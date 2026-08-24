@@ -1,0 +1,118 @@
+name: Update Merged PRs
+
+on:
+  schedule:
+    - cron: "0 0 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-prs:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout profile repository
+        uses: actions/checkout@v4
+
+      - name: Fetch merged PRs
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          python <<'PY'
+          import json
+          import os
+          import urllib.request
+
+          username = "AbarnaaSree"
+
+          query = f"""
+          {{
+            search(query: "is:pr is:merged author:{username}", type: ISSUE, first: 20) {{
+              nodes {{
+                ... on PullRequest {{
+                  title
+                  number
+                  url
+                  repository {{
+                    nameWithOwner
+                  }}
+                  mergedAt
+                }}
+              }}
+            }}
+          }}
+          """
+
+          data = json.dumps({"query": query}).encode()
+
+          request = urllib.request.Request(
+              "https://api.github.com/graphql",
+              data=data,
+              headers={
+                  "Authorization": f"Bearer {os.environ['GH_TOKEN']}",
+                  "Accept": "application/vnd.github+json"
+              }
+          )
+
+          response = urllib.request.urlopen(request)
+          result = json.load(response)
+
+          prs = result["data"]["search"]["nodes"]
+
+          output = [
+              "## 🚀 Open Source Contributions",
+              "",
+          ]
+
+          if not prs:
+              output.append("No merged pull requests found yet.")
+          else:
+              for pr in prs:
+                  output.append(
+                      f"- **[{pr['repository']['nameWithOwner']} #{pr['number']}]"
+                      f"({pr['url']})** — {pr['title']} ✅"
+                  )
+
+          output.extend([
+              "",
+              "<sub>Automatically updated by GitHub Actions.</sub>"
+          ])
+
+          new_section = "\n".join(output)
+
+          with open("README.md", "r", encoding="utf-8") as f:
+              readme = f.read()
+
+          start = "<!--START_MERGED_PRS-->"
+          end = "<!--END_MERGED_PRS-->"
+
+          start_index = readme.index(start) + len(start)
+          end_index = readme.index(end)
+
+          updated = (
+              readme[:start_index]
+              + "\n\n"
+              + new_section
+              + "\n"
+              + readme[end_index:]
+          )
+
+          with open("README.md", "w", encoding="utf-8") as f:
+              f.write(updated)
+          PY
+
+      - name: Commit changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add README.md
+
+          if git diff --cached --quiet; then
+            echo "No changes."
+          else
+            git commit -m "docs: update merged PRs"
+            git push
+          fi
