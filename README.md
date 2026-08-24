@@ -37,7 +37,12 @@
 
 ### 🚀 Open Source Contributions
 <!--START_MERGED_PRS-->
-Loading merged pull requests...
+| Repository | PR | Title | Status |
+|---|---|---|---|
+| floci-io/floci | [#2487](https://github.com/floci-io/floci/pull/2487) | fix(bedrock-agentcore): allow maxResults up to 1000 | ✅ Merged |
+| floci-io/floci | [#2406](https://github.com/floci-io/floci/pull/2406) | fix: preserve Firehose compression format in CloudFormation | ✅ Merged |
+| pollinations/pollinations | [#13297](https://github.com/pollinations/pollinations/pull/13297) | fix: keep tracking alive after malformed SSE chunks | ✅ Merged |
+| pbakaus/impeccable | [#465](https://github.com/pbakaus/impeccable/pull/465) | Warn when static HTML parser dependencies are unavailable | ✅ Merged |
 <!--END_MERGED_PRS-->
 
 ---
