@@ -1,16 +1,19 @@
-## Hi there 👋
+# Hi, I'm Abarnaa Sree 👋
 
-<!--
-**AbarnaaSree/AbarnaaSree** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+🎓 B.Tech Information Technology  
+💻 Software Developer | Open Source Contributor  
+🚀 Interested in AI, Backend Development & Open Source
 
-Here are some ideas to get you started:
+## 🚀 Open Source Contributions
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+<!--START_MERGED_PRS-->
+Loading merged pull requests...
+<!--END_MERGED_PRS-->
+
+## 🛠️ Technologies
+
+Java • Python • Spring Boot • React • FastAPI • MongoDB • Docker • Git
+
+## 📊 GitHub
+
+![GitHub Stats](https://github-readme-stats.vercel.app/api?username=AbarnaaSree&show_icons=true)
