@@ -1,7 +1,7 @@
 # Hi, I'm Abarnaa Sree 👋
 
 🎓 B.Tech Information Technology  
-💻 Software Developer | Open Source Contributor  
+💻 AI Software Developer | Open Source Contributor  
 🚀 Interested in AI, Backend Development & Open Source
 
 ## 🚀 Open Source Contributions
