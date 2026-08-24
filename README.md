@@ -4,10 +4,6 @@
   <em>AI Software Developer &nbsp;|&nbsp; Open Source Contributor &nbsp;|&nbsp; B.Tech Information Technology</em>
 </p>
 
-<p align="center">
-  <img src="https://komarev.com/ghpvc/?username=AbarnaaSree&style=flat&color=blueviolet" alt="Profile views"/>
-</p>
-
 ---
 
 ###  About Me
