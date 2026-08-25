@@ -5,133 +5,18 @@
 <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=00FF88&background=050806&center=true&vCenter=true&width=650&lines=%24+whoami+%3E%3E+AI+Engineer;%24+stack+%3E%3E+Python+%7C+PyTorch+%7C+React+%7C+FastAPI;%24+passion+%3E%3E+Machine+Learning+%2B+Generative+AI;%24+status+%3E%3E+Contributing+to+Open+Source;%24+focus+%3E%3E+Deepening+AI%2FML+Expertise" alt="Typing SVG"/>
 
 <div align="center">
-
-[![Portfolio](https://img.shields.io/badge/Portfolio-39FF88?style=for-the-badge&logo=googlechrome&logoColor=000000)](https://abarnaasree.github.io/MY--Portfolio/)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-39FF88?style=for-the-badge&logo=linkedin&logoColor=000000)](https://www.linkedin.com/in/abarnaa-sree-n/)
-[![GitHub](https://img.shields.io/badge/GitHub-39FF88?style=for-the-badge&logo=github&logoColor=000000)](https://github.com/AbarnaaSree)
-[![LeetCode](https://img.shields.io/badge/LeetCode-39FF88?style=for-the-badge&logo=leetcode&logoColor=000000)](https://leetcode.com/u/AbarnaaSree/)
+  
+[![Portfolio](https://img.shields.io/badge/Portfolio-39FF88?style=flat-square&logo=googlechrome&logoColor=000000)](https://abarnaa-sree.github.io/MY--Portfolio/)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-39FF88?style=flat-square&logo=linkedin&logoColor=000000)](https://www.linkedin.com/in/abarnaa-sree-n/)
+[![GitHub](https://img.shields.io/badge/GitHub-39FF88?style=flat-square&logo=github&logoColor=000000)](https://github.com/AbarnaaSree)
+[![LeetCode](https://img.shields.io/badge/LeetCode-39FF88?style=flat-square&logo=leetcode&logoColor=000000)](https://leetcode.com/u/AbarnaaSree/)
 
 </div>
 
 
-
+## Open Source Contribution 
 <!--START_MERGED_PRS-->
-<div align="center">
-
-## 🟢 Merged Pull Requests
-
-**🔀 4 Merged PRs**
-
-</div>
-
-<table width="100%">
-
-
-<tr>
-<td>
-
-🟢 **fix(bedrock-agentcore): allow maxResults up to 1000**
-
-<sub>
-📦 floci-io/floci
-&nbsp; • &nbsp;
-🔀 PR #2487
-&nbsp; • &nbsp;
-🗓️ 24 Aug 2026
-</sub>
-
-</td>
-
-<td align="right">
-<a href="https://github.com/floci-io/floci/pull/2487">
-<img src="https://img.shields.io/badge/VIEW-00C96B?style=for-the-badge&logo=github&logoColor=000000" />
-</a>
-</td>
-</tr>
-
-
-<tr>
-<td>
-
-🟢 **fix: preserve Firehose compression format in CloudFormation**
-
-<sub>
-📦 floci-io/floci
-&nbsp; • &nbsp;
-🔀 PR #2406
-&nbsp; • &nbsp;
-🗓️ 21 Aug 2026
-</sub>
-
-</td>
-
-<td align="right">
-<a href="https://github.com/floci-io/floci/pull/2406">
-<img src="https://img.shields.io/badge/VIEW-00C96B?style=for-the-badge&logo=github&logoColor=000000" />
-</a>
-</td>
-</tr>
-
-
-<tr>
-<td>
-
-🟢 **fix: keep tracking alive after malformed SSE chunks**
-
-<sub>
-📦 pollinations/pollinations
-&nbsp; • &nbsp;
-🔀 PR #13297
-&nbsp; • &nbsp;
-🗓️ 20 Aug 2026
-</sub>
-
-</td>
-
-<td align="right">
-<a href="https://github.com/pollinations/pollinations/pull/13297">
-<img src="https://img.shields.io/badge/VIEW-00C96B?style=for-the-badge&logo=github&logoColor=000000" />
-</a>
-</td>
-</tr>
-
-
-<tr>
-<td>
-
-🟢 **Warn when static HTML parser dependencies are unavailable**
-
-<sub>
-📦 pbakaus/impeccable
-&nbsp; • &nbsp;
-🔀 PR #465
-&nbsp; • &nbsp;
-🗓️ 10 Aug 2026
-</sub>
-
-</td>
-
-<td align="right">
-<a href="https://github.com/pbakaus/impeccable/pull/465">
-<img src="https://img.shields.io/badge/VIEW-00C96B?style=for-the-badge&logo=github&logoColor=000000" />
-</a>
-</td>
-</tr>
-
-
-</table>
-
-<div align="center">
-
-<sub>
-Showing latest 4 of 4 merged pull requests
-&nbsp; • &nbsp;
-🔄 Automatically updated
-</sub>
-
-</div>
 <!--END_MERGED_PRS-->
-
 ### `About me`
 
 AI Engineer focused on machine learning, deep learning, and generative AI systems, with a full-stack foundation spanning React, Node.js, and cloud-native backends. Actively growing an open-source footprint — contributing pull requests, reviewing issues, and collaborating on AI/ML repositories.
