@@ -292,17 +292,55 @@ function svgStart(width, height, title) {
   height="${height}"
   viewBox="0 0 ${width} ${height}"
 >
+<defs>
+
+  <!-- Neon green glow -->
+  <filter id="greenGlow" x="-50%" y="-50%" width="200%" height="200%">
+    <feGaussianBlur stdDeviation="5" result="blur"/>
+    <feMerge>
+      <feMergeNode in="blur"/>
+      <feMergeNode in="SourceGraphic"/>
+    </feMerge>
+  </filter>
+
+  <!-- Stronger shine -->
+  <filter id="strongGlow" x="-100%" y="-100%" width="300%" height="300%">
+    <feGaussianBlur stdDeviation="9" result="blur"/>
+    <feMerge>
+      <feMergeNode in="blur"/>
+      <feMergeNode in="SourceGraphic"/>
+    </feMerge>
+  </filter>
+
+  <!-- Animated shine -->
+  <linearGradient id="greenGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+    <stop offset="0%" stop-color="#00FF88"/>
+    <stop offset="50%" stop-color="#7CFFBD"/>
+    <stop offset="100%" stop-color="#00FF88">
+      <animate
+        attributeName="offset"
+        values="100%;0%;100%"
+        dur="3s"
+        repeatCount="indefinite"
+      />
+    </stop>
+  </linearGradient>
+
+</defs>
+
 <rect
   width="100%"
   height="100%"
   rx="18"
-  fill="#0B0C10"
+  fill="#050A08"
+  stroke="#163D2A"
+  stroke-width="1"
 />
 
 <text
   x="35"
   y="42"
-  fill="#F5F5F5"
+  fill="#F0FFF7"
   font-family="Arial, sans-serif"
   font-size="22"
   font-weight="700"
@@ -329,7 +367,7 @@ function bar({
   height,
   value,
   max,
-  color = "#FF2E9E",
+  color = "#00FF88",
   radius = 6,
 }) {
   const calculatedWidth =
@@ -342,7 +380,8 @@ function bar({
   width="${width}"
   height="${height}"
   rx="${radius}"
-  fill="#1A1C24"
+  fill="#0B1510"
+  stroke="#163D2A"
 />
 
 <rect
@@ -352,9 +391,11 @@ function bar({
   height="${height}"
   rx="${radius}"
   fill="${color}"
+  filter="url(#greenGlow)"
 />
 `;
 }
+  
 
 /* =========================================================
    ANALYTICS SVG
@@ -435,14 +476,14 @@ function generateAnalyticsSVG({
   width="310"
   height="110"
   rx="14"
-  fill="#12141B"
-  stroke="#252936"
+  fill="#0B1510"
+  stroke="#163D2A"
 />
 
 <text
   x="${x + 22}"
   y="${y + 35}"
-  fill="#A7AAB5"
+  fill="#8FA99C"
   font-family="Arial"
   font-size="14"
 >
@@ -452,7 +493,8 @@ ${escapeXml(card.label)}
 <text
   x="${x + 22}"
   y="${y + 78}"
-  fill="#FF2E9E"
+  fill="#00FF88"
+  filter="url(#greenGlow)"
   font-family="Arial"
   font-size="30"
   font-weight="700"
@@ -519,19 +561,19 @@ function generateContributionGraph(profile) {
     const ratio =
       day.contributionCount / max;
 
-    let fill = "#161922";
+    let fill = "#07100B";
 
-    if (ratio > 0.75) {
-      fill = "#FF2E9E";
-    } else if (ratio > 0.5) {
-      fill = "#C9247A";
-    } else if (ratio > 0.25) {
-      fill = "#812052";
-    } else if (ratio > 0) {
-      fill = "#48152F";
-    }
+if (ratio > 0.75) {
+  fill = "#00FF88";
+} else if (ratio > 0.5) {
+  fill = "#00C96B";
+} else if (ratio > 0.25) {
+  fill = "#087A46";
+} else if (ratio > 0) {
+  fill = "#06452B";
+}
 
-    svg += `
+svg += `
 <rect
   x="${x}"
   y="${y}"
@@ -539,13 +581,13 @@ function generateContributionGraph(profile) {
   height="${cell}"
   rx="3"
   fill="${fill}"
+  ${ratio > 0.5 ? 'filter="url(#greenGlow)"' : ''}
 >
 <title>
 ${escapeXml(day.date)}: ${day.contributionCount} contributions
 </title>
 </rect>
 `;
-  });
 
   svg += `
 <text
@@ -561,7 +603,7 @@ Total contributions:
 <text
   x="180"
   y="320"
-  fill="#FF2E9E"
+  fill="#00FF88"
   font-family="Arial"
   font-size="16"
   font-weight="700"
@@ -628,7 +670,7 @@ ${bar({
 <text
   x="860"
   y="${y + 19}"
-  fill="#FF2E9E"
+  fill="#00FF88"
   font-family="Arial"
   font-size="14"
   font-weight="700"
@@ -705,7 +747,7 @@ function generatePRGraph(prs) {
   y1="${chartY + chartHeight}"
   x2="${chartX + chartWidth}"
   y2="${chartY + chartHeight}"
-  stroke="#30333D"
+  stroke="#163D2A"
 />
 
 <line
@@ -713,7 +755,7 @@ function generatePRGraph(prs) {
   y1="${chartY}"
   x2="${chartX}"
   y2="${chartY + chartHeight}"
-  stroke="#30333D"
+  stroke="#163D2A"
 />
 `;
 
@@ -734,12 +776,13 @@ function generatePRGraph(prs) {
 
     points.push(`${x},${y}`);
 
-    svg += `
+svg += `
 <circle
   cx="${x}"
   cy="${y}"
   r="6"
-  fill="#FF2E9E"
+  fill="#00FF88"
+  filter="url(#strongGlow)"
 >
 <title>
 ${escapeXml(month)}: ${value} PRs
@@ -764,7 +807,8 @@ ${escapeXml(month)}
 <polyline
   points="${points.join(" ")}"
   fill="none"
-  stroke="#FF2E9E"
+  stroke="#00FF88"
+  filter="url(#greenGlow)"
   stroke-width="4"
   stroke-linecap="round"
   stroke-linejoin="round"
