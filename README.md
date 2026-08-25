@@ -1,217 +1,157 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0D1117,50:6a3093,100:a044ff&height=220&section=header&text=Abarnaa%20Sree%20N&fontSize=40&fontColor=E0D7FF&animation=twinkling&fontAlignY=32&desc=SOFTWARE%20ENGINEER%20%E2%80%A2%20OPEN%20SOURCE%20CONTRIBUTOR%20%E2%80%A2%20AI%20ENGINEER&descAlignY=52&descSize=15" width="100%"/>
-
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=24&duration=2800&pause=700&color=A78BFA&center=true&vCenter=true&width=700&lines=Software+Engineer;Open+Source+Contributor;AI+%2F+ML+Engineer;Full-Stack+Developer;Building+production-ready+software;Contributing+to+open+source;Debugging+real-world+systems" alt="Typing SVG" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:6D28D9,50:4F46E5,100:1E1B4B&height=220&section=header&text=SOFTWARE%20ENGINEER&fontSize=42&fontColor=E9E3FF&fontAlignY=35&desc=Open%20Source%20Contributor%20%7C%20AI%2FML%20Engineer&descAlignY=55&descSize=18&animation=fadeIn" width="100%"/>
 
 <br/>
 
-<img src="https://img.shields.io/badge/Open%20Source%20Contributor-6a3093?style=flat-square&logo=github&logoColor=white"/>
-<img src="https://img.shields.io/badge/Software%20Engineer-1a1a2e?style=flat-square&color=8250df"/>
-<img src="https://img.shields.io/badge/AI%20Engineer-1a1a2e?style=flat-square&color=a044ff"/>
-<img src="https://img.shields.io/badge/Full--Stack%20Engineer-1a1a2e?style=flat-square&color=6a3093"/>
-
-<br/><br/>
-
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/abarnaa-sree-n-0998272bb/)
-[![Portfolio](https://img.shields.io/badge/Portfolio-a044ff?style=for-the-badge&logo=vercel&logoColor=white)](https://abarnaasree.github.io/MY--Portfolio/)
-[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/AbarnaaSree)
-
-<br/>
-
-![Profile Views](https://komarev.com/ghpvc/?username=AbarnaaSree&style=flat-square&color=6a3093&label=PROFILE+VIEWS)
-![Followers](https://img.shields.io/github/followers/AbarnaaSree?style=flat-square&color=a044ff&label=FOLLOWERS)
-![Public Repos](https://img.shields.io/badge/dynamic/json?url=https://api.github.com/users/AbarnaaSree&label=REPOSITORIES&query=public_repos&color=8250df&style=flat-square)
-![Stars](https://img.shields.io/github/stars/AbarnaaSree?style=flat-square&color=6a3093&label=STARS)
-
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0D1117,50:6a3093,100:0D1117&height=3&width=100%25" width="100%"/>
+<a href="https://git.io/typing-svg">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=24&duration=3000&pause=800&color=A78BFA&center=true&vCenter=true&width=650&lines=Software+Engineer;Open+Source+Contributor;AI+%2F+ML+Engineer;Full-Stack+Developer;Building+Production-Ready+Software;Debugging+Real-World+Systems;Contributing+to+Open+Source" alt="Typing SVG" />
+</a>
 
 </div>
+
+---
+
+<div align="center">
+
+[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=E9E3FF&color=1E1B4B)](https://github.com/AbarnaaSree)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-100000?style=for-the-badge&logo=linkedin&logoColor=E9E3FF&color=4F46E5)](YOUR_LINKEDIN_URL)
+[![Portfolio](https://img.shields.io/badge/Portfolio-100000?style=for-the-badge&logo=vercel&logoColor=E9E3FF&color=6D28D9)](YOUR_PORTFOLIO_URL)
+[![Email](https://img.shields.io/badge/Email-100000?style=for-the-badge&logo=gmail&logoColor=E9E3FF&color=312E81)](mailto:YOUR_EMAIL_ADDRESS)
+
+</div>
+
+---
+
+<div align="center">
+
+<img src="https://komarev.com/ghpvc/?username=AbarnaaSree&style=for-the-badge&color=6D28D9&label=PROFILE+VIEWS" alt="Profile Views"/>
+<img src="https://img.shields.io/github/followers/AbarnaaSree?style=for-the-badge&color=4F46E5&labelColor=1E1B4B&label=FOLLOWERS" alt="Followers"/>
+<img src="https://img.shields.io/badge/dynamic/json?style=for-the-badge&labelColor=1E1B4B&color=6D28D9&label=REPOS&query=public_repos&url=https://api.github.com/users/AbarnaaSree" alt="Public Repos"/>
+
+</div>
+
+---
 
 ## About Me
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=16&duration=3500&pause=1000&color=8250df&center=true&vCenter=true&width=750&lines=Focused+on+building+reliable%2C+production-grade+systems;Debugging+real-world+problems+at+the+root+cause;Contributing+meaningful+pull+requests+to+open+source;Integrating+AI%2FML+into+shipped+software" alt="About Typing SVG"/>
+Building reliable software, solving real engineering problems, and contributing production-quality improvements to open-source projects.
 
-<br/>
+Focused on backend systems, full-stack development, and AI/ML engineering — with an emphasis on debugging, code review, and shipping code that holds up in production. Active on GitHub through pull requests, issue triage, and collaborative development across open-source repositories.
 
-Software engineer focused on building reliable systems, contributing to open source, debugging real-world problems, and developing AI-powered products. I work across the stack — from backend services and data pipelines to frontend interfaces — with a growing emphasis on integrating AI/ML into production software.
+---
 
-My engineering practice centers around:
-
-- **Building** — production-oriented software, not proof-of-concepts
-- **Contributing** — submitting pull requests to real repositories
-- **Debugging** — root-causing issues rather than patching symptoms
-- **Reviewing** — engaging with codebases through the PR process
-- **Shipping** — taking work from idea to merged, working code
-
-I care about clean architecture, maintainable code, and engineering decisions that hold up in production.
-
-<div align="center">
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0D1117,50:8250df,100:0D1117&height=3&width=100%25" width="100%"/>
-</div>
-
-<div align="center">
-<img src="https://capsule-render.vercel.app/api?type=transparent&color=auto&height=60&section=header&text=OPEN%20SOURCE%20CONTRIBUTIONS&fontSize=26&fontColor=A78BFA&fontAlignY=60&animation=fadeIn" width="100%"/>
-</div>
+## Open Source Contributions
 
 <div align="center">
 
-> **Actively contributing to open-source repositories through pull requests, code review, and issue resolution.**
-
-<img src="https://github-readme-stats.vercel.app/api?username=AbarnaaSree&show_icons=true&count_private=true&include_all_commits=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=A78BFA&icon_color=8250df&text_color=E0D7FF&hide=stars" width="70%"/>
+<img src="https://github-readme-stats.vercel.app/api?username=AbarnaaSree&show_icons=true&count_private=true&hide_border=true&title_color=A78BFA&icon_color=6D28D9&text_color=C4B5FD&bg_color=0D1117" alt="GitHub Stats"/>
 
 </div>
+
+<div align="center">
 
 | Metric | Status |
-|---|:---:|
-| Pull Requests | `Dynamic — see GitHub` |
-| Merged Pull Requests | `Dynamic — see GitHub` |
-| Issues Opened / Closed | `Dynamic — see GitHub` |
-| Repositories Contributed To | `Dynamic — see GitHub` |
-| Reviews | `Dynamic — see GitHub` |
+|---|---|
+| **Merged Pull Requests** | 🟣 **Emphasized — see [Merged Pull Requests](#merged-pull-requests)** |
+| Open Pull Requests | Tracked via GitHub |
+| Closed Pull Requests | Tracked via GitHub |
+| Issues | Tracked via GitHub |
+| Reviews | Tracked via GitHub |
+| Commits | Tracked via GitHub |
+| Repositories Contributed To | Tracked via GitHub |
 
-> Live pull request and contribution counts are best viewed directly on [github.com/AbarnaaSree](https://github.com/AbarnaaSree) — figures are intentionally not hard-coded here to avoid displaying stale or inaccurate numbers.
-
-<div align="center">
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0D1117,50:a044ff,100:0D1117&height=3&width=100%25" width="100%"/>
 </div>
+
+---
 
 ## Pull Request Activity
 
 <div align="center">
 
-| Metric | Count |
-|---|---:|
-| Pull Requests | `YOUR_PR_COUNT` |
-| Merged PRs | `YOUR_MERGED_PR_COUNT` |
-| Open PRs | `YOUR_OPEN_PR_COUNT` |
-| Closed PRs | `YOUR_CLOSED_PR_COUNT` |
-| PR Reviews | `YOUR_REVIEW_COUNT` |
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=AbarnaaSree&bg_color=0D1117&color=A78BFA&line=6D28D9&point=E9E3FF&area=true&hide_border=true&custom_title=Pull%20Request%20%26%20Contribution%20Activity" alt="Activity Graph" width="100%"/>
 
 </div>
 
-> Replace the placeholders above with real values from your GitHub profile ([Pulse](https://github.com/AbarnaaSree?tab=overview) / [Pull Requests](https://github.com/pulls?q=is%3Apr+author%3AAbarnaaSree)) as your contribution history grows. **Merged pull requests** are the strongest signal of real open-source impact — keep this row prominent.
+Pull requests are a core part of my GitHub activity — spanning active development, merged contributions, and ongoing reviews across multiple repositories.
 
-<div align="center">
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0D1117,50:6a3093,100:0D1117&height=3&width=100%25" width="100%"/>
-</div>
+---
 
 ## Merged Pull Requests
 
-<details>
-<summary><strong>[Repository Name] — [PR Title]</strong></summary>
-<br/>
-
-| Category | Details |
-|---|---|
-| Repository | `[Repository Name]` |
-| Pull Request | `[PR Title]` |
-| Status | Merged |
-| Contribution | `[What was changed]` |
-| Engineering Area | `[Backend / AI / Infrastructure / Bug Fix / Performance]` |
-| Impact | `[Why the change mattered]` |
-| PR | [`View Pull Request`](YOUR_PR_URL) |
-
-</details>
-
-<details>
-<summary><strong>[Repository Name] — [PR Title]</strong></summary>
-<br/>
-
-| Category | Details |
-|---|---|
-| Repository | `[Repository Name]` |
-| Pull Request | `[PR Title]` |
-| Status | Merged |
-| Contribution | `[What was changed]` |
-| Engineering Area | `[Backend / AI / Infrastructure / Bug Fix / Performance]` |
-| Impact | `[Why the change mattered]` |
-| PR | [`View Pull Request`](YOUR_PR_URL) |
-
-</details>
-
-> Add a collapsible block per merged PR as your contribution history builds. Only real, verifiable PR links should go here.
-
 <div align="center">
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0D1117,50:8250df,100:0D1117&height=3&width=100%25" width="100%"/>
+<img src="https://img.shields.io/badge/-Merged%20Pull%20Requests-1E1B4B?style=for-the-badge&logo=github&logoColor=A78BFA" alt="Merged PRs"/>
 </div>
 
-## Open Source Engineering Areas
+> Automatically updated from GitHub Actions.
 
-| Engineering Area | Focus |
-|---|---|
-| Open Source | Bug fixes, features, refactoring |
-| AI Engineering | AI agents, LLM tooling, SDKs |
-| Backend Engineering | APIs, services, concurrency |
-| Developer Tools | CLI tools, SDKs, automation |
-| Data Engineering | ETL, pipelines, databases |
-| Performance | Optimization and resource management |
-| Debugging | Root-cause analysis and production bugs |
+<!--START_MERGED_PRS-->
 
-<div align="center">
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0D1117,50:a044ff,100:0D1117&height=3&width=100%25" width="100%"/>
-</div>
+<!--END_MERGED_PRS-->
 
-## Featured Open Source Work
+---
+
+## Featured Open Source Contributions
 
 <details>
-<summary><strong>[Project / Repository Name]</strong></summary>
+<summary><strong>Repository Name — Pull Request Title</strong></summary>
 
 ### Problem
-`[Describe the real engineering problem]`
+Describe the real engineering problem addressed in this contribution.
 
 ### Investigation
-`[Describe how the issue was investigated]`
+Describe how the issue was reproduced and investigated.
 
 ### Solution
-`[Describe the technical solution]`
+Describe the technical implementation of the fix or feature.
 
-### Engineering Impact
-`[Describe why the contribution mattered]`
+### Impact
+Describe why the contribution mattered to the project.
 
-| Stack | Area | Contribution | Status |
-|---|---|---|---|
-| `[Technology]` | `[Engineering domain]` | `[Contribution summary]` | Merged |
-
-**Repository:** [`View Repository`](YOUR_REPO_URL)
-**Pull Request:** [`View Pull Request`](YOUR_PR_URL)
+| Area | Details |
+|---|---|
+| Stack | Technology |
+| Type | Bug Fix / Feature / Optimization |
+| Status | Merged |
+| PR | [View on GitHub](https://github.com/) |
 
 </details>
 
 <details>
-<summary><strong>[Project / Repository Name]</strong></summary>
+<summary><strong>Repository Name — Pull Request Title</strong></summary>
 
 ### Problem
-`[Describe the real engineering problem]`
+Describe the real engineering problem addressed in this contribution.
 
 ### Investigation
-`[Describe how the issue was investigated]`
+Describe how the issue was reproduced and investigated.
 
 ### Solution
-`[Describe the technical solution]`
+Describe the technical implementation of the fix or feature.
 
-### Engineering Impact
-`[Describe why the contribution mattered]`
+### Impact
+Describe why the contribution mattered to the project.
 
-| Stack | Area | Contribution | Status |
-|---|---|---|---|
-| `[Technology]` | `[Engineering domain]` | `[Contribution summary]` | Merged |
-
-**Repository:** [`View Repository`](YOUR_REPO_URL)
-**Pull Request:** [`View Pull Request`](YOUR_PR_URL)
+| Area | Details |
+|---|---|
+| Stack | Technology |
+| Type | Bug Fix / Feature / Optimization |
+| Status | Merged |
+| PR | [View on GitHub](https://github.com/) |
 
 </details>
 
-<div align="center">
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0D1117,50:6a3093,100:0D1117&height=3&width=100%25" width="100%"/>
-</div>
+---
+
+## GitHub Contribution Activity
 
 <div align="center">
-<img src="https://capsule-render.vercel.app/api?type=transparent&color=auto&height=60&section=header&text=GITHUB%20CONTRIBUTION%20ACTIVITY&fontSize=26&fontColor=A78BFA&fontAlignY=60&animation=fadeIn" width="100%"/>
 
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=AbarnaaSree&theme=react-dark&hide_border=true&bg_color=0D1117&color=A78BFA&line=8250df&point=E0D7FF&area=true" width="100%"/>
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=AbarnaaSree&bg_color=0D1117&color=A78BFA&line=6D28D9&point=E9E3FF&area=true&hide_border=true" width="100%" alt="GitHub Contribution Activity"/>
 
 </div>
+
+---
 
 ## Contribution Snake
 
@@ -220,189 +160,83 @@ I care about clean architecture, maintainable code, and engineering decisions th
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/AbarnaaSree/AbarnaaSree/output/github-contribution-grid-snake-dark.svg">
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/AbarnaaSree/AbarnaaSree/output/github-contribution-grid-snake.svg">
-  <img alt="GitHub contribution snake" src="https://raw.githubusercontent.com/AbarnaaSree/AbarnaaSree/output/github-contribution-grid-snake-dark.svg" width="100%">
+  <img alt="Contribution Snake" src="https://raw.githubusercontent.com/AbarnaaSree/AbarnaaSree/output/github-contribution-grid-snake.svg" width="100%">
 </picture>
 
 </div>
 
-> Requires the [`platane/snk`](https://github.com/Platane/snk) GitHub Action configured on the `AbarnaaSree/AbarnaaSree` profile repository to generate this animation automatically.
-
-<div align="center">
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0D1117,50:a044ff,100:0D1117&height=3&width=100%25" width="100%"/>
-</div>
+---
 
 ## GitHub Analytics
 
 <div align="center">
 
-<img src="https://github-readme-stats.vercel.app/api?username=AbarnaaSree&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=A78BFA&icon_color=8250df&text_color=E0D7FF" width="49%"/>
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=AbarnaaSree&theme=tokyonight&hide_border=true&background=0D1117&ring=8250df&fire=A78BFA&currStreakLabel=A78BFA" width="49%"/>
+<img src="https://github-readme-stats.vercel.app/api?username=AbarnaaSree&show_icons=true&hide_border=true&title_color=A78BFA&icon_color=6D28D9&text_color=C4B5FD&bg_color=0D1117" alt="GitHub Stats" width="48%"/>
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=AbarnaaSree&hide_border=true&background=0D1117&stroke=6D28D9&ring=A78BFA&fire=A78BFA&currStreakLabel=C4B5FD" alt="GitHub Streak" width="48%"/>
 
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=AbarnaaSree&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=A78BFA&text_color=E0D7FF" width="49%"/>
+<br/>
+
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=AbarnaaSree&layout=compact&hide_border=true&title_color=A78BFA&text_color=C4B5FD&bg_color=0D1117" alt="Top Languages" width="48%"/>
 
 </div>
 
-<div align="center">
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0D1117,50:6a3093,100:0D1117&height=3&width=100%25" width="100%"/>
-</div>
+---
 
 ## GitHub Trophies
 
 <div align="center">
 
-<img src="https://github-profile-trophy.vercel.app/?username=AbarnaaSree&theme=darkhub&no-frame=true&no-bg=true&margin-w=15&column=7" width="100%"/>
+<img src="https://github-profile-trophy.vercel.app/?username=AbarnaaSree&theme=algolia&no-frame=true&column=6&margin-w=8&margin-h=8&title=MultiLanguage,Repositories,Stars,PullRequest,Commits" alt="GitHub Trophies"/>
 
 </div>
 
-<div align="center">
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0D1117,50:8250df,100:0D1117&height=3&width=100%25" width="100%"/>
-</div>
+---
 
-## GitHub Profile Metrics
-
-<div align="center">
-
-![Repos](https://img.shields.io/badge/dynamic/json?url=https://api.github.com/users/AbarnaaSree&label=REPOSITORIES&query=public_repos&color=6a3093&style=flat-square)
-![Followers](https://img.shields.io/github/followers/AbarnaaSree?style=flat-square&color=8250df&label=FOLLOWERS)
-![Following](https://img.shields.io/badge/dynamic/json?url=https://api.github.com/users/AbarnaaSree&label=FOLLOWING&query=following&color=a044ff&style=flat-square)
-![Stars](https://img.shields.io/github/stars/AbarnaaSree?style=flat-square&color=6a3093&label=STARS)
-
-</div>
-
-<div align="center">
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0D1117,50:a044ff,100:0D1117&height=3&width=100%25" width="100%"/>
-</div>
-
-## Technical Stack
+## Tech Stack
 
 <div align="center">
 
 **Languages**
+<br/>
+<img src="https://skillicons.dev/icons?i=java,python,javascript,typescript,cpp,rust,mysql" />
 
-<img src="https://skillicons.dev/icons?i=java,python,js,ts,cpp,c&theme=dark" />
+<br/><br/>
 
 **Frontend**
+<br/>
+<img src="https://skillicons.dev/icons?i=react,html,css,tailwind,vite" />
 
-<img src="https://skillicons.dev/icons?i=react,html,css,tailwind,vite&theme=dark" />
+<br/><br/>
 
 **Backend**
+<br/>
+<img src="https://skillicons.dev/icons?i=spring,fastapi,nodejs" />
 
-<img src="https://skillicons.dev/icons?i=spring,fastapi,nodejs&theme=dark" />
+<br/><br/>
 
 **Databases**
+<br/>
+<img src="https://skillicons.dev/icons?i=postgres,mysql,mongodb,redis" />
 
-<img src="https://skillicons.dev/icons?i=postgres,mysql,mongodb,redis&theme=dark" />
+<br/><br/>
 
-**AI / ML**
-
-<img src="https://skillicons.dev/icons?i=pytorch,tensorflow,opencv&theme=dark" />
-
-**DevOps / Tools**
-
-<img src="https://skillicons.dev/icons?i=git,github,docker,linux,nginx,aws&theme=dark" />
+**DevOps**
+<br/>
+<img src="https://skillicons.dev/icons?i=git,github,docker,linux,nginx" />
 
 </div>
 
-<div align="center">
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0D1117,50:6a3093,100:0D1117&height=3&width=100%25" width="100%"/>
-</div>
-
-## Engineering Projects
-
-<details>
-<summary><strong>[Project Name]</strong></summary>
-
-**Problem:** `[Describe the concrete problem this project addresses]`
-
-**Solution:** `[Describe the technical approach taken]`
-
-**Architecture:** `[Describe the system architecture / design decisions]`
-
-**Stack:** `[List actual technologies used]`
-
-**Engineering Impact:** `[Describe measurable or practical impact]`
-
-**Repository:** [`View Repository`](YOUR_REPO_URL)
-
-</details>
-
-<details>
-<summary><strong>[Project Name]</strong></summary>
-
-**Problem:** `[Describe the concrete problem this project addresses]`
-
-**Solution:** `[Describe the technical approach taken]`
-
-**Architecture:** `[Describe the system architecture / design decisions]`
-
-**Stack:** `[List actual technologies used]`
-
-**Engineering Impact:** `[Describe measurable or practical impact]`
-
-**Repository:** [`View Repository`](YOUR_REPO_URL)
-
-</details>
-
-<div align="center">
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0D1117,50:8250df,100:0D1117&height=3&width=100%25" width="100%"/>
-</div>
-
-## Current Engineering Focus
-
-```yaml
-currently:
-  building:
-    - AI-powered products
-    - Open-source contributions
-    - Full-stack systems
-
-  learning:
-    - System Design
-    - Advanced DSA
-    - AI Engineering
-    - Distributed Systems
-
-  contributing:
-    - Open Source
-    - Developer Tooling
-    - AI Infrastructure
-
-  exploring:
-    - AI Agents
-    - RAG
-    - Computer Use
-    - MLOps
-
-  open_to:
-    - Open Source Collaboration
-    - Software Engineering
-    - AI Engineering
-    - Backend Engineering
-```
-
-<div align="center">
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0D1117,50:a044ff,100:0D1117&height=3&width=100%25" width="100%"/>
-</div>
+---
 
 ## Connect
 
 <div align="center">
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=16&duration=2500&pause=600&color=A78BFA&center=true&vCenter=true&width=500&lines=Let's+build+something+together;Open+to+collaboration+and+code+review;Always+happy+to+talk+engineering" alt="Connect Typing SVG"/>
-
-<br/><br/>
-
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/abarnaa-sree-n-0998272bb/)
-[![Portfolio](https://img.shields.io/badge/Portfolio-a044ff?style=for-the-badge&logo=vercel&logoColor=white)](https://abarnaasree.github.io/MY--Portfolio/)
-[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/AbarnaaSree)
-[![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:YOUR_EMAIL)
+[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=E9E3FF&color=1E1B4B)](https://github.com/AbarnaaSree)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-100000?style=for-the-badge&logo=linkedin&logoColor=E9E3FF&color=4F46E5)](YOUR_LINKEDIN_URL)
+[![Portfolio](https://img.shields.io/badge/Portfolio-100000?style=for-the-badge&logo=vercel&logoColor=E9E3FF&color=6D28D9)](YOUR_PORTFOLIO_URL)
+[![Email](https://img.shields.io/badge/Email-100000?style=for-the-badge&logo=gmail&logoColor=E9E3FF&color=312E81)](mailto:YOUR_EMAIL_ADDRESS)
 
 </div>
 
-<div align="center">
-
-*Build. Contribute. Debug. Ship.*
-
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:a044ff,50:6a3093,100:0D1117&height=130&section=footer&animation=twinkling" width="100%"/>
-
-</div>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:1E1B4B,50:4F46E5,100:6D28D9&height=150&section=footer&text=Build.%20Contribute.%20Debug.%20Ship.&fontSize=20&fontColor=E9E3FF&fontAlignY=70&animation=fadeIn" width="100%"/>
