@@ -516,7 +516,6 @@ ${escapeXml(shortNumber(card.value))}
 /* =========================================================
    CONTRIBUTION GRAPH
 ========================================================= */
-
 function generateContributionGraph(profile) {
   const days =
     profile.contributionsCollection
@@ -563,17 +562,22 @@ function generateContributionGraph(profile) {
 
     let fill = "#07100B";
 
-if (ratio > 0.75) {
-  fill = "#00FF88";
-} else if (ratio > 0.5) {
-  fill = "#00C96B";
-} else if (ratio > 0.25) {
-  fill = "#087A46";
-} else if (ratio > 0) {
-  fill = "#06452B";
-}
+    if (ratio > 0.75) {
+      fill = "#00FF88";
+    } else if (ratio > 0.5) {
+      fill = "#00C96B";
+    } else if (ratio > 0.25) {
+      fill = "#087A46";
+    } else if (ratio > 0) {
+      fill = "#06452B";
+    }
 
-svg += `
+    const glow =
+      ratio > 0.5
+        ? 'filter="url(#greenGlow)"'
+        : "";
+
+    svg += `
 <rect
   x="${x}"
   y="${y}"
@@ -581,19 +585,20 @@ svg += `
   height="${cell}"
   rx="3"
   fill="${fill}"
-  ${ratio > 0.5 ? 'filter="url(#greenGlow)"' : ''}
+  ${glow}
 >
 <title>
 ${escapeXml(day.date)}: ${day.contributionCount} contributions
 </title>
 </rect>
 `;
+  });
 
   svg += `
 <text
   x="45"
   y="320"
-  fill="#A7AAB5"
+  fill="#8FA99C"
   font-family="Arial"
   font-size="14"
 >
@@ -604,6 +609,7 @@ Total contributions:
   x="180"
   y="320"
   fill="#00FF88"
+  filter="url(#greenGlow)"
   font-family="Arial"
   font-size="16"
   font-weight="700"
@@ -620,7 +626,6 @@ ${profile.contributionsCollection.contributionCalendar.totalContributions}
     "utf8"
   );
 }
-
 /* =========================================================
    LANGUAGE GRAPH
 ========================================================= */
