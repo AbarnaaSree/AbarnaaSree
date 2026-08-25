@@ -88,7 +88,7 @@ Only successfully merged pull requests are shown.
 <a href="https://github.com/floci-io/floci/pull/2487">
 
 <img
-src="https://img.shields.io/badge/VIEW_PR-00FF88?style=for-the-badge&logo=github&logoColor=white"
+src="https://img.shields.io/badge/VIEW_PR-FF2E9E?style=for-the-badge&logo=github&logoColor=white"
 alt="View Pull Request"
 />
 
@@ -136,7 +136,7 @@ alt="View Pull Request"
 <a href="https://github.com/floci-io/floci/pull/2406">
 
 <img
-src="https://img.shields.io/badge/VIEW_PR-00FF88?style=for-the-badge&logo=github&logoColor=white"
+src="https://img.shields.io/badge/VIEW_PR-FF2E9E?style=for-the-badge&logo=github&logoColor=white"
 alt="View Pull Request"
 />
 
@@ -184,7 +184,7 @@ alt="View Pull Request"
 <a href="https://github.com/pollinations/pollinations/pull/13297">
 
 <img
-src="https://img.shields.io/badge/VIEW_PR-00FF88?style=for-the-badge&logo=github&logoColor=white"
+src="https://img.shields.io/badge/VIEW_PR-FF2E9E?style=for-the-badge&logo=github&logoColor=white"
 alt="View Pull Request"
 />
 
@@ -232,7 +232,7 @@ alt="View Pull Request"
 <a href="https://github.com/pbakaus/impeccable/pull/465">
 
 <img
-src="https://img.shields.io/badge/VIEW_PR-00FF88?style=for-the-badge&logo=github&logoColor=white"
+src="https://img.shields.io/badge/VIEW_PR-FF2E9E?style=for-the-badge&logo=github&logoColor=white"
 alt="View Pull Request"
 />
 
