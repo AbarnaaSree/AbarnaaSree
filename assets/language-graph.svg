@@ -101,7 +101,7 @@ JavaScript
   font-size="14"
   font-weight="700"
 >
-45.4%
+45.3%
 </text>
 
 <text
@@ -128,7 +128,7 @@ HTML
 <rect
   x="190"
   y="123"
-  width="431.08412678706156"
+  width="431.4772366645128"
   height="24"
   rx="6"
   fill="#00FF88"
@@ -171,7 +171,7 @@ CSS
 <rect
   x="190"
   y="171"
-  width="211.99071730763723"
+  width="212.18403373875412"
   height="24"
   rx="6"
   fill="#00FF88"
@@ -214,7 +214,7 @@ Java
 <rect
   x="190"
   y="219"
-  width="83.77228753426097"
+  width="83.84868031154055"
   height="24"
   rx="6"
   fill="#00FF88"
@@ -257,7 +257,7 @@ Python
 <rect
   x="190"
   y="267"
-  width="54.52101498409909"
+  width="54.5707332367257"
   height="24"
   rx="6"
   fill="#00FF88"

@@ -16,6 +16,120 @@
 
 ## Open Source Contribution 
 <!--START_MERGED_PRS-->
+<div align="center">
+
+## 🟢 Merged Pull Requests
+
+**🔀 4 Merged PRs**
+
+</div>
+
+<table width="100%">
+
+
+<tr>
+<td>
+
+🟢 **fix(bedrock-agentcore): allow maxResults up to 1000**
+
+<sub>
+📦 floci-io/floci
+&nbsp; • &nbsp;
+🔀 PR #2487
+&nbsp; • &nbsp;
+🗓️ 24 Aug 2026
+</sub>
+
+</td>
+
+<td align="right">
+<a href="https://github.com/floci-io/floci/pull/2487">
+<img src="https://img.shields.io/badge/VIEW-00C96B?style=for-the-badge&logo=github&logoColor=000000" />
+</a>
+</td>
+</tr>
+
+
+<tr>
+<td>
+
+🟢 **fix: preserve Firehose compression format in CloudFormation**
+
+<sub>
+📦 floci-io/floci
+&nbsp; • &nbsp;
+🔀 PR #2406
+&nbsp; • &nbsp;
+🗓️ 21 Aug 2026
+</sub>
+
+</td>
+
+<td align="right">
+<a href="https://github.com/floci-io/floci/pull/2406">
+<img src="https://img.shields.io/badge/VIEW-00C96B?style=for-the-badge&logo=github&logoColor=000000" />
+</a>
+</td>
+</tr>
+
+
+<tr>
+<td>
+
+🟢 **fix: keep tracking alive after malformed SSE chunks**
+
+<sub>
+📦 pollinations/pollinations
+&nbsp; • &nbsp;
+🔀 PR #13297
+&nbsp; • &nbsp;
+🗓️ 20 Aug 2026
+</sub>
+
+</td>
+
+<td align="right">
+<a href="https://github.com/pollinations/pollinations/pull/13297">
+<img src="https://img.shields.io/badge/VIEW-00C96B?style=for-the-badge&logo=github&logoColor=000000" />
+</a>
+</td>
+</tr>
+
+
+<tr>
+<td>
+
+🟢 **Warn when static HTML parser dependencies are unavailable**
+
+<sub>
+📦 pbakaus/impeccable
+&nbsp; • &nbsp;
+🔀 PR #465
+&nbsp; • &nbsp;
+🗓️ 10 Aug 2026
+</sub>
+
+</td>
+
+<td align="right">
+<a href="https://github.com/pbakaus/impeccable/pull/465">
+<img src="https://img.shields.io/badge/VIEW-00C96B?style=for-the-badge&logo=github&logoColor=000000" />
+</a>
+</td>
+</tr>
+
+
+</table>
+
+<div align="center">
+
+<sub>
+Showing latest 4 of 4 merged pull requests
+&nbsp; • &nbsp;
+🔄 Automatically updated
+</sub>
+
+</div>
 <!--END_MERGED_PRS-->
 ### `About me`
 
