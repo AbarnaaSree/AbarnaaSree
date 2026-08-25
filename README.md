@@ -15,17 +15,29 @@
 
 </div>
 
-### `$ git log --open-source-contributions`
+<!--START_OPEN_SOURCE_CONTRIBUTIONS-->
 
-Actively contributing to open-source projects. The cards below pull live data straight from the GitHub API, so pull request counts and recent activity stay automatically up to date — nothing here is manually typed.
+<h2 align="center">🚀 Open Source Contributions</h2>
+
+<p align="center">
+  <i>Actively contributing to open-source projects.</i><br>
+  <i>These statistics and pull requests are automatically synced from GitHub.</i>
+</p>
 
 <div align="center">
-<img src="https://github-readme-stats.vercel.app/api?username=AbarnaaSree&show_icons=true&hide=stars,commits,issues,contribs&hide_rank=true&custom_title=Total+Pull+Requests&bg_color=0B0C10&title_color=FF2E9E&text_color=F5F5F5&icon_color=FF2E9E&border_color=FF2E9E" width="60%" />
+
+| 📊 Contributions | 🔀 Pull Requests | 🟢 Merged | 🔵 Open | ⚪ Closed |
+|:---:|:---:|:---:|:---:|:---:|
+| <strong>LIVE</strong> | <strong>LIVE</strong> | <strong>LIVE</strong> | <strong>LIVE</strong> | <strong>LIVE</strong> |
+
 </div>
 
-[![View Pull Requests](https://img.shields.io/badge/View-Pull_Requests-FF2E9E?style=for-the-badge&logo=github&logoColor=F5F5F5)](https://github.com/AbarnaaSree?tab=pulls)
-[![Open Source](https://img.shields.io/badge/Open_Source-Contributor-FF2E9E?style=for-the-badge&logo=opensourceinitiative&logoColor=F5F5F5)](https://github.com/AbarnaaSree)
+### 🔀 My Pull Requests
 
+<!--START_MERGED_PRS-->
+<!--END_MERGED_PRS-->
+
+<!--END_OPEN_SOURCE_CONTRIBUTIONS-->
 
 ### `$ git log --merged --open-source`
 
