@@ -17,20 +17,22 @@ async function fetchMergedPRs() {
     `is:pr is:merged author:${username}`
   );
 
-  const url =
+  const searchUrl =
     `https://api.github.com/search/issues?q=${query}` +
     `&sort=updated&order=desc&per_page=100`;
 
   console.log("Fetching merged PRs from GitHub...");
   console.log(`Query: is:pr is:merged author:${username}`);
 
-  const response = await fetch(url, {
-    headers: {
-      Authorization: `Bearer ${token}`,
-      Accept: "application/vnd.github+json",
-      "X-GitHub-Api-Version": "2022-11-28",
-      "User-Agent": "AbarnaaSree-profile-updater",
-    },
+  const headers = {
+    Authorization: `Bearer ${token}`,
+    Accept: "application/vnd.github+json",
+    "X-GitHub-Api-Version": "2022-11-28",
+    "User-Agent": "AbarnaaSree-profile-updater",
+  };
+
+  const response = await fetch(searchUrl, {
+    headers,
   });
 
   if (!response.ok) {
@@ -43,8 +45,46 @@ async function fetchMergedPRs() {
 
   const data = await response.json();
 
-  return (data.items || [])
-    .filter((pr) => pr.pull_request?.merged_at)
+  console.log(
+    `GitHub search returned ${data.items?.length || 0} PR(s).`
+  );
+
+  const prs = await Promise.all(
+    (data.items || []).map(async (pr) => {
+      if (!pr.pull_request?.url) {
+        return null;
+      }
+
+      const detailResponse = await fetch(
+        pr.pull_request.url,
+        { headers }
+      );
+
+      if (!detailResponse.ok) {
+        console.warn(
+          `Could not fetch PR details for #${pr.number}`
+        );
+        return null;
+      }
+
+      const details = await detailResponse.json();
+
+      if (!details.merged_at) {
+        return null;
+      }
+
+      return {
+        ...pr,
+        pull_request: {
+          ...pr.pull_request,
+          ...details,
+        },
+      };
+    })
+  );
+
+  return prs
+    .filter(Boolean)
     .sort(
       (a, b) =>
         new Date(b.pull_request.merged_at) -
