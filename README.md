@@ -315,40 +315,35 @@ AI Engineer focused on machine learning, deep learning, and generative AI system
 <br>
 <img src="https://skillicons.dev/icons?i=vscode,postman,git,github&theme=dark" />
 
-
-
 ### `$ ./github-analytics --full`
 
 <div align="center">
 
-<img src="https://github-readme-stats.vercel.app/api?username=AbarnaaSree&show_icons=true&hide_border=true&bg_color=0B0C10&title_color=FF2E9E&text_color=F5F5F5&icon_color=FF2E9E&ring_color=FF2E9E" width="49%" />
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=AbarnaaSree&hide_border=true&background=0B0C10&ring=FF2E9E&fire=FF2E9E&currStreakLabel=FF2E9E&sideLabels=F5F5F5&currStreakNum=F5F5F5&sideNums=F5F5F5&dates=F5F5F5" width="49%" />
+<img src="./assets/github-analytics.svg" width="100%"/>
 
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=AbarnaaSree&layout=compact&hide_border=true&bg_color=0B0C10&title_color=FF2E9E&text_color=F5F5F5" width="60%" />
-
-</div>
-
-### `$ ./trophies --render`
-
-<div align="center">
-<img src="https://github-profile-trophy.vercel.app/?username=AbarnaaSree&title_color=FF2E9E&icon_color=FF2E9E&text_color=F5F5F5&bg_color=0B0C10&column=7&no-frame=true&margin-w=8&margin-h=8" width="100%" />
 </div>
 
 ### `$ ./activity-graph --render`
 
 <div align="center">
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=AbarnaaSree&bg_color=0B0C10&color=FF2E9E&line=FF2E9E&point=F5F5F5&area=true&hide_border=true" width="100%" />
+
+<img src="./assets/contribution-graph.svg" width="100%"/>
+
 </div>
 
-### `$ ./summary-cards --all`
+### `$ ./language-graph --render`
 
 <div align="center">
 
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=AbarnaaSree&theme=github_dark" width="100%" />
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=AbarnaaSree&theme=github_dark" width="49%" />
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=AbarnaaSree&theme=github_dark" width="49%" />
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=AbarnaaSree&theme=github_dark" width="49%" />
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=AbarnaaSree&theme=github_dark&utcOffset=5.5" width="49%" />
+<img src="./assets/language-graph.svg" width="100%"/>
+
+</div>
+
+### `$ ./pr-activity --render`
+
+<div align="center">
+
+<img src="./assets/pr-activity.svg" width="100%"/>
 
 </div>
 
