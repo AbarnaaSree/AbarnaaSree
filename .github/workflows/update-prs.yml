@@ -1,4 +1,4 @@
-name: Merged Pull Requests Metrics
+name: Update Merged Pull Requests
 
 on:
   schedule:
@@ -9,24 +9,36 @@ permissions:
   contents: write
 
 jobs:
-  pulls-metrics:
+  update-merged-prs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Generate pull request metrics
-        uses: lowlighter/metrics@latest
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          user: AbarnaaSree
+          node-version: 20
 
-          template: classic
-          base: ""
-          filename: metrics.pulls.svg
+      - name: Update merged PRs
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_USERNAME: AbarnaaSree
+          MAX_PRS: 10
+          README_PATH: README.md
+        run: node scripts/update-merged-prs.js
 
-          config_timezone: Asia/Kolkata
+      - name: Commit README changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-          plugin_pulls: yes
-          plugin_pulls_limit: 10
-          plugin_pulls_days: 365
+          git add README.md
 
-          config_display: large
+          if git diff --cached --quiet; then
+            echo "No README changes."
+          else
+            git commit -m "chore: update merged pull requests"
+            git push
+          fi
