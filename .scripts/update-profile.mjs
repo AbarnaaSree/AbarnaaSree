@@ -861,22 +861,18 @@ function buildMergedPRMarkdown(mergedPRs) {
 
 ## 🟢 Merged Pull Requests
 
-No merged pull requests found for **${username}**.
+**🔀 ${mergedPRs.length} Merged PRs**
 
 </div>
+
+No merged pull requests found for **${username}**.
 `;
   }
 
   const rows = sorted
     .map((pr) => {
-      const repository = getRepository(pr);
-
       const title =
         pr.title || "Untitled Pull Request";
-
-      const date = formatDate(
-        pr.closed_at || pr.updated_at
-      );
 
       return `
 <tr>
@@ -884,19 +880,11 @@ No merged pull requests found for **${username}**.
 
 🟢 **${escapeXml(title)}**
 
-<sub>
-📦 ${escapeXml(repository)}
-&nbsp; • &nbsp;
-🔀 PR #${pr.number}
-&nbsp; • &nbsp;
-🗓️ ${date}
-</sub>
-
 </td>
 
 <td align="right">
 <a href="${escapeXml(pr.html_url)}">
-<img src="https://img.shields.io/badge/VIEW-00C96B?style=for-the-badge&logo=github&logoColor=000000" />
+<img src="https://img.shields.io/badge/VIEW-00C96B?style=flat-square&logo=github&logoColor=000000" />
 </a>
 </td>
 </tr>
@@ -907,9 +895,11 @@ No merged pull requests found for **${username}**.
   return `
 <div align="center">
 
-## 🟢 Merged Pull Requests
+## 🟢 Pull Requests
 
-**🔀 ${mergedPRs.length} Merged PRs**
+**🔀 ${prs.length} Total PRs**
+&nbsp;&nbsp; • &nbsp;&nbsp;
+**🟢 ${mergedPRs.length} Merged PRs**
 
 </div>
 
@@ -924,7 +914,6 @@ ${rows}
 <sub>
 Showing latest ${sorted.length} of ${mergedPRs.length} merged pull requests
 &nbsp; • &nbsp;
-🔄 Automatically updated
 </sub>
 
 </div>
