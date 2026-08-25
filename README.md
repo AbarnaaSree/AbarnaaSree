@@ -16,13 +16,12 @@
 </div>
 
 <!--START_MERGED_PRS-->
-
 <div align="center">
 
-## ⚡ Open Source Contributions
+## 🟢 Merged Pull Requests
 
 <sub>
-Automatically synced from GitHub.
+Only successfully merged pull requests are shown.
 </sub>
 
 <br><br>
@@ -33,17 +32,7 @@ Automatically synced from GitHub.
 
 <td align="center">
 
-<strong>🔀 17</strong>
-
-<br>
-
-<sub>Total PRs</sub>
-
-</td>
-
-<td align="center">
-
-<strong>🟢 4</strong>
+<strong>🔀 4</strong>
 
 <br>
 
@@ -59,17 +48,13 @@ Automatically synced from GitHub.
 
 <br>
 
-### 🔀 Merged Pull Requests
-
 <table width="100%">
 
 
 <tr>
 
-<td align="center" width="60">
-
+<td align="center" width="70">
 <strong>🟢</strong>
-
 </td>
 
 <td>
@@ -116,10 +101,8 @@ alt="View Pull Request"
 
 <tr>
 
-<td align="center" width="60">
-
+<td align="center" width="70">
 <strong>🟢</strong>
-
 </td>
 
 <td>
@@ -166,10 +149,8 @@ alt="View Pull Request"
 
 <tr>
 
-<td align="center" width="60">
-
+<td align="center" width="70">
 <strong>🟢</strong>
-
 </td>
 
 <td>
@@ -216,10 +197,8 @@ alt="View Pull Request"
 
 <tr>
 
-<td align="center" width="60">
-
+<td align="center" width="70">
 <strong>🟢</strong>
-
 </td>
 
 <td>
@@ -271,21 +250,12 @@ alt="View Pull Request"
 <div align="center">
 
 <sub>
-
-Showing latest 4 of 4 merged PRs
-
+Showing latest 4 of 4 merged pull requests
 &nbsp; • &nbsp;
-
-🔄 Automatically updated every 6 hours
-
-&nbsp; • &nbsp;
-
-⚡ GitHub Actions
-
+🔄 Automatically updated by GitHub Actions
 </sub>
 
 </div>
-
 <!--END_MERGED_PRS-->
 
 ### `About me`
