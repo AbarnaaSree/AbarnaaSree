@@ -22,6 +22,7 @@ async function fetchMergedPRs() {
     `&sort=updated&order=desc&per_page=100`;
 
   console.log("Fetching merged PRs from GitHub...");
+  console.log(`Query: is:pr is:merged author:${username}`);
 
   const response = await fetch(url, {
     headers: {
@@ -84,6 +85,7 @@ No merged pull requests found yet.
   const rows = prs
     .map((pr, index) => {
       const repository = escapeHtml(getRepository(pr));
+
       const title = escapeHtml(
         pr.title || "Untitled Pull Request"
       );
@@ -106,15 +108,11 @@ No merged pull requests found yet.
       return `
 <tr>
 <td align="center" width="70">
-
-### ${icon}
-
+<strong>${icon}</strong>
 </td>
 
 <td>
-
 <strong>${title}</strong>
-
 <br>
 
 <sub>
@@ -156,7 +154,9 @@ Latest ${prs.length} merged pull requests
 <br>
 
 <table width="100%">
+
 ${rows}
+
 </table>
 
 <br>
@@ -171,6 +171,10 @@ ${rows}
 
 </div>
 `;
+}
+
+function escapeRegExp(value) {
+  return value.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
 }
 
 function updateReadme(markdown) {
@@ -189,7 +193,9 @@ ${END_MARKER}`
   }
 
   const pattern = new RegExp(
-    `${START_MARKER}[\\s\\S]*?${END_MARKER}`
+    `${escapeRegExp(START_MARKER)}[\\s\\S]*?${escapeRegExp(
+      END_MARKER
+    )}`
   );
 
   const replacement =

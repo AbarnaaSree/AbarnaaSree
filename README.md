@@ -26,7 +26,6 @@ Actively contributing to open-source projects. The cards below pull live data st
 [![View Pull Requests](https://img.shields.io/badge/View-Pull_Requests-FF2E9E?style=for-the-badge&logo=github&logoColor=F5F5F5)](https://github.com/AbarnaaSree?tab=pulls)
 [![Open Source](https://img.shields.io/badge/Open_Source-Contributor-FF2E9E?style=for-the-badge&logo=opensourceinitiative&logoColor=F5F5F5)](https://github.com/AbarnaaSree)
 
-### `$ git log --merged --open-source`
 
 ### `$ git log --merged --open-source`
 
