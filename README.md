@@ -28,22 +28,10 @@ Actively contributing to open-source projects. The cards below pull live data st
 
 ### `$ git log --merged --open-source`
 
-<div align="center">
+### `$ git log --merged --open-source`
 
-<img
-  src="https://raw.githubusercontent.com/AbarnaaSree/AbarnaaSree/main/metrics.pulls.svg"
-  width="100%"
-  alt="Merged Pull Requests"
-/>
-
-</div>
-
-<p align="center">
-  <sub>
-    🔄 Automatically synchronized from GitHub every 6 hours
-    • No manual updates required
-  </sub>
-</p>
+<!--START_MERGED_PRS-->
+<!--END_MERGED_PRS-->
 
 ### `$ cat about.md`
 
