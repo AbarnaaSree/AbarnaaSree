@@ -6,10 +6,10 @@
 
 <div align="center">
 
-[![Portfolio](https://img.shields.io/badge/Portfolio-00FF88?style=for-the-badge&logo=googlechrome&logoColor=000000)](https://abarnaasree.github.io/MY--Portfolio/)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-00FF88?style=for-the-badge&logo=linkedin&logoColor=000000)](https://www.linkedin.com/in/abarnaa-sree-n/)
-[![GitHub](https://img.shields.io/badge/GitHub-00FF88?style=for-the-badge&logo=github&logoColor=000000)](https://github.com/AbarnaaSree)
-[![LeetCode](https://img.shields.io/badge/LeetCode-00FF88?style=for-the-badge&logo=leetcode&logoColor=000000)](https://leetcode.com/u/AbarnaaSree/)
+[![Portfolio](https://img.shields.io/badge/Portfolio-39FF88?style=for-the-badge&logo=googlechrome&logoColor=000000)](https://abarnaasree.github.io/MY--Portfolio/)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-39FF88?style=for-the-badge&logo=linkedin&logoColor=000000)](https://www.linkedin.com/in/abarnaa-sree-n/)
+[![GitHub](https://img.shields.io/badge/GitHub-39FF88?style=for-the-badge&logo=github&logoColor=000000)](https://github.com/AbarnaaSree)
+[![LeetCode](https://img.shields.io/badge/LeetCode-39FF88?style=for-the-badge&logo=leetcode&logoColor=000000)](https://leetcode.com/u/AbarnaaSree/)
 
 </div>
 
