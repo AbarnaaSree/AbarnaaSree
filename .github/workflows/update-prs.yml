@@ -1,4 +1,4 @@
-name: Update Merged Pull Requests
+name: Update GitHub Profile
 
 on:
   schedule:
@@ -6,15 +6,19 @@ on:
 
   workflow_dispatch:
 
+  push:
+    branches:
+      - main
+
 permissions:
   contents: write
 
 jobs:
-  update-merged-prs:
+  update-profile:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout profile repository
+      - name: Checkout repository
         uses: actions/checkout@v4
 
       - name: Setup Node.js
@@ -22,16 +26,15 @@ jobs:
         with:
           node-version: 20
 
-      - name: Update merged PRs
+      - name: Update PR section
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GH_USERNAME: AbarnaaSree
-          MAX_PRS: 10
           README_PATH: README.md
-        run: |
-          node .scripts/update-prs.mjs
+          MAX_PRS: 10
+        run: node .scripts/update-prs.mjs
 
-      - name: Commit README changes
+      - name: Commit changes
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -39,8 +42,9 @@ jobs:
           git add README.md
 
           if git diff --cached --quiet; then
-            echo "No changes to commit."
-          else
-            git commit -m "chore: update merged pull requests"
-            git push
+            echo "No README changes."
+            exit 0
           fi
+
+          git commit -m "chore: update GitHub PR statistics"
+          git push
