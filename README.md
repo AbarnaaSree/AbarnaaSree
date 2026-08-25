@@ -288,16 +288,10 @@ Showing latest 4 of 4 merged PRs
 
 <!--END_MERGED_PRS-->
 
-### `$ cat about.md`
+### `About me`
 
 AI Engineer focused on machine learning, deep learning, and generative AI systems, with a full-stack foundation spanning React, Node.js, and cloud-native backends. Actively growing an open-source footprint — contributing pull requests, reviewing issues, and collaborating on AI/ML repositories.
 
-```bash
-ROLE     : AI Engineer
-DOMAIN   : Artificial Intelligence / Machine Learning / Full-Stack Development
-STACK    : Python · JavaScript · TypeScript · React.js · Node.js · Flask · FastAPI · Spring Boot
-OPEN_TO  : AI/ML Engineering & Software Development opportunities
-```
 
 ### `$ ls tech-stack/`
 
@@ -321,33 +315,7 @@ OPEN_TO  : AI/ML Engineering & Software Development opportunities
 <br>
 <img src="https://skillicons.dev/icons?i=vscode,postman,git,github&theme=dark" />
 
-### `$ ./specialty --list`
 
-![AI/ML](https://img.shields.io/badge/AI%2FML-FF2E9E?style=flat-square&logoColor=F5F5F5)
-![Generative AI](https://img.shields.io/badge/Generative_AI-FF2E9E?style=flat-square&logoColor=F5F5F5)
-![LLMs](https://img.shields.io/badge/LLMs-FF2E9E?style=flat-square&logoColor=F5F5F5)
-![Agentic AI](https://img.shields.io/badge/Agentic_AI-FF2E9E?style=flat-square&logoColor=F5F5F5)
-![Computer Vision](https://img.shields.io/badge/Computer_Vision-FF2E9E?style=flat-square&logoColor=F5F5F5)
-![Gemini](https://img.shields.io/badge/Gemini-FF2E9E?style=flat-square&logoColor=F5F5F5)
-![Claude](https://img.shields.io/badge/Claude-FF2E9E?style=flat-square&logoColor=F5F5F5)
-![Antigravity](https://img.shields.io/badge/Antigravity-FF2E9E?style=flat-square&logoColor=F5F5F5)
-
-### `$ cat expertise.md`
-
-| Domain | Proficiency | Details |
-|---|:---:|---|
-| Machine Learning & Deep Learning | ⭐⭐⭐⭐ | PyTorch, TensorFlow — model building & training |
-| Computer Vision | ⭐⭐⭐ | OpenCV — image processing pipelines |
-| Backend Development | ⭐⭐⭐⭐ | Flask, FastAPI, Spring Boot, Node.js |
-| Frontend Development | ⭐⭐⭐ | React.js, TypeScript, JavaScript |
-| Cloud Platforms | ⭐⭐⭐ | AWS, Azure |
-| Databases | ⭐⭐⭐ | MySQL, MongoDB |
-
-### `$ ./coding-profiles.sh`
-
-[![LeetCode](https://img.shields.io/badge/LeetCode-AbarnaaSree-FF2E9E?style=for-the-badge&logo=leetcode&logoColor=F5F5F5)](https://leetcode.com/u/AbarnaaSree/)
-
-<img src="https://leetcard.jacoblin.cool/AbarnaaSree?theme=dark&font=Fira%20Code&ext=heatmap" width="100%" />
 
 ### `$ ./github-analytics --full`
 
@@ -390,15 +358,6 @@ OPEN_TO  : AI/ML Engineering & Software Development opportunities
 <img src="https://raw.githubusercontent.com/AbarnaaSree/AbarnaaSree/output/github-contribution-grid-snake-dark.svg" width="100%" />
 </div>
 
-### `$ cat current-focus.yaml`
-
-```yaml
-current_focus:
-  learning: "Advanced AI/ML concepts and Generative AI systems"
-  building: "Open-source contributions across AI/ML repositories"
-  exploring: "Agentic AI tooling — Gemini, Claude, Antigravity"
-  open_to: "AI/ML Engineering & Software Development opportunities"
-```
 
 ### `$ ./connect --all`
 
