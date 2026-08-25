@@ -18,9 +18,11 @@
 <!--START_MERGED_PRS-->
 <div align="center">
 
-## 🟢 Merged Pull Requests
+##  Pull Requests
 
-**🔀 4 Merged PRs**
+** 17 Total PRs**
+&nbsp;&nbsp; • &nbsp;&nbsp;
+** 4 Merged PRs**
 
 </div>
 
@@ -30,21 +32,13 @@
 <tr>
 <td>
 
-🟢 **fix(bedrock-agentcore): allow maxResults up to 1000**
-
-<sub>
-📦 floci-io/floci
-&nbsp; • &nbsp;
-🔀 PR #2487
-&nbsp; • &nbsp;
-🗓️ 24 Aug 2026
-</sub>
+ **fix(bedrock-agentcore): allow maxResults up to 1000**
 
 </td>
 
 <td align="right">
 <a href="https://github.com/floci-io/floci/pull/2487">
-<img src="https://img.shields.io/badge/VIEW-00C96B?style=for-the-badge&logo=github&logoColor=000000" />
+<img src="https://img.shields.io/badge/VIEW-00C96B?style=flat-square&logo=github&logoColor=000000" />
 </a>
 </td>
 </tr>
@@ -53,21 +47,13 @@
 <tr>
 <td>
 
-🟢 **fix: preserve Firehose compression format in CloudFormation**
-
-<sub>
-📦 floci-io/floci
-&nbsp; • &nbsp;
-🔀 PR #2406
-&nbsp; • &nbsp;
-🗓️ 21 Aug 2026
-</sub>
+ **fix: preserve Firehose compression format in CloudFormation**
 
 </td>
 
 <td align="right">
 <a href="https://github.com/floci-io/floci/pull/2406">
-<img src="https://img.shields.io/badge/VIEW-00C96B?style=for-the-badge&logo=github&logoColor=000000" />
+<img src="https://img.shields.io/badge/VIEW-00C96B?style=flat-square&logo=github&logoColor=000000" />
 </a>
 </td>
 </tr>
@@ -76,21 +62,13 @@
 <tr>
 <td>
 
-🟢 **fix: keep tracking alive after malformed SSE chunks**
-
-<sub>
-📦 pollinations/pollinations
-&nbsp; • &nbsp;
-🔀 PR #13297
-&nbsp; • &nbsp;
-🗓️ 20 Aug 2026
-</sub>
+ **fix: keep tracking alive after malformed SSE chunks**
 
 </td>
 
 <td align="right">
 <a href="https://github.com/pollinations/pollinations/pull/13297">
-<img src="https://img.shields.io/badge/VIEW-00C96B?style=for-the-badge&logo=github&logoColor=000000" />
+<img src="https://img.shields.io/badge/VIEW-00C96B?style=flat-square&logo=github&logoColor=000000" />
 </a>
 </td>
 </tr>
@@ -99,21 +77,13 @@
 <tr>
 <td>
 
-🟢 **Warn when static HTML parser dependencies are unavailable**
-
-<sub>
-📦 pbakaus/impeccable
-&nbsp; • &nbsp;
-🔀 PR #465
-&nbsp; • &nbsp;
-🗓️ 10 Aug 2026
-</sub>
+ **Warn when static HTML parser dependencies are unavailable**
 
 </td>
 
 <td align="right">
 <a href="https://github.com/pbakaus/impeccable/pull/465">
-<img src="https://img.shields.io/badge/VIEW-00C96B?style=for-the-badge&logo=github&logoColor=000000" />
+<img src="https://img.shields.io/badge/VIEW-00C96B?style=flat-square&logo=github&logoColor=000000" />
 </a>
 </td>
 </tr>
@@ -126,7 +96,6 @@
 <sub>
 Showing latest 4 of 4 merged pull requests
 &nbsp; • &nbsp;
-🔄 Automatically updated
 </sub>
 
 </div>
