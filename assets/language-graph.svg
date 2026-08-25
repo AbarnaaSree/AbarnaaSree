@@ -5,17 +5,55 @@
   height="500"
   viewBox="0 0 1100 500"
 >
+<defs>
+
+  <!-- Neon green glow -->
+  <filter id="greenGlow" x="-50%" y="-50%" width="200%" height="200%">
+    <feGaussianBlur stdDeviation="5" result="blur"/>
+    <feMerge>
+      <feMergeNode in="blur"/>
+      <feMergeNode in="SourceGraphic"/>
+    </feMerge>
+  </filter>
+
+  <!-- Stronger shine -->
+  <filter id="strongGlow" x="-100%" y="-100%" width="300%" height="300%">
+    <feGaussianBlur stdDeviation="9" result="blur"/>
+    <feMerge>
+      <feMergeNode in="blur"/>
+      <feMergeNode in="SourceGraphic"/>
+    </feMerge>
+  </filter>
+
+  <!-- Animated shine -->
+  <linearGradient id="greenGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+    <stop offset="0%" stop-color="#00FF88"/>
+    <stop offset="50%" stop-color="#7CFFBD"/>
+    <stop offset="100%" stop-color="#00FF88">
+      <animate
+        attributeName="offset"
+        values="100%;0%;100%"
+        dur="3s"
+        repeatCount="indefinite"
+      />
+    </stop>
+  </linearGradient>
+
+</defs>
+
 <rect
   width="100%"
   height="100%"
   rx="18"
-  fill="#0B0C10"
+  fill="#050A08"
+  stroke="#163D2A"
+  stroke-width="1"
 />
 
 <text
   x="35"
   y="42"
-  fill="#F5F5F5"
+  fill="#F0FFF7"
   font-family="Arial, sans-serif"
   font-size="22"
   font-weight="700"
@@ -40,7 +78,8 @@ JavaScript
   width="650"
   height="24"
   rx="6"
-  fill="#1A1C24"
+  fill="#0B1510"
+  stroke="#163D2A"
 />
 
 <rect
@@ -49,19 +88,20 @@ JavaScript
   width="650"
   height="24"
   rx="6"
-  fill="#FF2E9E"
+  fill="#00FF88"
+  filter="url(#greenGlow)"
 />
 
 
 <text
   x="860"
   y="94"
-  fill="#FF2E9E"
+  fill="#00FF88"
   font-family="Arial"
   font-size="14"
   font-weight="700"
 >
-44.7%
+45.3%
 </text>
 
 <text
@@ -81,28 +121,30 @@ HTML
   width="650"
   height="24"
   rx="6"
-  fill="#1A1C24"
+  fill="#0B1510"
+  stroke="#163D2A"
 />
 
 <rect
   x="190"
   y="123"
-  width="443.32748636799346"
+  width="432.1050586041453"
   height="24"
   rx="6"
-  fill="#FF2E9E"
+  fill="#00FF88"
+  filter="url(#greenGlow)"
 />
 
 
 <text
   x="860"
   y="142"
-  fill="#FF2E9E"
+  fill="#00FF88"
   font-family="Arial"
   font-size="14"
   font-weight="700"
 >
-30.5%
+30.1%
 </text>
 
 <text
@@ -122,28 +164,30 @@ CSS
   width="650"
   height="24"
   rx="6"
-  fill="#1A1C24"
+  fill="#0B1510"
+  stroke="#163D2A"
 />
 
 <rect
   x="190"
   y="171"
-  width="218.01153417037258"
+  width="212.49277260213128"
   height="24"
   rx="6"
-  fill="#FF2E9E"
+  fill="#00FF88"
+  filter="url(#greenGlow)"
 />
 
 
 <text
   x="860"
   y="190"
-  fill="#FF2E9E"
+  fill="#00FF88"
   font-family="Arial"
   font-size="14"
   font-weight="700"
 >
-15.0%
+14.8%
 </text>
 
 <text
@@ -163,23 +207,25 @@ Java
   width="650"
   height="24"
   rx="6"
-  fill="#1A1C24"
+  fill="#0B1510"
+  stroke="#163D2A"
 />
 
 <rect
   x="190"
   y="219"
-  width="86.15153134182944"
+  width="83.97068452551895"
   height="24"
   rx="6"
-  fill="#FF2E9E"
+  fill="#00FF88"
+  filter="url(#greenGlow)"
 />
 
 
 <text
   x="860"
   y="238"
-  fill="#FF2E9E"
+  fill="#00FF88"
   font-family="Arial"
   font-size="14"
   font-weight="700"
@@ -204,28 +250,30 @@ Python
   width="650"
   height="24"
   rx="6"
-  fill="#1A1C24"
+  fill="#0B1510"
+  stroke="#163D2A"
 />
 
 <rect
   x="190"
   y="267"
-  width="56.06948394801767"
+  width="54.650136506878944"
   height="24"
   rx="6"
-  fill="#FF2E9E"
+  fill="#00FF88"
+  filter="url(#greenGlow)"
 />
 
 
 <text
   x="860"
   y="286"
-  fill="#FF2E9E"
+  fill="#00FF88"
   font-family="Arial"
   font-size="14"
   font-weight="700"
 >
-3.9%
+3.8%
 </text>
 
 <text
@@ -245,7 +293,8 @@ Batchfile
   width="650"
   height="24"
   rx="6"
-  fill="#1A1C24"
+  fill="#0B1510"
+  stroke="#163D2A"
 />
 
 <rect
@@ -254,14 +303,15 @@ Batchfile
   width="2"
   height="24"
   rx="6"
-  fill="#FF2E9E"
+  fill="#00FF88"
+  filter="url(#greenGlow)"
 />
 
 
 <text
   x="860"
   y="334"
-  fill="#FF2E9E"
+  fill="#00FF88"
   font-family="Arial"
   font-size="14"
   font-weight="700"
@@ -286,7 +336,8 @@ Dockerfile
   width="650"
   height="24"
   rx="6"
-  fill="#1A1C24"
+  fill="#0B1510"
+  stroke="#163D2A"
 />
 
 <rect
@@ -295,14 +346,15 @@ Dockerfile
   width="2"
   height="24"
   rx="6"
-  fill="#FF2E9E"
+  fill="#00FF88"
+  filter="url(#greenGlow)"
 />
 
 
 <text
   x="860"
   y="382"
-  fill="#FF2E9E"
+  fill="#00FF88"
   font-family="Arial"
   font-size="14"
   font-weight="700"
