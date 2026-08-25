@@ -271,11 +271,15 @@ The workflow can populate the engineering impact.
 
 <br><br>
 
+<div align="center">
+
 <img
-  src="https://github-readme-activity-graph.vercel.app/graph?username=AbarnaaSree&bg_color=0D1117&color=E5E7EB&line=EF93C4&point=FF69B4&area_color=F8BBD0&area=true&hide_border=true&custom_title=Contribution%20Activity"
-  width="96%"
-  alt="GitHub contribution activity graph"
+  src="https://github-readme-activity-graph.vercel.app/graph?username=AbarnaaSree"
+  width="95%"
+  alt="GitHub Contribution Activity Graph"
 />
+
+</div>
 
 </div>
 
