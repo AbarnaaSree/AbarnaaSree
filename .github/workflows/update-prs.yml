@@ -29,8 +29,4 @@ jobs:
           plugin_pulls_limit: 10
           plugin_pulls_days: 365
 
-          plugin_pulls_merged: yes
-          plugin_pulls_closed: no
-          plugin_pulls_open: no
-
           config_display: large
