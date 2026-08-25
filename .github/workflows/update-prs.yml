@@ -3,6 +3,7 @@ name: Update Merged Pull Requests
 on:
   schedule:
     - cron: "0 */6 * * *"
+
   workflow_dispatch:
 
 permissions:
@@ -13,7 +14,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository
+      - name: Checkout profile repository
         uses: actions/checkout@v4
 
       - name: Setup Node.js
@@ -27,7 +28,8 @@ jobs:
           GH_USERNAME: AbarnaaSree
           MAX_PRS: 10
           README_PATH: README.md
-        run: node scripts/update-merged-prs.js
+        run: |
+          node scripts/update-merged-prs.mjs
 
       - name: Commit README changes
         run: |
@@ -37,7 +39,7 @@ jobs:
           git add README.md
 
           if git diff --cached --quiet; then
-            echo "No README changes."
+            echo "No changes to commit."
           else
             git commit -m "chore: update merged pull requests"
             git push
