@@ -1,0 +1,1137 @@
+import {
+  readFileSync,
+  writeFileSync,
+  mkdirSync,
+} from "node:fs";
+
+const token = process.env.GITHUB_TOKEN;
+const username = process.env.GH_USERNAME || "AbarnaaSree";
+const readmePath = process.env.README_PATH || "README.md";
+
+const maxPRs = Number(process.env.MAX_PRS || 10);
+
+const START_MARKER = "<!--START_MERGED_PRS-->";
+const END_MARKER = "<!--END_MERGED_PRS-->";
+
+const GRAPHQL_URL = "https://api.github.com/graphql";
+const REST_URL = "https://api.github.com";
+
+const ASSETS_DIR = "assets";
+
+if (!token) {
+  throw new Error("GITHUB_TOKEN is not available.");
+}
+
+mkdirSync(ASSETS_DIR, { recursive: true });
+
+/* =========================================================
+   GITHUB REQUESTS
+========================================================= */
+
+async function githubRest(url) {
+  const response = await fetch(url, {
+    headers: {
+      Accept: "application/vnd.github+json",
+      Authorization: `Bearer ${token}`,
+      "X-GitHub-Api-Version": "2022-11-28",
+      "User-Agent": "AbarnaaSree-profile-updater",
+    },
+  });
+
+  if (!response.ok) {
+    const text = await response.text();
+
+    throw new Error(
+      `GitHub REST API ${response.status}: ${text}`
+    );
+  }
+
+  return response.json();
+}
+
+async function githubGraphQL(query, variables = {}) {
+  const response = await fetch(GRAPHQL_URL, {
+    method: "POST",
+
+    headers: {
+      Accept: "application/json",
+      Authorization: `Bearer ${token}`,
+      "Content-Type": "application/json",
+      "User-Agent": "AbarnaaSree-profile-updater",
+    },
+
+    body: JSON.stringify({
+      query,
+      variables,
+    }),
+  });
+
+  const data = await response.json();
+
+  if (!response.ok || data.errors) {
+    throw new Error(
+      `GitHub GraphQL API error: ${JSON.stringify(
+        data.errors || data
+      )}`
+    );
+  }
+
+  return data.data;
+}
+
+/* =========================================================
+   HELPERS
+========================================================= */
+
+function escapeXml(value) {
+  return String(value)
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&apos;");
+}
+
+function formatDate(date) {
+  if (!date) return "Unknown";
+
+  return new Date(date).toLocaleDateString("en-IN", {
+    day: "2-digit",
+    month: "short",
+    year: "numeric",
+    timeZone: "Asia/Kolkata",
+  });
+}
+
+function shortNumber(value) {
+  return new Intl.NumberFormat("en", {
+    notation: "compact",
+    maximumFractionDigits: 1,
+  }).format(value);
+}
+
+/* =========================================================
+   FETCH USER PROFILE
+========================================================= */
+
+async function fetchProfile() {
+  console.log("Fetching GitHub profile...");
+
+  const query = `
+    query($login: String!) {
+      user(login: $login) {
+        login
+        name
+        followers {
+          totalCount
+        }
+        following {
+          totalCount
+        }
+        repositories(first: 100, ownerAffiliations: OWNER) {
+          totalCount
+        }
+        contributionsCollection {
+          totalCommitContributions
+          totalPullRequestContributions
+          totalIssueContributions
+          totalRepositoryContributions
+          restrictedContributionsCount
+          contributionCalendar {
+            totalContributions
+            weeks {
+              contributionDays {
+                date
+                contributionCount
+                color
+              }
+            }
+          }
+        }
+      }
+    }
+  `;
+
+  const data = await githubGraphQL(query, {
+    login: username,
+  });
+
+  return data.user;
+}
+
+/* =========================================================
+   FETCH REPOSITORIES
+========================================================= */
+
+async function fetchRepositories() {
+  console.log("Fetching repositories...");
+
+  const repositories = [];
+
+  let page = 1;
+
+  while (true) {
+    const url =
+      `${REST_URL}/users/${username}/repos` +
+      `?per_page=100&page=${page}` +
+      `&type=owner&sort=updated`;
+
+    const data = await githubRest(url);
+
+    repositories.push(...data);
+
+    if (data.length < 100) break;
+
+    page++;
+  }
+
+  return repositories;
+}
+
+/* =========================================================
+   FETCH ALL PULL REQUESTS
+========================================================= */
+
+async function fetchPullRequests() {
+  console.log("Fetching pull requests...");
+
+  const query = encodeURIComponent(
+    `is:pr author:${username}`
+  );
+
+  const url =
+    `${REST_URL}/search/issues?q=${query}` +
+    `&sort=updated&order=desc&per_page=100`;
+
+  const data = await githubRest(url);
+
+  return data.items || [];
+}
+
+/* =========================================================
+   FETCH MERGED PULL REQUESTS
+========================================================= */
+
+async function fetchMergedPullRequests() {
+  console.log("Fetching merged PRs...");
+
+  const query = encodeURIComponent(
+    `is:pr author:${username} is:merged`
+  );
+
+  console.log(
+    `Query: is:pr author:${username} is:merged`
+  );
+
+  const url =
+    `${REST_URL}/search/issues?q=${query}` +
+    `&sort=updated&order=desc&per_page=100`;
+
+  const data = await githubRest(url);
+
+  return data.items || [];
+}
+
+/* =========================================================
+   LANGUAGE DATA
+========================================================= */
+
+async function fetchLanguageStats(repositories) {
+  console.log("Calculating repository languages...");
+
+  const languageBytes = new Map();
+
+  for (const repo of repositories) {
+    if (repo.fork) continue;
+
+    try {
+      const languages = await githubRest(
+        `${REST_URL}/repos/${repo.full_name}/languages`
+      );
+
+      for (const [language, bytes] of Object.entries(
+        languages
+      )) {
+        languageBytes.set(
+          language,
+          (languageBytes.get(language) || 0) + bytes
+        );
+      }
+    } catch (error) {
+      console.warn(
+        `Could not fetch languages for ${repo.full_name}`
+      );
+    }
+  }
+
+  const entries = [...languageBytes.entries()]
+    .sort((a, b) => b[1] - a[1]);
+
+  const total = entries.reduce(
+    (sum, [, bytes]) => sum + bytes,
+    0
+  );
+
+  return entries.map(([language, bytes]) => ({
+    language,
+    bytes,
+    percentage:
+      total > 0 ? (bytes / total) * 100 : 0,
+  }));
+}
+
+/* =========================================================
+   SVG HEADER
+========================================================= */
+
+function svgStart(width, height, title) {
+  return `
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="${width}"
+  height="${height}"
+  viewBox="0 0 ${width} ${height}"
+>
+<rect
+  width="100%"
+  height="100%"
+  rx="18"
+  fill="#0B0C10"
+/>
+
+<text
+  x="35"
+  y="42"
+  fill="#F5F5F5"
+  font-family="Arial, sans-serif"
+  font-size="22"
+  font-weight="700"
+>
+${escapeXml(title)}
+</text>
+`;
+}
+
+function svgEnd() {
+  return `
+</svg>
+`;
+}
+
+/* =========================================================
+   BAR
+========================================================= */
+
+function bar({
+  x,
+  y,
+  width,
+  height,
+  value,
+  max,
+  color = "#FF2E9E",
+  radius = 6,
+}) {
+  const calculatedWidth =
+    max > 0 ? (value / max) * width : 0;
+
+  return `
+<rect
+  x="${x}"
+  y="${y}"
+  width="${width}"
+  height="${height}"
+  rx="${radius}"
+  fill="#1A1C24"
+/>
+
+<rect
+  x="${x}"
+  y="${y}"
+  width="${Math.max(calculatedWidth, 2)}"
+  height="${height}"
+  rx="${radius}"
+  fill="${color}"
+/>
+`;
+}
+
+/* =========================================================
+   ANALYTICS SVG
+========================================================= */
+
+function generateAnalyticsSVG({
+  profile,
+  repositories,
+  prs,
+  mergedPRs,
+}) {
+  const totalStars = repositories.reduce(
+    (sum, repo) => sum + repo.stargazers_count,
+    0
+  );
+
+  const totalForks = repositories.reduce(
+    (sum, repo) => sum + repo.forks_count,
+    0
+  );
+
+  const totalIssues = repositories.reduce(
+    (sum, repo) => sum + repo.open_issues_count,
+    0
+  );
+
+  const commits =
+    profile.contributionsCollection
+      .totalCommitContributions;
+
+  const width = 1100;
+  const height = 390;
+
+  let svg = svgStart(
+    width,
+    height,
+    "GitHub Analytics"
+  );
+
+  const cards = [
+    {
+      label: "Repositories",
+      value: profile.repositories.totalCount,
+    },
+    {
+      label: "Followers",
+      value: profile.followers.totalCount,
+    },
+    {
+      label: "Commits",
+      value: commits,
+    },
+    {
+      label: "Pull Requests",
+      value: prs.length,
+    },
+    {
+      label: "Merged PRs",
+      value: mergedPRs.length,
+    },
+    {
+      label: "Stars",
+      value: totalStars,
+    },
+  ];
+
+  cards.forEach((card, index) => {
+    const col = index % 3;
+    const row = Math.floor(index / 3);
+
+    const x = 35 + col * 350;
+    const y = 75 + row * 140;
+
+    svg += `
+<rect
+  x="${x}"
+  y="${y}"
+  width="310"
+  height="110"
+  rx="14"
+  fill="#12141B"
+  stroke="#252936"
+/>
+
+<text
+  x="${x + 22}"
+  y="${y + 35}"
+  fill="#A7AAB5"
+  font-family="Arial"
+  font-size="14"
+>
+${escapeXml(card.label)}
+</text>
+
+<text
+  x="${x + 22}"
+  y="${y + 78}"
+  fill="#FF2E9E"
+  font-family="Arial"
+  font-size="30"
+  font-weight="700"
+>
+${escapeXml(shortNumber(card.value))}
+</text>
+`;
+  });
+
+  svg += svgEnd();
+
+  writeFileSync(
+    `${ASSETS_DIR}/github-analytics.svg`,
+    svg,
+    "utf8"
+  );
+}
+
+/* =========================================================
+   CONTRIBUTION GRAPH
+========================================================= */
+
+function generateContributionGraph(profile) {
+  const days =
+    profile.contributionsCollection
+      .contributionCalendar.weeks.flatMap(
+        (week) => week.contributionDays
+      );
+
+  const width = 1100;
+  const height = 360;
+
+  const cell = 13;
+  const gap = 4;
+
+  const startX = 45;
+  const startY = 80;
+
+  const max =
+    Math.max(
+      ...days.map(
+        (day) => day.contributionCount
+      )
+    ) || 1;
+
+  let svg = svgStart(
+    width,
+    height,
+    "Contribution Activity"
+  );
+
+  days.forEach((day, index) => {
+    const week = Math.floor(index / 7);
+    const weekday = index % 7;
+
+    const x =
+      startX +
+      week * (cell + gap);
+
+    const y =
+      startY +
+      weekday * (cell + gap);
+
+    const ratio =
+      day.contributionCount / max;
+
+    let fill = "#161922";
+
+    if (ratio > 0.75) {
+      fill = "#FF2E9E";
+    } else if (ratio > 0.5) {
+      fill = "#C9247A";
+    } else if (ratio > 0.25) {
+      fill = "#812052";
+    } else if (ratio > 0) {
+      fill = "#48152F";
+    }
+
+    svg += `
+<rect
+  x="${x}"
+  y="${y}"
+  width="${cell}"
+  height="${cell}"
+  rx="3"
+  fill="${fill}"
+>
+<title>
+${escapeXml(day.date)}: ${day.contributionCount} contributions
+</title>
+</rect>
+`;
+  });
+
+  svg += `
+<text
+  x="45"
+  y="320"
+  fill="#A7AAB5"
+  font-family="Arial"
+  font-size="14"
+>
+Total contributions:
+</text>
+
+<text
+  x="180"
+  y="320"
+  fill="#FF2E9E"
+  font-family="Arial"
+  font-size="16"
+  font-weight="700"
+>
+${profile.contributionsCollection.contributionCalendar.totalContributions}
+</text>
+`;
+
+  svg += svgEnd();
+
+  writeFileSync(
+    `${ASSETS_DIR}/contribution-graph.svg`,
+    svg,
+    "utf8"
+  );
+}
+
+/* =========================================================
+   LANGUAGE GRAPH
+========================================================= */
+
+function generateLanguageGraph(languageStats) {
+  const width = 1100;
+  const height = 500;
+
+  let svg = svgStart(
+    width,
+    height,
+    "Repository Language Distribution"
+  );
+
+  const visible = languageStats.slice(0, 8);
+
+  const max =
+    Math.max(
+      ...visible.map(
+        (item) => item.percentage
+      )
+    ) || 1;
+
+  visible.forEach((item, index) => {
+    const y = 75 + index * 48;
+
+    svg += `
+<text
+  x="40"
+  y="${y + 20}"
+  fill="#F5F5F5"
+  font-family="Arial"
+  font-size="14"
+>
+${escapeXml(item.language)}
+</text>
+
+${bar({
+  x: 190,
+  y,
+  width: 650,
+  height: 24,
+  value: item.percentage,
+  max,
+})}
+
+<text
+  x="860"
+  y="${y + 19}"
+  fill="#FF2E9E"
+  font-family="Arial"
+  font-size="14"
+  font-weight="700"
+>
+${item.percentage.toFixed(1)}%
+</text>
+`;
+  });
+
+  svg += svgEnd();
+
+  writeFileSync(
+    `${ASSETS_DIR}/language-graph.svg`,
+    svg,
+    "utf8"
+  );
+}
+
+/* =========================================================
+   PR ACTIVITY GRAPH
+========================================================= */
+
+function generatePRGraph(prs) {
+  const width = 1100;
+  const height = 400;
+
+  const months = new Map();
+
+  for (const pr of prs) {
+    const date =
+      pr.created_at ||
+      pr.updated_at;
+
+    if (!date) continue;
+
+    const d = new Date(date);
+
+    const key =
+      `${d.getUTCFullYear()}-${String(
+        d.getUTCMonth() + 1
+      ).padStart(2, "0")}`;
+
+    months.set(
+      key,
+      (months.get(key) || 0) + 1
+    );
+  }
+
+  const values = [...months.entries()]
+    .sort(([a], [b]) =>
+      a.localeCompare(b)
+    )
+    .slice(-12);
+
+  const max =
+    Math.max(
+      ...values.map(([, value]) => value)
+    ) || 1;
+
+  let svg = svgStart(
+    width,
+    height,
+    "Pull Request Activity"
+  );
+
+  const chartX = 70;
+  const chartY = 80;
+  const chartWidth = 950;
+  const chartHeight = 240;
+
+  svg += `
+<line
+  x1="${chartX}"
+  y1="${chartY + chartHeight}"
+  x2="${chartX + chartWidth}"
+  y2="${chartY + chartHeight}"
+  stroke="#30333D"
+/>
+
+<line
+  x1="${chartX}"
+  y1="${chartY}"
+  x2="${chartX}"
+  y2="${chartY + chartHeight}"
+  stroke="#30333D"
+/>
+`;
+
+  const points = [];
+
+  values.forEach(([month, value], index) => {
+    const x =
+      chartX +
+      (index /
+        Math.max(values.length - 1, 1)) *
+        chartWidth;
+
+    const y =
+      chartY +
+      chartHeight -
+      (value / max) *
+        chartHeight;
+
+    points.push(`${x},${y}`);
+
+    svg += `
+<circle
+  cx="${x}"
+  cy="${y}"
+  r="6"
+  fill="#FF2E9E"
+>
+<title>
+${escapeXml(month)}: ${value} PRs
+</title>
+</circle>
+
+<text
+  x="${x}"
+  y="${chartY + chartHeight + 28}"
+  fill="#A7AAB5"
+  font-family="Arial"
+  font-size="12"
+  text-anchor="middle"
+>
+${escapeXml(month)}
+</text>
+`;
+  });
+
+  if (points.length > 1) {
+    svg += `
+<polyline
+  points="${points.join(" ")}"
+  fill="none"
+  stroke="#FF2E9E"
+  stroke-width="4"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+/>
+`;
+  }
+
+  svg += svgEnd();
+
+  writeFileSync(
+    `${ASSETS_DIR}/pr-activity.svg`,
+    svg,
+    "utf8"
+  );
+}
+
+/* =========================================================
+   MERGED PR README
+========================================================= */
+
+function getRepository(item) {
+  if (item.repository_url) {
+    const match =
+      item.repository_url.match(
+        /repos\/([^/]+\/[^/]+)$/
+      );
+
+    if (match) return match[1];
+  }
+
+  return "GitHub";
+}
+
+function buildMergedPRMarkdown(mergedPRs) {
+  const sorted = [...mergedPRs]
+    .sort(
+      (a, b) =>
+        new Date(b.closed_at || b.updated_at) -
+        new Date(a.closed_at || a.updated_at)
+    )
+    .slice(0, maxPRs);
+
+  if (sorted.length === 0) {
+    return `
+<div align="center">
+
+## 🟢 Merged Pull Requests
+
+No merged pull requests found for **${escapeXml(
+      username
+    )}**.
+
+</div>
+`;
+  }
+
+  const rows = sorted
+    .map((pr) => {
+      const repository =
+        getRepository(pr);
+
+      const title =
+        pr.title ||
+        "Untitled Pull Request";
+
+      const date =
+        formatDate(
+          pr.closed_at ||
+            pr.updated_at
+        );
+
+      return `
+<tr>
+
+<td align="center" width="70">
+<strong>🟢</strong>
+</td>
+
+<td>
+
+<strong>${escapeXml(
+        title
+      )}</strong>
+
+<br>
+
+<sub>
+
+📦 ${escapeXml(repository)}
+
+&nbsp;&nbsp;•&nbsp;&nbsp;
+
+🔀 PR #${pr.number}
+
+&nbsp;&nbsp;•&nbsp;&nbsp;
+
+🟢 MERGED
+
+&nbsp;&nbsp;•&nbsp;&nbsp;
+
+🗓️ ${date}
+
+</sub>
+
+</td>
+
+<td align="center" width="130">
+
+<a href="${escapeXml(
+        pr.html_url
+      )}">
+
+<img
+src="https://img.shields.io/badge/VIEW_PR-FF2E9E?style=for-the-badge&logo=github&logoColor=white"
+alt="View Pull Request"
+/>
+
+</a>
+
+</td>
+
+</tr>
+`;
+    })
+    .join("\n");
+
+  return `
+<div align="center">
+
+## 🟢 Merged Pull Requests
+
+<sub>
+Only successfully merged pull requests are shown.
+</sub>
+
+<br><br>
+
+<table>
+
+<tr>
+
+<td align="center">
+
+<strong>🔀 ${mergedPRs.length}</strong>
+
+<br>
+
+<sub>Merged PRs</sub>
+
+</td>
+
+</tr>
+
+</table>
+
+</div>
+
+<br>
+
+<table width="100%">
+
+${rows}
+
+</table>
+
+<br>
+
+<div align="center">
+
+<sub>
+Showing latest ${sorted.length} of ${mergedPRs.length} merged pull requests
+&nbsp; • &nbsp;
+🔄 Automatically updated by GitHub Actions
+</sub>
+
+</div>
+`;
+}
+
+/* =========================================================
+   UPDATE README
+========================================================= */
+
+function updateReadme(markdown) {
+  const original = readFileSync(
+    readmePath,
+    "utf8"
+  );
+
+  if (
+    !original.includes(START_MARKER) ||
+    !original.includes(END_MARKER)
+  ) {
+    throw new Error(
+      `README.md must contain:
+
+${START_MARKER}
+
+${END_MARKER}`
+    );
+  }
+
+  const start =
+    original.indexOf(START_MARKER);
+
+  const end =
+    original.indexOf(
+      END_MARKER,
+      start
+    );
+
+  if (end === -1) {
+    throw new Error(
+      "Invalid README marker order."
+    );
+  }
+
+  const before =
+    original.slice(
+      0,
+      start
+    );
+
+  const after =
+    original.slice(
+      end + END_MARKER.length
+    );
+
+  const updated =
+    before +
+    START_MARKER +
+    "\n" +
+    markdown.trim() +
+    "\n" +
+    END_MARKER +
+    after;
+
+  writeFileSync(
+    readmePath,
+    updated,
+    "utf8"
+  );
+
+  console.log(
+    "README updated successfully."
+  );
+}
+
+/* =========================================================
+   MAIN
+========================================================= */
+
+async function main() {
+  console.log(
+    `Updating GitHub profile for ${username}...`
+  );
+
+  console.log("");
+
+  const [
+    profile,
+    repositories,
+    prs,
+    mergedPRs,
+  ] = await Promise.all([
+    fetchProfile(),
+    fetchRepositories(),
+    fetchPullRequests(),
+    fetchMergedPullRequests(),
+  ]);
+
+  console.log("");
+
+  console.log(
+    "📊 GitHub Statistics"
+  );
+
+  console.log(
+    `Repositories : ${profile.repositories.totalCount}`
+  );
+
+  console.log(
+    `Followers    : ${profile.followers.totalCount}`
+  );
+
+  console.log(
+    `Commits      : ${profile.contributionsCollection.totalCommitContributions}`
+  );
+
+  console.log(
+    `Total PRs    : ${prs.length}`
+  );
+
+  console.log(
+    `Merged PRs   : ${mergedPRs.length}`
+  );
+
+  console.log("");
+
+  const languageStats =
+    await fetchLanguageStats(
+      repositories
+    );
+
+  console.log(
+    "📈 Generating SVG graphs..."
+  );
+
+  generateAnalyticsSVG({
+    profile,
+    repositories,
+    prs,
+    mergedPRs,
+  });
+
+  generateContributionGraph(
+    profile
+  );
+
+  generateLanguageGraph(
+    languageStats
+  );
+
+  generatePRGraph(
+    prs
+  );
+
+  console.log(
+    "✅ Generated github-analytics.svg"
+  );
+
+  console.log(
+    "✅ Generated contribution-graph.svg"
+  );
+
+  console.log(
+    "✅ Generated language-graph.svg"
+  );
+
+  console.log(
+    "✅ Generated pr-activity.svg"
+  );
+
+  const mergedMarkdown =
+    buildMergedPRMarkdown(
+      mergedPRs
+    );
+
+  updateReadme(
+    mergedMarkdown
+  );
+
+  console.log("");
+
+  console.log(
+    "🎉 GitHub profile updated successfully."
+  );
+}
+
+main().catch((error) => {
+  console.error("");
+
+  console.error(
+    "❌ Failed to update GitHub profile"
+  );
+
+  console.error(error);
+
+  process.exit(1);
+});
