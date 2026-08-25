@@ -160,15 +160,9 @@ I enjoy working across the stack — from designing backend services and debuggi
 
 > Automatically synchronized from GitHub Actions — no manual updates required.
 
-</div>
-
 <!--START_MERGED_PRS-->
-
+Loading merged pull requests... 🔄
 <!--END_MERGED_PRS-->
-
----
-
-<div align="center">
 
 ## 🧩 Featured Open Source Contributions
 
@@ -261,31 +255,12 @@ The workflow can populate the engineering impact.
 
 ## 🔥 GitHub Activity
 
-<br>
-
-<img
-  src="https://streak-stats.demolab.com?user=AbarnaaSree&hide_border=true&background=0D1117&ring=EF93C4&fire=FF69B4&currStreakLabel=EF93C4&sideLabels=F8BBD0&currStreakNum=FF69B4&sideNums=EF93C4&dates=E5E7EB&stroke=0D1117"
-  width="82%"
-  alt="GitHub streak"
-/>
-
-<br><br>
-
-<div align="center">
-
-<img
-  src="https://github-readme-activity-graph.vercel.app/graph?username=AbarnaaSree"
-  width="95%"
-  alt="GitHub Contribution Activity Graph"
-/>
-
-</div>
-
-</div>
-
----
-
-<div align="center">
+<p align="center">
+  <img
+    src="https://github-readme-activity-graph.vercel.app/graph?username=AbarnaaSree&bg_color=0D1117&color=E5E7EB&line=EF93C4&point=FF69B4&area=true&hide_border=true"
+    alt="AbarnaaSree GitHub Activity Graph"
+  />
+</p>
 
 ## 🐍 Contribution Snake
 
