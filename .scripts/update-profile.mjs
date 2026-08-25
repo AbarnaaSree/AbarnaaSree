@@ -1086,9 +1086,10 @@ async function main() {
   );
 
   const mergedMarkdown =
-    buildMergedPRMarkdown(
-      mergedPRs
-    );
+  buildMergedPRMarkdown(
+    mergedPRs,
+    prs
+  );
 
   updateReadme(
     mergedMarkdown
