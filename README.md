@@ -413,7 +413,8 @@ Showing latest 10 of 17 pull requests
 <!--END_OPEN_SOURCE_CONTRIBUTIONS-->
 
 ### `$ git log --merged --open-source`
-
+<!--START_MERGED_PRS-->
+<!--END_MERGED_PRS-->
 
 ### `$ cat about.md`
 
