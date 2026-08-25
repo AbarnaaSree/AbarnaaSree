@@ -20,239 +20,113 @@
 
 ## 🟢 Merged Pull Requests
 
-<sub>
-Only successfully merged pull requests are shown.
-</sub>
-
-<br><br>
-
-<table>
-
-<tr>
-
-<td align="center">
-
-<strong>🔀 4</strong>
-
-<br>
-
-<sub>Merged PRs</sub>
-
-</td>
-
-</tr>
-
-</table>
+**🔀 4 Merged PRs**
 
 </div>
-
-<br>
 
 <table width="100%">
 
 
 <tr>
-
-<td align="center" width="70">
-<strong>🟢</strong>
-</td>
-
 <td>
 
-<strong>fix(bedrock-agentcore): allow maxResults up to 1000</strong>
-
-<br>
+🟢 **fix(bedrock-agentcore): allow maxResults up to 1000**
 
 <sub>
-
 📦 floci-io/floci
-
-&nbsp;&nbsp;•&nbsp;&nbsp;
-
+&nbsp; • &nbsp;
 🔀 PR #2487
-
-&nbsp;&nbsp;•&nbsp;&nbsp;
-
-🟢 MERGED
-
-&nbsp;&nbsp;•&nbsp;&nbsp;
-
+&nbsp; • &nbsp;
 🗓️ 24 Aug 2026
-
 </sub>
 
 </td>
 
-<td align="center" width="130">
-
+<td align="right">
 <a href="https://github.com/floci-io/floci/pull/2487">
-
-<img
-src="https://img.shields.io/badge/VIEW_PR-FF2E9E?style=for-the-badge&logo=github&logoColor=white"
-alt="View Pull Request"
-/>
-
+<img src="https://img.shields.io/badge/VIEW-00C96B?style=for-the-badge&logo=github&logoColor=000000" />
 </a>
-
 </td>
-
 </tr>
 
 
 <tr>
-
-<td align="center" width="70">
-<strong>🟢</strong>
-</td>
-
 <td>
 
-<strong>fix: preserve Firehose compression format in CloudFormation</strong>
-
-<br>
+🟢 **fix: preserve Firehose compression format in CloudFormation**
 
 <sub>
-
 📦 floci-io/floci
-
-&nbsp;&nbsp;•&nbsp;&nbsp;
-
+&nbsp; • &nbsp;
 🔀 PR #2406
-
-&nbsp;&nbsp;•&nbsp;&nbsp;
-
-🟢 MERGED
-
-&nbsp;&nbsp;•&nbsp;&nbsp;
-
+&nbsp; • &nbsp;
 🗓️ 21 Aug 2026
-
 </sub>
 
 </td>
 
-<td align="center" width="130">
-
+<td align="right">
 <a href="https://github.com/floci-io/floci/pull/2406">
-
-<img
-src="https://img.shields.io/badge/VIEW_PR-FF2E9E?style=for-the-badge&logo=github&logoColor=white"
-alt="View Pull Request"
-/>
-
+<img src="https://img.shields.io/badge/VIEW-00C96B?style=for-the-badge&logo=github&logoColor=000000" />
 </a>
-
 </td>
-
 </tr>
 
 
 <tr>
-
-<td align="center" width="70">
-<strong>🟢</strong>
-</td>
-
 <td>
 
-<strong>fix: keep tracking alive after malformed SSE chunks</strong>
-
-<br>
+🟢 **fix: keep tracking alive after malformed SSE chunks**
 
 <sub>
-
 📦 pollinations/pollinations
-
-&nbsp;&nbsp;•&nbsp;&nbsp;
-
+&nbsp; • &nbsp;
 🔀 PR #13297
-
-&nbsp;&nbsp;•&nbsp;&nbsp;
-
-🟢 MERGED
-
-&nbsp;&nbsp;•&nbsp;&nbsp;
-
+&nbsp; • &nbsp;
 🗓️ 20 Aug 2026
-
 </sub>
 
 </td>
 
-<td align="center" width="130">
-
+<td align="right">
 <a href="https://github.com/pollinations/pollinations/pull/13297">
-
-<img
-src="https://img.shields.io/badge/VIEW_PR-FF2E9E?style=for-the-badge&logo=github&logoColor=white"
-alt="View Pull Request"
-/>
-
+<img src="https://img.shields.io/badge/VIEW-00C96B?style=for-the-badge&logo=github&logoColor=000000" />
 </a>
-
 </td>
-
 </tr>
 
 
 <tr>
-
-<td align="center" width="70">
-<strong>🟢</strong>
-</td>
-
 <td>
 
-<strong>Warn when static HTML parser dependencies are unavailable</strong>
-
-<br>
+🟢 **Warn when static HTML parser dependencies are unavailable**
 
 <sub>
-
 📦 pbakaus/impeccable
-
-&nbsp;&nbsp;•&nbsp;&nbsp;
-
+&nbsp; • &nbsp;
 🔀 PR #465
-
-&nbsp;&nbsp;•&nbsp;&nbsp;
-
-🟢 MERGED
-
-&nbsp;&nbsp;•&nbsp;&nbsp;
-
+&nbsp; • &nbsp;
 🗓️ 10 Aug 2026
-
 </sub>
 
 </td>
 
-<td align="center" width="130">
-
+<td align="right">
 <a href="https://github.com/pbakaus/impeccable/pull/465">
-
-<img
-src="https://img.shields.io/badge/VIEW_PR-FF2E9E?style=for-the-badge&logo=github&logoColor=white"
-alt="View Pull Request"
-/>
-
+<img src="https://img.shields.io/badge/VIEW-00C96B?style=for-the-badge&logo=github&logoColor=000000" />
 </a>
-
 </td>
-
 </tr>
 
 
 </table>
-
-<br>
 
 <div align="center">
 
 <sub>
 Showing latest 4 of 4 merged pull requests
 &nbsp; • &nbsp;
-🔄 Automatically updated by GitHub Actions
+🔄 Automatically updated
 </sub>
 
 </div>
