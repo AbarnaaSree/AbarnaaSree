@@ -1,12 +1,12 @@
 import { readFileSync, writeFileSync } from "node:fs";
 
-const token = process.env.GITHUB_TOKEN || "";
+const token = process.env.GITHUB_TOKEN;
 const username = process.env.GH_USERNAME || "AbarnaaSree";
 const readmePath = process.env.README_PATH || "README.md";
 const maxPRs = Number(process.env.MAX_PRS || 10);
 
-const START_MARKER = "<!--START_OPEN_SOURCE_CONTRIBUTIONS-->";
-const END_MARKER = "<!--END_OPEN_SOURCE_CONTRIBUTIONS-->";
+const START_MARKER = "<!--START_MERGED_PRS-->";
+const END_MARKER = "<!--END_MERGED_PRS-->";
 
 async function githubFetch(url) {
   const headers = {
@@ -15,8 +15,6 @@ async function githubFetch(url) {
     "User-Agent": "AbarnaaSree-profile-updater",
   };
 
-  // Token is optional.
-  // GitHub Actions will automatically provide it through GITHUB_TOKEN.
   if (token) {
     headers.Authorization = `Bearer ${token}`;
   }
@@ -34,104 +32,87 @@ async function githubFetch(url) {
   return response.json();
 }
 
-/**
- * Fetch ALL PRs created by the user.
- *
- * Uses GitHub Search API pagination.
+/*
+ * Fetch PRs created by the user.
+ * This gives the TOTAL PR count.
  */
-async function fetchPullRequests() {
-  console.log("Fetching pull requests from GitHub...");
-  console.log(`Query: is:pr author:${username}`);
-
-  const allPRs = [];
-
-  for (let page = 1; page <= 10; page++) {
-    const query = encodeURIComponent(
-      `is:pr author:${username}`
-    );
-
-    const url =
-      `https://api.github.com/search/issues` +
-      `?q=${query}` +
-      `&sort=updated` +
-      `&order=desc` +
-      `&per_page=100` +
-      `&page=${page}`;
-
-    const data = await githubFetch(url);
-
-    const items = data.items || [];
-
-    allPRs.push(...items);
-
-    console.log(
-      `Page ${page}: ${items.length} PR(s)`
-    );
-
-    if (
-      items.length < 100 ||
-      allPRs.length >= data.total_count
-    ) {
-      break;
-    }
-  }
-
-  console.log(
-    `GitHub search returned ${allPRs.length} pull request(s).`
+async function fetchAllPullRequests() {
+  const query = encodeURIComponent(
+    `is:pr author:${username}`
   );
 
-  return allPRs;
+  const url =
+    `https://api.github.com/search/issues?q=${query}` +
+    `&per_page=1`;
+
+  const data = await githubFetch(url);
+
+  return data.total_count || 0;
 }
 
-/**
- * Extract owner/repository from repository_url.
- *
- * Example:
- * https://api.github.com/repos/floci-io/floci
- *
- * => floci-io/floci
+/*
+ * Fetch ONLY merged PRs.
  */
+async function fetchMergedPullRequests() {
+  const query = encodeURIComponent(
+    `is:pr author:${username} is:merged`
+  );
+
+  const url =
+    `https://api.github.com/search/issues?q=${query}` +
+    `&sort=updated&order=desc&per_page=100`;
+
+  console.log("Fetching merged PRs from GitHub...");
+  console.log(
+    `Query: is:pr author:${username} is:merged`
+  );
+
+  const data = await githubFetch(url);
+
+  const mergedPRs = await Promise.all(
+    (data.items || []).map(async (pr) => {
+      if (!pr.pull_request?.url) {
+        return null;
+      }
+
+      try {
+        const details = await githubFetch(
+          pr.pull_request.url
+        );
+
+        /*
+         * Extra protection:
+         * Only accept PRs that actually have merged_at.
+         */
+        if (!details.merged_at) {
+          return null;
+        }
+
+        return {
+          ...pr,
+          ...details,
+        };
+      } catch (error) {
+        console.warn(
+          `Could not fetch PR #${pr.number}: ${error.message}`
+        );
+
+        return null;
+      }
+    })
+  );
+
+  return mergedPRs.filter(Boolean);
+}
+
 function getRepository(pr) {
-  if (pr.repository_url) {
-    const match = pr.repository_url.match(
-      /\/repos\/([^/]+\/[^/]+)$/
-    );
+  const match = pr.repository_url?.match(
+    /repos\/([^/]+\/[^/]+)$/
+  );
 
-    if (match) {
-      return match[1];
-    }
-  }
-
-  return "GitHub";
+  return match ? match[1] : "GitHub";
 }
 
-/**
- * Determine PR status.
- */
-function getStatus(pr) {
-  if (pr.pull_request?.merged_at) {
-    return {
-      label: "MERGED",
-      emoji: "🟢",
-    };
-  }
-
-  if (pr.state === "open") {
-    return {
-      label: "OPEN",
-      emoji: "🔵",
-    };
-  }
-
-  return {
-    label: "CLOSED",
-    emoji: "⚪",
-  };
-}
-
-/**
- * Escape HTML so PR titles cannot break README HTML.
- */
 function escapeHtml(value) {
   return String(value)
     .replace(/&/g, "&amp;")
@@ -140,9 +121,13 @@ function escapeHtml(value) {
     .replace(/"/g, "&quot;");
 }
 
-/**
- * Convert GitHub date to Indian date format.
- */
+function escapeRegExp(value) {
+  return value.replace(
+    /[.*+?^${}()|[\]\\]/g,
+    "\\$&"
+  );
+}
+
 function formatDate(date) {
   if (!date) {
     return "Unknown";
@@ -156,141 +141,80 @@ function formatDate(date) {
   });
 }
 
-/**
- * Calculate PR statistics.
- */
-function calculateStats(prs) {
-  const total = prs.length;
+function buildMarkdown(totalPRs, mergedPRs) {
+  const sortedPRs = [...mergedPRs]
+    .sort(
+      (a, b) =>
+        new Date(b.merged_at) -
+        new Date(a.merged_at)
+    )
+    .slice(0, maxPRs);
 
-  const merged = prs.filter(
-    (pr) => Boolean(pr.pull_request?.merged_at)
-  ).length;
+  const mergedCount = mergedPRs.length;
 
-  const open = prs.filter(
-    (pr) => pr.state === "open"
-  ).length;
+  const rows = sortedPRs
+    .map((pr) => {
+      const repository = escapeHtml(
+        getRepository(pr)
+      );
 
-  const closed = prs.filter(
-    (pr) =>
-      pr.state === "closed" &&
-      !pr.pull_request?.merged_at
-  ).length;
+      const title = escapeHtml(
+        pr.title || "Untitled Pull Request"
+      );
 
-  return {
-    total,
-    merged,
-    open,
-    closed,
-  };
-}
+      const date = formatDate(pr.merged_at);
 
-/**
- * Sort PRs by latest relevant date.
- */
-function sortPullRequests(prs) {
-  return [...prs].sort((a, b) => {
-    const dateA = new Date(
-      a.pull_request?.merged_at ||
-        a.updated_at ||
-        a.created_at
-    );
-
-    const dateB = new Date(
-      b.pull_request?.merged_at ||
-        b.updated_at ||
-        b.created_at
-    );
-
-    return dateB - dateA;
-  });
-}
-
-/**
- * Build one PR row.
- */
-function buildPRRow(pr) {
-  const repository = escapeHtml(
-    getRepository(pr)
-  );
-
-  const title = escapeHtml(
-    pr.title || "Untitled Pull Request"
-  );
-
-  const status = getStatus(pr);
-
-  const date = formatDate(
-    pr.pull_request?.merged_at ||
-      pr.updated_at ||
-      pr.created_at
-  );
-
-  const url = pr.html_url;
-
-  return `
+      return `
 <tr>
-<td align="center" width="70">
-<strong>${status.emoji}</strong>
+
+<td align="center" width="60">
+
+<strong>🟢</strong>
+
 </td>
 
 <td>
+
 <strong>${title}</strong>
+
 <br>
 
 <sub>
+
 📦 ${repository}
+
 &nbsp;&nbsp;•&nbsp;&nbsp;
+
 🔀 PR #${pr.number}
+
 &nbsp;&nbsp;•&nbsp;&nbsp;
-${status.emoji} ${status.label}
+
+🟢 MERGED
+
 &nbsp;&nbsp;•&nbsp;&nbsp;
+
 🗓️ ${date}
+
 </sub>
+
 </td>
 
 <td align="center" width="130">
 
-<a href="${url}">
+<a href="${pr.html_url}">
+
 <img
 src="https://img.shields.io/badge/VIEW_PR-FF2E9E?style=for-the-badge&logo=github&logoColor=white"
 alt="View Pull Request"
 />
+
 </a>
 
 </td>
+
 </tr>
 `;
-}
-
-/**
- * Build complete automatically generated section.
- */
-function buildMarkdown(prs) {
-  const stats = calculateStats(prs);
-
-  const sortedPRs = sortPullRequests(prs);
-
-  const displayedPRs = sortedPRs.slice(
-    0,
-    maxPRs
-  );
-
-  if (sortedPRs.length === 0) {
-    return `
-<div align="center">
-
-## ⚡ Open Source Contributions
-
-<sub>
-No pull requests found for <strong>${escapeHtml(username)}</strong>.
-</sub>
-
-</div>
-`;
-  }
-
-  const rows = displayedPRs
-    .map(buildPRRow)
+    })
     .join("\n");
 
   return `
@@ -299,8 +223,7 @@ No pull requests found for <strong>${escapeHtml(username)}</strong>.
 ## ⚡ Open Source Contributions
 
 <sub>
-Pull requests created by <strong>${escapeHtml(username)}</strong>,
-automatically synced from GitHub.
+Automatically synced from GitHub.
 </sub>
 
 <br><br>
@@ -310,27 +233,23 @@ automatically synced from GitHub.
 <tr>
 
 <td align="center">
-<strong>🔀 ${stats.total}</strong>
+
+<strong>🔀 ${totalPRs}</strong>
+
 <br>
+
 <sub>Total PRs</sub>
+
 </td>
 
 <td align="center">
-<strong>🟢 ${stats.merged}</strong>
-<br>
-<sub>Merged</sub>
-</td>
 
-<td align="center">
-<strong>🔵 ${stats.open}</strong>
-<br>
-<sub>Open</sub>
-</td>
+<strong>🟢 ${mergedCount}</strong>
 
-<td align="center">
-<strong>⚪ ${stats.closed}</strong>
 <br>
-<sub>Closed</sub>
+
+<sub>Merged PRs</sub>
+
 </td>
 
 </tr>
@@ -341,7 +260,7 @@ automatically synced from GitHub.
 
 <br>
 
-### 🔀 My Pull Requests
+### 🔀 Merged Pull Requests
 
 <table width="100%">
 
@@ -355,7 +274,7 @@ ${rows}
 
 <sub>
 
-Showing latest ${displayedPRs.length} of ${stats.total} pull requests
+Showing latest ${sortedPRs.length} of ${mergedCount} merged PRs
 
 &nbsp; • &nbsp;
 
@@ -371,66 +290,36 @@ Showing latest ${displayedPRs.length} of ${stats.total} pull requests
 `;
 }
 
-/**
- * Replace ONLY the content between the
- * Open Source Contributions markers.
- */
 function updateReadme(markdown) {
   const original = readFileSync(
     readmePath,
     "utf8"
   );
 
-  const startIndex =
-    original.indexOf(START_MARKER);
-
-  const endIndex =
-    original.indexOf(END_MARKER);
-
-  if (startIndex === -1) {
+  if (
+    !original.includes(START_MARKER) ||
+    !original.includes(END_MARKER)
+  ) {
     throw new Error(
-      `README is missing start marker:\n${START_MARKER}`
+      `README.md must contain:
+
+${START_MARKER}
+
+${END_MARKER}`
     );
   }
 
-  if (endIndex === -1) {
-    throw new Error(
-      `README is missing end marker:\n${END_MARKER}`
-    );
-  }
-
-  if (endIndex < startIndex) {
-    throw new Error(
-      "README markers are in the wrong order."
-    );
-  }
-
-  const before = original.slice(
-    0,
-    startIndex
-  );
-
-  const after = original.slice(
-    endIndex + END_MARKER.length
+  const pattern = new RegExp(
+    `${escapeRegExp(START_MARKER)}[\\s\\S]*?${escapeRegExp(END_MARKER)}`
   );
 
   const replacement =
-    `${START_MARKER}\n` +
-    `${markdown.trim()}\n` +
-    `${END_MARKER}`;
+    `${START_MARKER}\n${markdown}\n${END_MARKER}`;
 
-  const updated =
-    before +
-    replacement +
-    after;
-
-  if (updated === original) {
-    console.log(
-      "README is already up to date."
-    );
-
-    return;
-  }
+  const updated = original.replace(
+    pattern,
+    replacement
+  );
 
   writeFileSync(
     readmePath,
@@ -438,53 +327,50 @@ function updateReadme(markdown) {
     "utf8"
   );
 
-  console.log(
-    "README updated successfully."
-  );
+  console.log("README updated successfully.");
 }
 
-/**
- * Main.
- */
 async function main() {
   console.log(
-    `Updating pull requests for ${username}...`
+    `Updating GitHub statistics for ${username}...`
   );
 
+  /*
+   * 1. Fetch TOTAL PR count
+   */
+  const totalPRs = await fetchAllPullRequests();
+
+  /*
+   * 2. Fetch ONLY MERGED PRs
+   */
+  const mergedPRs =
+    await fetchMergedPullRequests();
+
+  console.log("");
+  console.log("📊 GitHub Statistics");
+  console.log(`Total PRs   : ${totalPRs}`);
+  console.log(`Merged PRs  : ${mergedPRs.length}`);
   console.log("");
 
-  const prs = await fetchPullRequests();
-
-  const stats = calculateStats(prs);
-
-  console.log("");
-  console.log(
-    "📊 Pull Request Statistics"
+  /*
+   * 3. Generate README section
+   */
+  const markdown = buildMarkdown(
+    totalPRs,
+    mergedPRs
   );
 
-  console.log(`Total  : ${stats.total}`);
-  console.log(`Merged : ${stats.merged}`);
-  console.log(`Open   : ${stats.open}`);
-  console.log(`Closed : ${stats.closed}`);
-
-  console.log("");
-
-  const markdown = buildMarkdown(prs);
-
+  /*
+   * 4. Update README
+   */
   updateReadme(markdown);
-
-  console.log("");
-  console.log(
-    "✅ GitHub profile PR section synchronized."
-  );
 }
 
 main().catch((error) => {
   console.error("");
   console.error(
-    "❌ Failed to update pull requests"
+    "❌ Failed to update GitHub statistics"
   );
   console.error(error);
-
   process.exit(1);
 });
