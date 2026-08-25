@@ -846,7 +846,7 @@ function getRepository(item) {
 
   return "GitHub";
 }
-function buildMergedPRMarkdown(mergedPRs) {
+function buildMergedPRMarkdown(mergedPRs, prs) {
   const sorted = [...mergedPRs]
     .sort(
       (a, b) =>
@@ -859,13 +859,13 @@ function buildMergedPRMarkdown(mergedPRs) {
     return `
 <div align="center">
 
-## 🟢 Merged Pull Requests
+## Pull Requests
 
-**🔀 ${mergedPRs.length} Merged PRs**
+** ${prs.length} Total PRs**
+&nbsp;&nbsp; • &nbsp;&nbsp;
+** 0 Merged PRs**
 
 </div>
-
-No merged pull requests found for **${username}**.
 `;
   }
 
@@ -878,7 +878,7 @@ No merged pull requests found for **${username}**.
 <tr>
 <td>
 
-🟢 **${escapeXml(title)}**
+ **${escapeXml(title)}**
 
 </td>
 
@@ -895,11 +895,11 @@ No merged pull requests found for **${username}**.
   return `
 <div align="center">
 
-## 🟢 Pull Requests
+##  Pull Requests
 
-**🔀 ${prs.length} Total PRs**
+** ${prs.length} Total PRs**
 &nbsp;&nbsp; • &nbsp;&nbsp;
-**🟢 ${mergedPRs.length} Merged PRs**
+** ${mergedPRs.length} Merged PRs**
 
 </div>
 
