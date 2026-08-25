@@ -18,11 +18,7 @@
 <!--START_MERGED_PRS-->
 <div align="center">
 
-## 🟢 Merged Pull Requests
-
-<sub>
-Only successfully merged pull requests are shown.
-</sub>
+## Merged Pull Requests
 
 <br><br>
 
@@ -316,17 +312,6 @@ AI Engineer focused on machine learning, deep learning, and generative AI system
 </div>
 
 
-### `Connect`
-
-<div align="center">
-
-[![Portfolio](https://img.shields.io/badge/Portfolio-00FF88?style=for-the-badge&logo=googlechrome&logoColor=F5F5F5)](https://abarnaasree.github.io/MY--Portfolio/)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-00FF88?style=for-the-badge&logo=linkedin&logoColor=F5F5F5)](https://www.linkedin.com/in/abarnaa-sree-n/)
-[![GitHub](https://img.shields.io/badge/GitHub-00FF88?style=for-the-badge&logo=github&logoColor=F5F5F5)](https://github.com/AbarnaaSree)
-[![LeetCode](https://img.shields.io/badge/LeetCode-00FF88?style=for-the-badge&logo=leetcode&logoColor=F5F5F5)](https://leetcode.com/u/AbarnaaSree/)
-
 *"Building intelligent systems, one commit at a time."*
-
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:050806,50:00FF88,100:39FF14&height=120&section=footer" width="100%"/>
 
 </div>
