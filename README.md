@@ -4,14 +4,48 @@
 
 <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=00FF88&background=050806&center=true&vCenter=true&width=650&lines=%24+whoami+%3E%3E+AI+Engineer;%24+stack+%3E%3E+Python+%7C+PyTorch+%7C+React+%7C+FastAPI;%24+passion+%3E%3E+Machine+Learning+%2B+Generative+AI;%24+status+%3E%3E+Contributing+to+Open+Source;%24+focus+%3E%3E+Deepening+AI%2FML+Expertise" alt="Typing SVG"/>
 
-[![Portfolio](https://img.shields.io/badge/Portfolio-00FF88?style=for-the-badge&logo=googlechrome&logoColor=F5F5F5)](https://abarnaasree.github.io/MY--Portfolio/)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-00FF88?style=for-the-badge&logo=linkedin&logoColor=F5F5F5)](https://www.linkedin.com/in/abarnaa-sree-n/)
-[![GitHub](https://img.shields.io/badge/GitHub-00FF88?style=for-the-badge&logo=github&logoColor=F5F5F5)](https://github.com/AbarnaaSree)
-[![LeetCode](https://img.shields.io/badge/LeetCode-00FF88?style=for-the-badge&logo=leetcode&logoColor=F5F5F5)](https://leetcode.com/u/AbarnaaSree/)
+<style>
+  .badge-row {
+    display: flex;
+    justify-content: center;
+    gap: 14px;
+    flex-wrap: wrap;
+    padding: 20px;
+  }
 
-![Profile Views](https://komarev.com/ghpvc/?username=AbarnaaSree&color=00FF88&style=flat-square&label=Profile+Views)
-![Followers](https://img.shields.io/github/followers/AbarnaaSree?style=flat-square&color=00FF88&label=Followers)
-![Stars](https://img.shields.io/github/stars/AbarnaaSree?style=flat-square&color=00FF88&label=Stars)
+  .badge-row a {
+    display: inline-block;
+    padding: 10px 22px;
+    background: #00FF88;
+    color: #000000;
+    font-family: 'Segoe UI', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    text-decoration: none;
+    border-radius: 8px;
+    box-shadow:
+      0 0 8px #00FF88,
+      0 0 18px #00FF88,
+      0 0 30px rgba(0, 255, 136, 0.6);
+    transition: all 0.25s ease;
+  }
+
+  .badge-row a:hover {
+    box-shadow:
+      0 0 14px #00FF88,
+      0 0 28px #00FF88,
+      0 0 45px rgba(0, 255, 136, 0.9);
+    transform: translateY(-3px) scale(1.05);
+  }
+</style>
+
+<div class="badge-row">
+  <a href="https://abarnaasree.github.io/MY--Portfolio/">🌐 Portfolio</a>
+  <a href="https://www.linkedin.com/in/abarnaa-sree-n/">💼 LinkedIn</a>
+  <a href="https://github.com/AbarnaaSree">💻 GitHub</a>
+  <a href="https://leetcode.com/u/AbarnaaSree/">🧩 LeetCode</a>
+</div>
 
 </div>
 
