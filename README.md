@@ -15,6 +15,23 @@
 
 </div>
 
+### `$ git log --open-source-contributions`
+
+Actively contributing to open-source projects. The cards below pull live data straight from the GitHub API, so pull request counts and recent activity stay automatically up to date — nothing here is manually typed.
+
+<div align="center">
+<img src="https://github-readme-stats.vercel.app/api?username=AbarnaaSree&show_icons=true&hide=stars,commits,issues,contribs&hide_rank=true&custom_title=Total+Pull+Requests&bg_color=0B0C10&title_color=FF2E9E&text_color=F5F5F5&icon_color=FF2E9E&border_color=FF2E9E" width="60%" />
+</div>
+
+[![View Pull Requests](https://img.shields.io/badge/View-Pull_Requests-FF2E9E?style=for-the-badge&logo=github&logoColor=F5F5F5)](https://github.com/AbarnaaSree?tab=pulls)
+[![Open Source](https://img.shields.io/badge/Open_Source-Contributor-FF2E9E?style=for-the-badge&logo=opensourceinitiative&logoColor=F5F5F5)](https://github.com/AbarnaaSree)
+
+**Recent Activity (auto-updated by GitHub Actions):**
+
+<!--START_SECTION:activity-->
+<!-- This section is auto-populated by the github-activity-readme workflow. It will fill in automatically once the workflow (below) runs on your repo. -->
+<!--END_SECTION:activity-->
+
 ### `$ cat about.md`
 
 AI Engineer focused on machine learning, deep learning, and generative AI systems, with a full-stack foundation spanning React, Node.js, and cloud-native backends. Actively growing an open-source footprint — contributing pull requests, reviewing issues, and collaborating on AI/ML repositories.
@@ -69,15 +86,6 @@ OPEN_TO  : AI/ML Engineering & Software Development opportunities
 | Frontend Development | ⭐⭐⭐ | React.js, TypeScript, JavaScript |
 | Cloud Platforms | ⭐⭐⭐ | AWS, Azure |
 | Databases | ⭐⭐⭐ | MySQL, MongoDB |
-
-### `$ git log --open-source-contributions`
-
-Actively contributing to open-source projects — the badges and cards below pull live data directly from GitHub, so the pull request and contribution counts stay automatically up to date.
-
-[![View Pull Requests](https://img.shields.io/badge/View-Pull_Requests-FF2E9E?style=for-the-badge&logo=github&logoColor=F5F5F5)](https://github.com/AbarnaaSree?tab=pulls)
-[![Open Source](https://img.shields.io/badge/Open_Source-Contributor-FF2E9E?style=for-the-badge&logo=opensourceinitiative&logoColor=F5F5F5)](https://github.com/AbarnaaSree)
-
-> 📊 Live merged-PR count, commit activity, and contribution stats are shown automatically in the **GitHub Analytics** and **Trophies** sections below.
 
 ### `$ ./coding-profiles.sh`
 
