@@ -100,7 +100,7 @@ Showing latest 4 of 4 merged pull requests
 
 </div>
 <!--END_MERGED_PRS-->
-### About me
+
 
 AI Engineer focused on machine learning, deep learning, and generative AI systems, with a full-stack foundation spanning React, Node.js, and cloud-native backends. Actively growing an open-source footprint — contributing pull requests, reviewing issues, and collaborating on AI/ML repositories.
 
