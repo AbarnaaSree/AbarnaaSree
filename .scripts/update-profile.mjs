@@ -846,7 +846,6 @@ function getRepository(item) {
 
   return "GitHub";
 }
-
 function buildMergedPRMarkdown(mergedPRs) {
   const sorted = [...mergedPRs]
     .sort(
@@ -862,9 +861,7 @@ function buildMergedPRMarkdown(mergedPRs) {
 
 ## 🟢 Merged Pull Requests
 
-No merged pull requests found for **${escapeXml(
-      username
-    )}**.
+No merged pull requests found for **${username}**.
 
 </div>
 `;
@@ -872,69 +869,36 @@ No merged pull requests found for **${escapeXml(
 
   const rows = sorted
     .map((pr) => {
-      const repository =
-        getRepository(pr);
+      const repository = getRepository(pr);
 
       const title =
-        pr.title ||
-        "Untitled Pull Request";
+        pr.title || "Untitled Pull Request";
 
-      const date =
-        formatDate(
-          pr.closed_at ||
-            pr.updated_at
-        );
+      const date = formatDate(
+        pr.closed_at || pr.updated_at
+      );
 
       return `
 <tr>
-
-<td align="center" width="70">
-<strong>🟢</strong>
-</td>
-
 <td>
 
-<strong>${escapeXml(
-        title
-      )}</strong>
-
-<br>
+🟢 **${escapeXml(title)}**
 
 <sub>
-
 📦 ${escapeXml(repository)}
-
-&nbsp;&nbsp;•&nbsp;&nbsp;
-
+&nbsp; • &nbsp;
 🔀 PR #${pr.number}
-
-&nbsp;&nbsp;•&nbsp;&nbsp;
-
-🟢 MERGED
-
-&nbsp;&nbsp;•&nbsp;&nbsp;
-
+&nbsp; • &nbsp;
 🗓️ ${date}
-
 </sub>
 
 </td>
 
-<td align="center" width="130">
-
-<a href="${escapeXml(
-        pr.html_url
-      )}">
-
-<img
-src="https://img.shields.io/badge/VIEW_PR-FF2E9E?style=for-the-badge&logo=github&logoColor=white"
-alt="View Pull Request"
-/>
-
+<td align="right">
+<a href="${escapeXml(pr.html_url)}">
+<img src="https://img.shields.io/badge/VIEW-00C96B?style=for-the-badge&logo=github&logoColor=000000" />
 </a>
-
 </td>
-
 </tr>
 `;
     })
@@ -945,33 +909,9 @@ alt="View Pull Request"
 
 ## 🟢 Merged Pull Requests
 
-<sub>
-Only successfully merged pull requests are shown.
-</sub>
-
-<br><br>
-
-<table>
-
-<tr>
-
-<td align="center">
-
-<strong>🔀 ${mergedPRs.length}</strong>
-
-<br>
-
-<sub>Merged PRs</sub>
-
-</td>
-
-</tr>
-
-</table>
+**🔀 ${mergedPRs.length} Merged PRs**
 
 </div>
-
-<br>
 
 <table width="100%">
 
@@ -979,19 +919,18 @@ ${rows}
 
 </table>
 
-<br>
-
 <div align="center">
 
 <sub>
 Showing latest ${sorted.length} of ${mergedPRs.length} merged pull requests
 &nbsp; • &nbsp;
-🔄 Automatically updated by GitHub Actions
+🔄 Automatically updated
 </sub>
 
 </div>
 `;
 }
+
 
 /* =========================================================
    UPDATE README
