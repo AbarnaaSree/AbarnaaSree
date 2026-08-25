@@ -18,8 +18,6 @@
 <!--START_MERGED_PRS-->
 <div align="center">
 
-## 🟢 Pull Requests
-
 **🔀 17 Total PRs**
 &nbsp;&nbsp; • &nbsp;&nbsp;
 **🟢 4 Merged PRs**
