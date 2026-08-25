@@ -895,11 +895,11 @@ function buildMergedPRMarkdown(mergedPRs, prs) {
   return `
 <div align="center">
 
-##  Pull Requests
+## 🟢 Pull Requests
 
-** ${prs.length} Total PRs**
+**🔀 ${prs.length} Total PRs**
 &nbsp;&nbsp; • &nbsp;&nbsp;
-** ${mergedPRs.length} Merged PRs**
+**🟢 ${mergedPRs.length} Merged PRs**
 
 </div>
 
