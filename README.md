@@ -2,7 +2,7 @@
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://capsule-render.vercel.app/api?type=waving&color=0:080B10,45:EF93C4,100:FF69B4&height=280&section=header&text=Hey%20there%2C%20I'm%20Abarnaa%20Sree%20N&fontSize=44&fontColor=FFFFFF&fontAlignY=38&animation=twinkling">
     <source media="(prefers-color-scheme: light)" srcset="https://capsule-render.vercel.app/api?type=waving&color=0:080B10,45:EF93C4,100:FF69B4&height=280&section=header&text=Hey%20there%2C%20I'm%20Abarnaa%20Sree%20N&fontSize=44&fontColor=FFFFFF&fontAlignY=38&animation=twinkling">
-    <img src="https://capsule-render.vercel.app/api?type=waving&color=0:080B10,45:EF93C4,100:FF69B4&height=280&section=header&text=Hey%20there%2C%20I'm%20Abarnaa%20Sree%20N&fontSize=44&fontColor=FFFFFF&fontAlignY=38&animation=twinkling" width="100%" alt="Abarnaa Sree N">
+    <img src="https://capsule-render.vercel.app/api?type=waving&color=0:080B10,45:EF93C4,100:FF69B4&height=280&section=header&text=Hey%20there%2C%20I'm%20Abarnaa%20Sree%20N&fontSize=44&fontColor=FFFFFF&fontAlignY=38&animation=twinkling" width="100%" alt="Hey there, I'm Abarnaa Sree N">
   </picture>
 </p>
 
@@ -26,12 +26,8 @@
 
 <br><br>
 
-<a href="https://github.com/AbarnaaSree?tab=followers">
-  <img src="https://img.shields.io/badge/OPEN%20SOURCE-💗-EF93C4?style=flat-square&labelColor=0D1117" alt="Open Source">
-</a>
-<a href="https://github.com/AbarnaaSree?tab=activity">
-  <img src="https://img.shields.io/badge/BUILD-DEBUG-SHIP-FF69B4?style=flat-square&labelColor=0D1117" alt="Build Debug Ship">
-</a>
+<img src="https://img.shields.io/badge/OPEN%20SOURCE-CONTRIBUTOR-EF93C4?style=for-the-badge&logo=github&logoColor=FFFFFF&labelColor=0D1117" alt="Open Source Contributor">
+<img src="https://img.shields.io/badge/BUILD-DEBUG-SHIP-FF69B4?style=for-the-badge&logo=git&logoColor=FFFFFF&labelColor=0D1117" alt="Build Debug Ship">
 
 </div>
 
@@ -68,7 +64,7 @@ I enjoy working across the stack — from designing backend services and debuggi
 
 <td width="35%" align="center" valign="middle">
 
-<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/github/github-original.svg" width="150" alt="GitHub">
+<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/github/github-original.svg" width="150" alt="GitHub developer illustration">
 
 <br><br>
 
@@ -80,7 +76,7 @@ I enjoy working across the stack — from designing backend services and debuggi
 
 <br>
 
-<img src="https://img.shields.io/badge/AI%20%2F%20ML-F8BBD0?style=for-the-badge&labelColor=0D1117&logoColor=0D1117" alt="AI ML">
+<img src="https://img.shields.io/badge/AI%20%2F%20ML-F8BBD0?style=for-the-badge&labelColor=0D1117" alt="AI ML">
 
 </td>
 </tr>
@@ -94,30 +90,34 @@ I enjoy working across the stack — from designing backend services and debuggi
 
 <p>
   <sub>
-    Automatically tracked from GitHub — no manual statistics required.
+    Automatically tracked from GitHub. No manual statistics required.
   </sub>
 </p>
 
 <br>
 
-<table align="center" width="90%" border="0" cellspacing="0" cellpadding="12">
+<table align="center" width="92%" border="0" cellspacing="0" cellpadding="15">
 <tr>
 
 <td align="center" width="33%">
 
 ### 🔀 Pull Requests
 
+<br>
+
 <img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.github.com%2Fsearch%2Fissues%3Fq%3Dauthor%253AAbarnaaSree%2Btype%253Apr&query=%24.total_count&label=TOTAL%20PRs&style=for-the-badge&labelColor=0D1117&color=EF93C4" alt="Total Pull Requests">
 
 <br><br>
 
-<sub>Authored PRs</sub>
+<sub>PRs authored by me</sub>
 
 </td>
 
 <td align="center" width="33%">
 
 ### ✅ Merged PRs
+
+<br>
 
 <img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.github.com%2Fsearch%2Fissues%3Fq%3Dauthor%253AAbarnaaSree%2Btype%253Apr%2Bis%253Amerged&query=%24.total_count&label=MERGED%20PRs&style=for-the-badge&labelColor=0D1117&color=FF69B4" alt="Merged Pull Requests">
 
@@ -130,6 +130,8 @@ I enjoy working across the stack — from designing backend services and debuggi
 <td align="center" width="33%">
 
 ### 🌐 Public PRs
+
+<br>
 
 <img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.github.com%2Fsearch%2Fissues%3Fq%3Dauthor%253AAbarnaaSree%2Btype%253Apr%2Bis%253Apublic&query=%24.total_count&label=PUBLIC%20PRs&style=for-the-badge&labelColor=0D1117&color=F8BBD0" alt="Public Pull Requests">
 
@@ -156,7 +158,7 @@ I enjoy working across the stack — from designing backend services and debuggi
 
 ## 🏆 Merged Pull Requests
 
-> Automatically updated from GitHub Actions — no manual updates required.
+> Automatically synchronized from GitHub Actions — no manual updates required.
 
 </div>
 
@@ -171,7 +173,7 @@ I enjoy working across the stack — from designing backend services and debuggi
 ## 🧩 Featured Open Source Contributions
 
 <sub>
-Automatically maintained contribution details can be placed here by your GitHub Action.
+Contribution details can be automatically populated from real merged pull requests.
 </sub>
 
 </div>
@@ -183,25 +185,23 @@ Automatically maintained contribution details can be placed here by your GitHub 
 
 <br>
 
-This section is intentionally kept free of fabricated repository names, PR numbers, or technical claims.
-
-Your GitHub Actions workflow can populate this area with real merged contributions.
+This section is reserved for real open-source contributions retrieved by GitHub Actions.
 
 ### Problem
 
-Automatically generated from the actual pull request description.
+The workflow can populate the actual problem description from a merged pull request.
 
 ### Investigation
 
-Automatically generated from the actual contribution information.
+The workflow can populate the actual investigation and debugging process.
 
 ### Solution
 
-Automatically generated from the merged pull request.
+The workflow can populate the implemented solution.
 
 ### Impact
 
-Automatically generated from the real contribution.
+The workflow can populate the engineering impact.
 
 | Category | Details |
 |---|---|
@@ -245,13 +245,13 @@ Automatically generated from the real contribution.
 
 ### AI / ML
 
-<img src="https://skillicons.dev/icons?i=python,pytorch,tensorflow,opencv,huggingface&theme=dark" alt="AI ML technologies">
+<img src="https://skillicons.dev/icons?i=pytorch,tensorflow,opencv,huggingface&theme=dark" alt="AI ML technologies">
 
 <br><br>
 
 ### DevOps & Tools
 
-<img src="https://skillicons.dev/icons?i=git,github,docker,linux,nginx,aws&theme=dark" alt="DevOps tools">
+<img src="https://skillicons.dev/icons?i=git,github,docker,linux,nginx,aws&theme=dark" alt="DevOps and tools">
 
 </div>
 
@@ -263,11 +263,19 @@ Automatically generated from the real contribution.
 
 <br>
 
-<img src="https://streak-stats.demolab.com?user=AbarnaaSree&hide_border=true&background=0D1117&ring=EF93C4&fire=FF69B4&currStreakLabel=EF93C4&sideLabels=F8BBD0&currStreakNum=FF69B4&sideNums=EF93C4&dates=E5E7EB&stroke=0D1117" width="82%" alt="GitHub streak">
+<img
+  src="https://streak-stats.demolab.com?user=AbarnaaSree&hide_border=true&background=0D1117&ring=EF93C4&fire=FF69B4&currStreakLabel=EF93C4&sideLabels=F8BBD0&currStreakNum=FF69B4&sideNums=EF93C4&dates=E5E7EB&stroke=0D1117"
+  width="82%"
+  alt="GitHub streak"
+/>
 
 <br><br>
 
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=AbarnaaSree&bg_color=0D1117&color=E5E7EB&line=EF93C4&point=FF69B4&area_color=F8BBD0&area=true&hide_border=true&custom_title=Contribution%20Activity" width="96%" alt="GitHub contribution activity graph">
+<img
+  src="https://github-readme-activity-graph.vercel.app/graph?username=AbarnaaSree&bg_color=0D1117&color=E5E7EB&line=EF93C4&point=FF69B4&area_color=F8BBD0&area=true&hide_border=true&custom_title=Contribution%20Activity"
+  width="96%"
+  alt="GitHub contribution activity graph"
+/>
 
 </div>
 
@@ -279,12 +287,22 @@ Automatically generated from the real contribution.
 
 <br>
 
-<!-- GitHub Actions generates these files automatically. -->
+<!-- GitHub Actions generates the snake automatically. -->
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/AbarnaaSree/AbarnaaSree/output/github-contribution-grid-snake-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/AbarnaaSree/AbarnaaSree/output/github-contribution-grid-snake.svg">
-  <img src="https://raw.githubusercontent.com/AbarnaaSree/AbarnaaSree/output/github-contribution-grid-snake.svg" width="96%" alt="GitHub contribution snake">
+  <source
+    media="(prefers-color-scheme: dark)"
+    srcset="https://raw.githubusercontent.com/AbarnaaSree/AbarnaaSree/output/github-contribution-grid-snake-dark.svg"
+  >
+  <source
+    media="(prefers-color-scheme: light)"
+    srcset="https://raw.githubusercontent.com/AbarnaaSree/AbarnaaSree/output/github-contribution-grid-snake.svg"
+  >
+  <img
+    src="https://raw.githubusercontent.com/AbarnaaSree/AbarnaaSree/output/github-contribution-grid-snake.svg"
+    width="96%"
+    alt="GitHub contribution snake"
+  >
 </picture>
 
 </div>
@@ -297,13 +315,35 @@ Automatically generated from the real contribution.
 
 <br>
 
-<a href="https://github.com/AbarnaaSree">
-  <img src="https://github-readme-stats.vercel.app/api?username=AbarnaaSree&show_icons=true&include_all_commits=true&count_private=true&hide_border=true&bg_color=0D1117&title_color=EF93C4&icon_color=FF69B4&text_color=E5E7EB&custom_title=GitHub%20Statistics" height="180" alt="GitHub statistics">
-</a>
+<table border="0" cellspacing="0" cellpadding="10" align="center">
+<tr>
+
+<td align="center">
 
 <a href="https://github.com/AbarnaaSree">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=AbarnaaSree&layout=compact&langs_count=8&hide_border=true&bg_color=0D1117&title_color=EF93C4&text_color=E5E7EB&custom_title=Top%20Languages" height="180" alt="Top languages">
+  <img
+    src="https://github-readme-stats.vercel.app/api?username=AbarnaaSree&show_icons=true&include_all_commits=true&count_private=true&hide_border=true&bg_color=0D1117&title_color=EF93C4&icon_color=FF69B4&text_color=E5E7EB&custom_title=GitHub%20Statistics"
+    height="180"
+    alt="GitHub statistics"
+  >
 </a>
+
+</td>
+
+<td align="center">
+
+<a href="https://github.com/AbarnaaSree">
+  <img
+    src="https://github-readme-stats.vercel.app/api/top-langs/?username=AbarnaaSree&layout=compact&langs_count=8&hide_border=true&bg_color=0D1117&title_color=EF93C4&text_color=E5E7EB&custom_title=Top%20Languages"
+    height="180"
+    alt="Top languages"
+  >
+</a>
+
+</td>
+
+</tr>
+</table>
 
 </div>
 
@@ -316,39 +356,63 @@ Automatically generated from the real contribution.
 <br>
 
 <a href="YOUR_LINKEDIN_URL">
-  <img src="https://img.shields.io/badge/LinkedIn-YOUR%20LINKEDIN-EF93C4?style=for-the-badge&logo=linkedin&logoColor=FFFFFF&labelColor=0D1117" alt="LinkedIn">
+  <img
+    src="https://img.shields.io/badge/LinkedIn-YOUR%20LINKEDIN-EF93C4?style=for-the-badge&logo=linkedin&logoColor=FFFFFF&labelColor=0D1117"
+    alt="LinkedIn"
+  >
 </a>
 
 <a href="YOUR_X_URL">
-  <img src="https://img.shields.io/badge/X-YOUR%20X-FF69B4?style=for-the-badge&logo=x&logoColor=FFFFFF&labelColor=0D1117" alt="X">
+  <img
+    src="https://img.shields.io/badge/X-YOUR%20X-FF69B4?style=for-the-badge&logo=x&logoColor=FFFFFF&labelColor=0D1117"
+    alt="X"
+  >
 </a>
 
 <a href="YOUR_INSTAGRAM_URL">
-  <img src="https://img.shields.io/badge/Instagram-YOUR%20INSTAGRAM-F8BBD0?style=for-the-badge&logo=instagram&logoColor=0D1117&labelColor=0D1117" alt="Instagram">
+  <img
+    src="https://img.shields.io/badge/Instagram-YOUR%20INSTAGRAM-F8BBD0?style=for-the-badge&logo=instagram&logoColor=0D1117&labelColor=0D1117"
+    alt="Instagram"
+  >
 </a>
 
 <br><br>
 
 <a href="YOUR_TIKTOK_URL">
-  <img src="https://img.shields.io/badge/TikTok-YOUR%20TIKTOK-EF93C4?style=for-the-badge&logo=tiktok&logoColor=FFFFFF&labelColor=0D1117" alt="TikTok">
+  <img
+    src="https://img.shields.io/badge/TikTok-YOUR%20TIKTOK-EF93C4?style=for-the-badge&logo=tiktok&logoColor=FFFFFF&labelColor=0D1117"
+    alt="TikTok"
+  >
 </a>
 
 <a href="YOUR_YOUTUBE_URL">
-  <img src="https://img.shields.io/badge/YouTube-YOUR%20YOUTUBE-FF69B4?style=for-the-badge&logo=youtube&logoColor=FFFFFF&labelColor=0D1117" alt="YouTube">
+  <img
+    src="https://img.shields.io/badge/YouTube-YOUR%20YOUTUBE-FF69B4?style=for-the-badge&logo=youtube&logoColor=FFFFFF&labelColor=0D1117"
+    alt="YouTube"
+  >
 </a>
 
 <a href="mailto:YOUR_EMAIL">
-  <img src="https://img.shields.io/badge/Email-YOUR%20EMAIL-F8BBD0?style=for-the-badge&logo=gmail&logoColor=0D1117&labelColor=0D1117" alt="Email">
+  <img
+    src="https://img.shields.io/badge/Email-YOUR%20EMAIL-F8BBD0?style=for-the-badge&logo=gmail&logoColor=0D1117&labelColor=0D1117"
+    alt="Email"
+  >
 </a>
 
 <br><br>
 
 <a href="https://github.com/AbarnaaSree">
-  <img src="https://img.shields.io/badge/GitHub-AbarnaaSree-EF93C4?style=for-the-badge&logo=github&logoColor=FFFFFF&labelColor=0D1117" alt="GitHub">
+  <img
+    src="https://img.shields.io/badge/GitHub-AbarnaaSree-EF93C4?style=for-the-badge&logo=github&logoColor=FFFFFF&labelColor=0D1117"
+    alt="GitHub"
+  >
 </a>
 
 <a href="YOUR_PORTFOLIO_URL">
-  <img src="https://img.shields.io/badge/Portfolio-YOUR%20PORTFOLIO-FF69B4?style=for-the-badge&logo=googlechrome&logoColor=FFFFFF&labelColor=0D1117" alt="Portfolio">
+  <img
+    src="https://img.shields.io/badge/Portfolio-YOUR%20PORTFOLIO-FF69B4?style=for-the-badge&logo=googlechrome&logoColor=FFFFFF&labelColor=0D1117"
+    alt="Portfolio"
+  >
 </a>
 
 </div>
@@ -357,11 +421,9 @@ Automatically generated from the real contribution.
 
 <div align="center">
 
-### Build. Contribute. Debug. Ship.
+### Build. Contribute. Debug. Ship. ✨
 
-<br>
-
-<sub>Open source • Engineering • AI • Full Stack</sub>
+<sub>Open Source • Software Engineering • AI • Full Stack</sub>
 
 </div>
 
@@ -369,8 +431,18 @@ Automatically generated from the real contribution.
 
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://capsule-render.vercel.app/api?type=waving&color=0:FF69B4,50:EF93C4,100:080B10&height=160&section=footer&animation=twinkling">
-    <source media="(prefers-color-scheme: light)" srcset="https://capsule-render.vercel.app/api?type=waving&color=0:FF69B4,50:EF93C4,100:080B10&height=160&section=footer&animation=twinkling">
-    <img src="https://capsule-render.vercel.app/api?type=waving&color=0:FF69B4,50:EF93C4,100:080B10&height=160&section=footer&animation=twinkling" width="100%" alt="Pink waving footer">
+    <source
+      media="(prefers-color-scheme: dark)"
+      srcset="https://capsule-render.vercel.app/api?type=waving&color=0:FF69B4,50:EF93C4,100:080B10&height=160&section=footer&animation=twinkling"
+    >
+    <source
+      media="(prefers-color-scheme: light)"
+      srcset="https://capsule-render.vercel.app/api?type=waving&color=0:FF69B4,50:EF93C4,100:080B10&height=160&section=footer&animation=twinkling"
+    >
+    <img
+      src="https://capsule-render.vercel.app/api?type=waving&color=0:FF69B4,50:EF93C4,100:080B10&height=160&section=footer&animation=twinkling"
+      width="100%"
+      alt="Pink waving footer"
+    >
   </picture>
 </p>
