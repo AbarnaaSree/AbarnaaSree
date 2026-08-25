@@ -17,22 +17,16 @@
 
 <!--START_OPEN_SOURCE_CONTRIBUTIONS-->
 
-<h2 align="center">🚀 Open Source Contributions</h2>
-
-<p align="center">
-  <i>Actively contributing to open-source projects.</i><br>
-  <i>These statistics and pull requests are automatically synced from GitHub.</i>
-</p>
-
 <div align="center">
 
-| 📊 Contributions | 🔀 Pull Requests | 🟢 Merged | 🔵 Open | ⚪ Closed |
-|:---:|:---:|:---:|:---:|:---:|
-| <strong>LIVE</strong> | <strong>LIVE</strong> | <strong>LIVE</strong> | <strong>LIVE</strong> | <strong>LIVE</strong> |
+## 🚀 Open Source Contributions
+
+<sub>
+Actively contributing to open-source projects.<br>
+Live statistics and pull requests are automatically synced from GitHub.
+</sub>
 
 </div>
-
-### 🔀 My Pull Requests
 
 <!--START_MERGED_PRS-->
 
