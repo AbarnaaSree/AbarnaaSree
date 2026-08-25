@@ -1,17 +1,17 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=blur&color=0:0B0C10,50:FF2E9E,100:00F0FF&height=200&section=header&text=Abarnaa%20Sree%20N&fontSize=42&fontColor=F5F5F5&animation=fadeIn&desc=AI%20Engineer%20%7C%20Building%20Intelligent%20Systems&descSize=18&descAlignY=62&fontAlignY=35" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=blur&color=0:050806,50:00FF88,100:39FF14&height=200&section=header&text=Abarnaa%20Sree%20N&fontSize=42&fontColor=E8FFF3&animation=fadeIn&desc=AI%20Engineer%20%7C%20Building%20Intelligent%20Systems&descSize=18&descAlignY=62&fontAlignY=35" width="100%"/>
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=FF2E9E&background=0B0C10&center=true&vCenter=true&width=650&lines=%24+whoami+%3E%3E+AI+Engineer;%24+stack+%3E%3E+Python+%7C+PyTorch+%7C+React+%7C+FastAPI;%24+passion+%3E%3E+Machine+Learning+%2B+Generative+AI;%24+status+%3E%3E+Contributing+to+Open+Source;%24+focus+%3E%3E+Deepening+AI%2FML+Expertise" alt="Typing SVG"/>
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=00FF88&background=050806&center=true&vCenter=true&width=650&lines=%24+whoami+%3E%3E+AI+Engineer;%24+stack+%3E%3E+Python+%7C+PyTorch+%7C+React+%7C+FastAPI;%24+passion+%3E%3E+Machine+Learning+%2B+Generative+AI;%24+status+%3E%3E+Contributing+to+Open+Source;%24+focus+%3E%3E+Deepening+AI%2FML+Expertise" alt="Typing SVG"/>
 
-[![Portfolio](https://img.shields.io/badge/Portfolio-FF2E9E?style=for-the-badge&logo=googlechrome&logoColor=F5F5F5)](https://abarnaasree.github.io/MY--Portfolio/)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-FF2E9E?style=for-the-badge&logo=linkedin&logoColor=F5F5F5)](https://www.linkedin.com/in/abarnaa-sree-n/)
-[![GitHub](https://img.shields.io/badge/GitHub-FF2E9E?style=for-the-badge&logo=github&logoColor=F5F5F5)](https://github.com/AbarnaaSree)
-[![LeetCode](https://img.shields.io/badge/LeetCode-FF2E9E?style=for-the-badge&logo=leetcode&logoColor=F5F5F5)](https://leetcode.com/u/AbarnaaSree/)
+[![Portfolio](https://img.shields.io/badge/Portfolio-00FF88?style=for-the-badge&logo=googlechrome&logoColor=F5F5F5)](https://abarnaasree.github.io/MY--Portfolio/)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-00FF88?style=for-the-badge&logo=linkedin&logoColor=F5F5F5)](https://www.linkedin.com/in/abarnaa-sree-n/)
+[![GitHub](https://img.shields.io/badge/GitHub-00FF88?style=for-the-badge&logo=github&logoColor=F5F5F5)](https://github.com/AbarnaaSree)
+[![LeetCode](https://img.shields.io/badge/LeetCode-00FF88?style=for-the-badge&logo=leetcode&logoColor=F5F5F5)](https://leetcode.com/u/AbarnaaSree/)
 
-![Profile Views](https://komarev.com/ghpvc/?username=AbarnaaSree&color=FF2E9E&style=flat-square&label=Profile+Views)
-![Followers](https://img.shields.io/github/followers/AbarnaaSree?style=flat-square&color=FF2E9E&label=Followers)
-![Stars](https://img.shields.io/github/stars/AbarnaaSree?style=flat-square&color=FF2E9E&label=Stars)
+![Profile Views](https://komarev.com/ghpvc/?username=AbarnaaSree&color=00FF88&style=flat-square&label=Profile+Views)
+![Followers](https://img.shields.io/github/followers/AbarnaaSree?style=flat-square&color=00FF88&label=Followers)
+![Stars](https://img.shields.io/github/stars/AbarnaaSree?style=flat-square&color=00FF88&label=Stars)
 
 </div>
 
@@ -88,7 +88,7 @@ Only successfully merged pull requests are shown.
 <a href="https://github.com/floci-io/floci/pull/2487">
 
 <img
-src="https://img.shields.io/badge/VIEW_PR-FF2E9E?style=for-the-badge&logo=github&logoColor=white"
+src="https://img.shields.io/badge/VIEW_PR-00FF88?style=for-the-badge&logo=github&logoColor=white"
 alt="View Pull Request"
 />
 
@@ -136,7 +136,7 @@ alt="View Pull Request"
 <a href="https://github.com/floci-io/floci/pull/2406">
 
 <img
-src="https://img.shields.io/badge/VIEW_PR-FF2E9E?style=for-the-badge&logo=github&logoColor=white"
+src="https://img.shields.io/badge/VIEW_PR-00FF88?style=for-the-badge&logo=github&logoColor=white"
 alt="View Pull Request"
 />
 
@@ -184,7 +184,7 @@ alt="View Pull Request"
 <a href="https://github.com/pollinations/pollinations/pull/13297">
 
 <img
-src="https://img.shields.io/badge/VIEW_PR-FF2E9E?style=for-the-badge&logo=github&logoColor=white"
+src="https://img.shields.io/badge/VIEW_PR-00FF88?style=for-the-badge&logo=github&logoColor=white"
 alt="View Pull Request"
 />
 
@@ -232,7 +232,7 @@ alt="View Pull Request"
 <a href="https://github.com/pbakaus/impeccable/pull/465">
 
 <img
-src="https://img.shields.io/badge/VIEW_PR-FF2E9E?style=for-the-badge&logo=github&logoColor=white"
+src="https://img.shields.io/badge/VIEW_PR-00FF88?style=for-the-badge&logo=github&logoColor=white"
 alt="View Pull Request"
 />
 
@@ -263,7 +263,7 @@ Showing latest 4 of 4 merged pull requests
 AI Engineer focused on machine learning, deep learning, and generative AI systems, with a full-stack foundation spanning React, Node.js, and cloud-native backends. Actively growing an open-source footprint — contributing pull requests, reviewing issues, and collaborating on AI/ML repositories.
 
 
-### `$ ls tech-stack/`
+### `Tech-Stack/`
 
 **Languages & Frontend**
 <br>
@@ -285,7 +285,7 @@ AI Engineer focused on machine learning, deep learning, and generative AI system
 <br>
 <img src="https://skillicons.dev/icons?i=vscode,postman,git,github&theme=dark" />
 
-### `$ ./github-analytics --full`
+### `Github-Analytics`
 
 <div align="center">
 
@@ -293,15 +293,7 @@ AI Engineer focused on machine learning, deep learning, and generative AI system
 
 </div>
 
-### `$ ./activity-graph --render`
-
-<div align="center">
-
-<img src="./assets/contribution-graph.svg" width="100%"/>
-
-</div>
-
-### `$ ./language-graph --render`
+### `Language-Graph`
 
 <div align="center">
 
@@ -309,7 +301,7 @@ AI Engineer focused on machine learning, deep learning, and generative AI system
 
 </div>
 
-### `$ ./pr-activity --render`
+### `Activity`
 
 <div align="center">
 
@@ -317,24 +309,24 @@ AI Engineer focused on machine learning, deep learning, and generative AI system
 
 </div>
 
-### `$ ./snake.sh --run`
+### `Snake`
 
 <div align="center">
 <img src="https://raw.githubusercontent.com/AbarnaaSree/AbarnaaSree/output/github-contribution-grid-snake-dark.svg" width="100%" />
 </div>
 
 
-### `$ ./connect --all`
+### `Connect`
 
 <div align="center">
 
-[![Portfolio](https://img.shields.io/badge/Portfolio-FF2E9E?style=for-the-badge&logo=googlechrome&logoColor=F5F5F5)](https://abarnaasree.github.io/MY--Portfolio/)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-FF2E9E?style=for-the-badge&logo=linkedin&logoColor=F5F5F5)](https://www.linkedin.com/in/abarnaa-sree-n/)
-[![GitHub](https://img.shields.io/badge/GitHub-FF2E9E?style=for-the-badge&logo=github&logoColor=F5F5F5)](https://github.com/AbarnaaSree)
-[![LeetCode](https://img.shields.io/badge/LeetCode-FF2E9E?style=for-the-badge&logo=leetcode&logoColor=F5F5F5)](https://leetcode.com/u/AbarnaaSree/)
+[![Portfolio](https://img.shields.io/badge/Portfolio-00FF88?style=for-the-badge&logo=googlechrome&logoColor=F5F5F5)](https://abarnaasree.github.io/MY--Portfolio/)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-00FF88?style=for-the-badge&logo=linkedin&logoColor=F5F5F5)](https://www.linkedin.com/in/abarnaa-sree-n/)
+[![GitHub](https://img.shields.io/badge/GitHub-00FF88?style=for-the-badge&logo=github&logoColor=F5F5F5)](https://github.com/AbarnaaSree)
+[![LeetCode](https://img.shields.io/badge/LeetCode-00FF88?style=for-the-badge&logo=leetcode&logoColor=F5F5F5)](https://leetcode.com/u/AbarnaaSree/)
 
 *"Building intelligent systems, one commit at a time."*
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0B0C10,50:FF2E9E,100:00F0FF&height=120&section=footer" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:050806,50:00FF88,100:39FF14&height=120&section=footer" width="100%"/>
 
 </div>
