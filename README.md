@@ -18,7 +18,11 @@
 <!--START_MERGED_PRS-->
 <div align="center">
 
-## Merged Pull Requests
+## 🟢 Merged Pull Requests
+
+<sub>
+Only successfully merged pull requests are shown.
+</sub>
 
 <br><br>
 
