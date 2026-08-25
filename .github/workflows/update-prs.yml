@@ -29,7 +29,7 @@ jobs:
           MAX_PRS: 10
           README_PATH: README.md
         run: |
-          node scripts/update-merged-prs.mjs
+          node .scripts/update-prs.mjs
 
       - name: Commit README changes
         run: |
