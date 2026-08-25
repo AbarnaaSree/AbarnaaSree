@@ -1,181 +1,376 @@
-# Hey there, I'm Abarnaa Sree N 👋
-
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://capsule-render.vercel.app/api?type=waving&color=0:EF93C4,100:FF69B4&height=220&section=header&text=Abarnaa%20Sree%20N&fontSize=48&fontColor=FFFFFF&animation=fadeIn&fontAlignY=38">
-    <source media="(prefers-color-scheme: light)" srcset="https://capsule-render.vercel.app/api?type=waving&color=0:F8BBD0,100:EF93C4&height=220&section=header&text=Abarnaa%20Sree%20N&fontSize=48&fontColor=FFFFFF&animation=fadeIn&fontAlignY=38">
-    <img src="https://capsule-render.vercel.app/api?type=waving&color=0:EF93C4,100:FF69B4&height=220&section=header&text=Abarnaa%20Sree%20N&fontSize=48&fontColor=FFFFFF&animation=fadeIn&fontAlignY=38" width="100%" alt="Abarnaa Sree N banner"/>
+    <source media="(prefers-color-scheme: dark)" srcset="https://capsule-render.vercel.app/api?type=waving&color=0:080B10,45:EF93C4,100:FF69B4&height=280&section=header&text=Hey%20there%2C%20I'm%20Abarnaa%20Sree%20N&fontSize=44&fontColor=FFFFFF&fontAlignY=38&animation=twinkling">
+    <source media="(prefers-color-scheme: light)" srcset="https://capsule-render.vercel.app/api?type=waving&color=0:080B10,45:EF93C4,100:FF69B4&height=280&section=header&text=Hey%20there%2C%20I'm%20Abarnaa%20Sree%20N&fontSize=44&fontColor=FFFFFF&fontAlignY=38&animation=twinkling">
+    <img src="https://capsule-render.vercel.app/api?type=waving&color=0:080B10,45:EF93C4,100:FF69B4&height=280&section=header&text=Hey%20there%2C%20I'm%20Abarnaa%20Sree%20N&fontSize=44&fontColor=FFFFFF&fontAlignY=38&animation=twinkling" width="100%" alt="Abarnaa Sree N">
   </picture>
 </p>
 
-<p align="center">
-  <a href="https://github.com/AbarnaaSree">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=2800&pause=900&color=EF93C4&center=true&vCenter=true&width=750&lines=AI+%26+Data+Enthusiast;Full+Stack+Developer;Python+%7C+React+%7C+SQL;Building+useful+things+with+code;Always+learning%2C+always+building+%E2%9C%A8" alt="Typing SVG"/>
-  </a>
-</p>
+<div align="center">
 
-<p align="center">
-  <a href="https://github.com/AbarnaaSree">
-    <img src="https://img.shields.io/github/followers/AbarnaaSree?label=Followers&style=for-the-badge&color=EF93C4&labelColor=1a1a1a" alt="GitHub followers"/>
-  </a>
-  <a href="https://github.com/AbarnaaSree?tab=repositories">
-    <img src="https://img.shields.io/github/stars/AbarnaaSree?label=Stars&style=for-the-badge&color=F8BBD0&labelColor=1a1a1a" alt="GitHub stars"/>
-  </a>
-  <img src="https://komarev.com/ghpvc/?username=AbarnaaSree&label=Profile%20Views&color=FF69B4&style=for-the-badge" alt="Profile views"/>
+# Hey there, I'm Abarnaa Sree N 👋
+
+<a href="https://github.com/AbarnaaSree">
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=21&duration=3200&pause=1100&color=EF93C4&center=true&vCenter=true&repeat=true&width=780&height=45&lines=Software+Engineer;Open+Source+Contributor;AI+%2F+ML+Engineer;Full-Stack+Developer;Building+Production-Ready+Software;Contributing+to+Open+Source" alt="Typing SVG">
+</a>
+
+<br>
+
+<a href="https://github.com/AbarnaaSree">
+  <img src="https://img.shields.io/github/followers/AbarnaaSree?style=for-the-badge&label=FOLLOWERS&labelColor=0D1117&color=EF93C4" alt="GitHub followers">
+</a>
+<a href="https://github.com/AbarnaaSree?tab=repositories">
+  <img src="https://img.shields.io/github/stars/AbarnaaSree?style=for-the-badge&label=STARS&labelColor=0D1117&color=F8BBD0" alt="GitHub stars">
+</a>
+<img src="https://komarev.com/ghpvc/?username=AbarnaaSree&style=for-the-badge&label=PROFILE+VIEWS&color=FF69B4&labelColor=0D1117" alt="Profile views">
+
+<br><br>
+
+<a href="https://github.com/AbarnaaSree?tab=followers">
+  <img src="https://img.shields.io/badge/OPEN%20SOURCE-💗-EF93C4?style=flat-square&labelColor=0D1117" alt="Open Source">
+</a>
+<a href="https://github.com/AbarnaaSree?tab=activity">
+  <img src="https://img.shields.io/badge/BUILD-DEBUG-SHIP-FF69B4?style=flat-square&labelColor=0D1117" alt="Build Debug Ship">
+</a>
+
+</div>
+
+---
+
+<div align="center">
+
+## 🌸 About Me
+
+</div>
+
+<table align="center" width="92%" border="0" cellspacing="0" cellpadding="20">
+<tr>
+<td width="65%" valign="middle">
+
+### 👋 Hello, I'm Abarnaa Sree N
+
+I'm a software engineer passionate about **building reliable systems, solving real-world engineering problems, and contributing to open-source software**.
+
+I enjoy working across the stack — from designing backend services and debugging complex issues to building polished interfaces and exploring AI/ML systems.
+
+- 💻 **Software Engineering** — maintainable, production-oriented software
+- 🌐 **Full-Stack Development** — frontend, backend, APIs and integrations
+- 🤖 **AI / ML** — intelligent applications, NLP, RAG and AI agents
+- 🔧 **Backend Engineering** — APIs, services, databases and debugging
+- 🐙 **Open Source** — bug fixes, features and engineering improvements
+- 🧩 **Problem Solving** — root-cause analysis and robust solutions
+
+<br>
+
+> **Build with purpose. Debug with patience. Contribute with impact.**
+
+</td>
+
+<td width="35%" align="center" valign="middle">
+
+<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/github/github-original.svg" width="150" alt="GitHub">
+
+<br><br>
+
+<img src="https://img.shields.io/badge/SOFTWARE-ENGINEERING-EF93C4?style=for-the-badge&labelColor=0D1117" alt="Software Engineering">
+
+<br>
+
+<img src="https://img.shields.io/badge/OPEN-SOURCE-FF69B4?style=for-the-badge&labelColor=0D1117" alt="Open Source">
+
+<br>
+
+<img src="https://img.shields.io/badge/AI%20%2F%20ML-F8BBD0?style=for-the-badge&labelColor=0D1117&logoColor=0D1117" alt="AI ML">
+
+</td>
+</tr>
+</table>
+
+---
+
+<div align="center">
+
+## 🚀 Open Source Contributions
+
+<p>
+  <sub>
+    Automatically tracked from GitHub — no manual statistics required.
+  </sub>
 </p>
 
 <br>
 
-## 🌸 About Me
+<table align="center" width="90%" border="0" cellspacing="0" cellpadding="12">
+<tr>
 
-<table align="center">
-  <tr>
-    <td width="65%" valign="middle">
+<td align="center" width="33%">
 
-### Hi, I'm Abarnaa Sree N! 💗
+### 🔀 Pull Requests
 
-I'm an **Information Technology enthusiast** passionate about building practical solutions with **AI, Data, and Full Stack Development**.
-
-- 🤖 Exploring **Artificial Intelligence & Generative AI**
-- 📊 Interested in **Data Analytics & Data Engineering**
-- 💻 Building applications with **Python, React & Flask**
-- 🗄️ Working with **SQL, MySQL & PostgreSQL**
-- 🌱 Continuously learning new technologies
-- 🛠️ Enjoy contributing to **open-source projects**
-- ✨ Turning ideas into clean, useful software
-- 🎯 Focused on becoming a better developer every day
-
-> **Code. Learn. Build. Repeat. 💗**
-
-    </td>
-    <td width="35%" align="center" valign="middle">
-
-<img src="https://github.com/AbarnaaSree.png" width="220" height="220" style="border-radius:50%;" alt="Abarnaa Sree N"/>
+<img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.github.com%2Fsearch%2Fissues%3Fq%3Dauthor%253AAbarnaaSree%2Btype%253Apr&query=%24.total_count&label=TOTAL%20PRs&style=for-the-badge&labelColor=0D1117&color=EF93C4" alt="Total Pull Requests">
 
 <br><br>
 
-<img src="https://img.shields.io/badge/Open%20to-Learning-FF69B4?style=for-the-badge" alt="Open to learning"/>
+<sub>Authored PRs</sub>
 
-    </td>
-  </tr>
+</td>
+
+<td align="center" width="33%">
+
+### ✅ Merged PRs
+
+<img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.github.com%2Fsearch%2Fissues%3Fq%3Dauthor%253AAbarnaaSree%2Btype%253Apr%2Bis%253Amerged&query=%24.total_count&label=MERGED%20PRs&style=for-the-badge&labelColor=0D1117&color=FF69B4" alt="Merged Pull Requests">
+
+<br><br>
+
+<sub>Successfully merged</sub>
+
+</td>
+
+<td align="center" width="33%">
+
+### 🌐 Public PRs
+
+<img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.github.com%2Fsearch%2Fissues%3Fq%3Dauthor%253AAbarnaaSree%2Btype%253Apr%2Bis%253Apublic&query=%24.total_count&label=PUBLIC%20PRs&style=for-the-badge&labelColor=0D1117&color=F8BBD0" alt="Public Pull Requests">
+
+<br><br>
+
+<sub>Open-source activity</sub>
+
+</td>
+
+</tr>
 </table>
 
 <br>
 
+<a href="https://github.com/AbarnaaSree?tab=pulls">
+  <img src="https://img.shields.io/badge/VIEW%20ALL%20PULL%20REQUESTS-FF69B4?style=for-the-badge&logo=github&logoColor=FFFFFF&labelColor=0D1117" alt="View all pull requests">
+</a>
+
+</div>
+
+---
+
+<div align="center">
+
+## 🏆 Merged Pull Requests
+
+> Automatically updated from GitHub Actions — no manual updates required.
+
+</div>
+
+<!--START_MERGED_PRS-->
+
+<!--END_MERGED_PRS-->
+
+---
+
+<div align="center">
+
+## 🧩 Featured Open Source Contributions
+
+<sub>
+Automatically maintained contribution details can be placed here by your GitHub Action.
+</sub>
+
+</div>
+
+<br>
+
+<details>
+<summary><strong>🔧 Automatically populated contribution</strong></summary>
+
+<br>
+
+This section is intentionally kept free of fabricated repository names, PR numbers, or technical claims.
+
+Your GitHub Actions workflow can populate this area with real merged contributions.
+
+### Problem
+
+Automatically generated from the actual pull request description.
+
+### Investigation
+
+Automatically generated from the actual contribution information.
+
+### Solution
+
+Automatically generated from the merged pull request.
+
+### Impact
+
+Automatically generated from the real contribution.
+
+| Category | Details |
+|---|---|
+| Repository | Automatically populated |
+| Stack | Automatically populated |
+| Type | Automatically populated |
+| Status | Merged |
+| Pull Request | Automatically populated |
+
+</details>
+
+---
+
+<div align="center">
+
 ## 💻 Tech Stack
 
-<p align="center">
-  <img src="https://skillicons.dev/icons?i=c,cpp,java,python,javascript,typescript,html,css,react,redux,tailwind,flask,spring,mysql,postgresql,git,github,linux,nodejs,npm,vite&perline=7" alt="Tech Stack"/>
-</p>
+### Languages
+
+<img src="https://skillicons.dev/icons?i=java,python,js,ts,cpp,rust&theme=dark" alt="Programming languages">
+
+<br><br>
+
+### Frontend
+
+<img src="https://skillicons.dev/icons?i=react,reactnative,html,css,tailwind,vite&theme=dark" alt="Frontend technologies">
+
+<br><br>
+
+### Backend
+
+<img src="https://skillicons.dev/icons?i=spring,fastapi,nodejs&theme=dark" alt="Backend technologies">
+
+<br><br>
+
+### Databases
+
+<img src="https://skillicons.dev/icons?i=postgres,mysql,mongodb,redis&theme=dark" alt="Databases">
+
+<br><br>
+
+### AI / ML
+
+<img src="https://skillicons.dev/icons?i=python,pytorch,tensorflow,opencv,huggingface&theme=dark" alt="AI ML technologies">
+
+<br><br>
+
+### DevOps & Tools
+
+<img src="https://skillicons.dev/icons?i=git,github,docker,linux,nginx,aws&theme=dark" alt="DevOps tools">
+
+</div>
+
+---
+
+<div align="center">
+
+## 🔥 GitHub Activity
 
 <br>
 
-## 📊 GitHub Statistics
+<img src="https://streak-stats.demolab.com?user=AbarnaaSree&hide_border=true&background=0D1117&ring=EF93C4&fire=FF69B4&currStreakLabel=EF93C4&sideLabels=F8BBD0&currStreakNum=FF69B4&sideNums=EF93C4&dates=E5E7EB&stroke=0D1117" width="82%" alt="GitHub streak">
 
-<p align="center">
-  <img height="180" src="https://github-readme-stats.vercel.app/api?username=AbarnaaSree&show_icons=true&hide_border=true&count_private=true&include_all_commits=true&title_color=EF93C4&icon_color=FF69B4&text_color=777777&bg_color=00000000" alt="GitHub Stats"/>
-  <img height="180" src="https://github-readme-stats.vercel.app/api/top-langs/?username=AbarnaaSree&layout=compact&hide_border=true&langs_count=8&title_color=EF93C4&text_color=777777&bg_color=00000000" alt="Top Languages"/>
-</p>
+<br><br>
 
-<br>
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=AbarnaaSree&bg_color=0D1117&color=E5E7EB&line=EF93C4&point=FF69B4&area_color=F8BBD0&area=true&hide_border=true&custom_title=Contribution%20Activity" width="96%" alt="GitHub contribution activity graph">
 
-## 🔥 GitHub Streak
+</div>
 
-<p align="center">
-  <img src="https://streak-stats.demolab.com?user=AbarnaaSree&hide_border=true&background=00000000&ring=EF93C4&fire=FF69B4&currStreakLabel=EF93C4&sideLabels=EF93C4&currStreakNum=FF69B4&sideNums=FF69B4&dates=999999" alt="GitHub Streak"/>
-</p>
+---
 
-<br>
-
-## 📈 Contribution Activity
-
-<p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=AbarnaaSree&bg_color=00000000&color=EF93C4&line=FF69B4&point=F8BBD0&area=true&hide_border=true&custom_title=Abarnaa%20Sree%20N's%20Contribution%20Graph" width="95%" alt="Contribution Activity Graph"/>
-</p>
-
-<br>
+<div align="center">
 
 ## 🐍 Contribution Snake
 
-<p align="center">
-  <img src="https://raw.githubusercontent.com/AbarnaaSree/AbarnaaSree/output/github-contribution-grid-snake.svg" alt="Contribution Snake"/>
-</p>
+<br>
 
-<!--
-GitHub Action used to generate the contribution snake:
+<!-- GitHub Actions generates these files automatically. -->
 
-name: Generate Snake
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/AbarnaaSree/AbarnaaSree/output/github-contribution-grid-snake-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/AbarnaaSree/AbarnaaSree/output/github-contribution-grid-snake.svg">
+  <img src="https://raw.githubusercontent.com/AbarnaaSree/AbarnaaSree/output/github-contribution-grid-snake.svg" width="96%" alt="GitHub contribution snake">
+</picture>
 
-on:
-  schedule:
-    - cron: "0 0 * * *"
-  workflow_dispatch:
+</div>
 
-jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: Platane/snk@v3
-        with:
-          github_user_name: ${{ github.repository_owner }}
-          outputs: |
-            dist/github-contribution-grid-snake.svg
-            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
-      - uses: crazy-max/ghaction-github-pages@v4
-        with:
-          build_dir: dist
-        env:
-          GH_PAT: ${{ secrets.GH_PAT }}
-          BUILD_DIR: dist
--->
+---
+
+<div align="center">
+
+## 📊 GitHub Analytics
 
 <br>
 
-## 🌐 Connect With Me
+<a href="https://github.com/AbarnaaSree">
+  <img src="https://github-readme-stats.vercel.app/api?username=AbarnaaSree&show_icons=true&include_all_commits=true&count_private=true&hide_border=true&bg_color=0D1117&title_color=EF93C4&icon_color=FF69B4&text_color=E5E7EB&custom_title=GitHub%20Statistics" height="180" alt="GitHub statistics">
+</a>
 
-<p align="center">
-  <a href="https://www.linkedin.com/in/AbarnaaSree/">
-    <img src="https://img.shields.io/badge/LinkedIn-Abarnaa%20Sree-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/>
-  </a>
-  <a href="https://x.com/AbarnaaSree">
-    <img src="https://img.shields.io/badge/X-AbarnaaSree-000000?style=for-the-badge&logo=x&logoColor=white" alt="X"/>
-  </a>
-  <a href="https://www.instagram.com/AbarnaaSree/">
-    <img src="https://img.shields.io/badge/Instagram-AbarnaaSree-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram"/>
-  </a>
-  <a href="https://www.tiktok.com/@AbarnaaSree">
-    <img src="https://img.shields.io/badge/TikTok-AbarnaaSree-000000?style=for-the-badge&logo=tiktok&logoColor=white" alt="TikTok"/>
-  </a>
-  <a href="https://www.youtube.com/@AbarnaaSree">
-    <img src="https://img.shields.io/badge/YouTube-AbarnaaSree-FF0000?style=for-the-badge&logo=youtube&logoColor=white" alt="YouTube"/>
-  </a>
-  <a href="mailto:your-email@example.com">
-    <img src="https://img.shields.io/badge/Email-Contact%20Me-EF93C4?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/>
-  </a>
-</p>
+<a href="https://github.com/AbarnaaSree">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=AbarnaaSree&layout=compact&langs_count=8&hide_border=true&bg_color=0D1117&title_color=EF93C4&text_color=E5E7EB&custom_title=Top%20Languages" height="180" alt="Top languages">
+</a>
+
+</div>
+
+---
+
+<div align="center">
+
+## 🌐 Connect
 
 <br>
 
-## 💗 A Little More About Me
+<a href="YOUR_LINKEDIN_URL">
+  <img src="https://img.shields.io/badge/LinkedIn-YOUR%20LINKEDIN-EF93C4?style=for-the-badge&logo=linkedin&logoColor=FFFFFF&labelColor=0D1117" alt="LinkedIn">
+</a>
 
-<p align="center">
-  <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=light&quote=Keep%20learning%2C%20keep%20building%2C%20and%20keep%20moving%20forward.&author=Abarnaa%20Sree%20N" alt="Quote"/>
-</p>
+<a href="YOUR_X_URL">
+  <img src="https://img.shields.io/badge/X-YOUR%20X-FF69B4?style=for-the-badge&logo=x&logoColor=FFFFFF&labelColor=0D1117" alt="X">
+</a>
+
+<a href="YOUR_INSTAGRAM_URL">
+  <img src="https://img.shields.io/badge/Instagram-YOUR%20INSTAGRAM-F8BBD0?style=for-the-badge&logo=instagram&logoColor=0D1117&labelColor=0D1117" alt="Instagram">
+</a>
+
+<br><br>
+
+<a href="YOUR_TIKTOK_URL">
+  <img src="https://img.shields.io/badge/TikTok-YOUR%20TIKTOK-EF93C4?style=for-the-badge&logo=tiktok&logoColor=FFFFFF&labelColor=0D1117" alt="TikTok">
+</a>
+
+<a href="YOUR_YOUTUBE_URL">
+  <img src="https://img.shields.io/badge/YouTube-YOUR%20YOUTUBE-FF69B4?style=for-the-badge&logo=youtube&logoColor=FFFFFF&labelColor=0D1117" alt="YouTube">
+</a>
+
+<a href="mailto:YOUR_EMAIL">
+  <img src="https://img.shields.io/badge/Email-YOUR%20EMAIL-F8BBD0?style=for-the-badge&logo=gmail&logoColor=0D1117&labelColor=0D1117" alt="Email">
+</a>
+
+<br><br>
+
+<a href="https://github.com/AbarnaaSree">
+  <img src="https://img.shields.io/badge/GitHub-AbarnaaSree-EF93C4?style=for-the-badge&logo=github&logoColor=FFFFFF&labelColor=0D1117" alt="GitHub">
+</a>
+
+<a href="YOUR_PORTFOLIO_URL">
+  <img src="https://img.shields.io/badge/Portfolio-YOUR%20PORTFOLIO-FF69B4?style=for-the-badge&logo=googlechrome&logoColor=FFFFFF&labelColor=0D1117" alt="Portfolio">
+</a>
+
+</div>
 
 <br>
 
-<p align="center">
-  <b>Thanks for visiting my profile! ✨</b>
-  <br>
-  <sub>Let's connect, collaborate, and build something amazing together. 💗</sub>
-</p>
+<div align="center">
+
+### Build. Contribute. Debug. Ship.
+
+<br>
+
+<sub>Open source • Engineering • AI • Full Stack</sub>
+
+</div>
 
 <br>
 
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://capsule-render.vercel.app/api?type=waving&color=0:FF69B4,100:EF93C4&height=130&section=footer">
-    <source media="(prefers-color-scheme: light)" srcset="https://capsule-render.vercel.app/api?type=waving&color=0:EF93C4,100:F8BBD0&height=130&section=footer">
-    <img src="https://capsule-render.vercel.app/api?type=waving&color=0:FF69B4,100:EF93C4&height=130&section=footer" width="100%" alt="Pink waving footer"/>
+    <source media="(prefers-color-scheme: dark)" srcset="https://capsule-render.vercel.app/api?type=waving&color=0:FF69B4,50:EF93C4,100:080B10&height=160&section=footer&animation=twinkling">
+    <source media="(prefers-color-scheme: light)" srcset="https://capsule-render.vercel.app/api?type=waving&color=0:FF69B4,50:EF93C4,100:080B10&height=160&section=footer&animation=twinkling">
+    <img src="https://capsule-render.vercel.app/api?type=waving&color=0:FF69B4,50:EF93C4,100:080B10&height=160&section=footer&animation=twinkling" width="100%" alt="Pink waving footer">
   </picture>
 </p>
