@@ -20,11 +20,26 @@
 
 **🔀 18 Total PRs**
 &nbsp;&nbsp; • &nbsp;&nbsp;
-**🟢 4 Merged PRs**
+**🟢 5 Merged PRs**
 
 </div>
 
 <table width="100%">
+
+
+<tr>
+<td>
+
+ **fix(cloudformation): resolve IAM assume role policy intrinsics**
+
+</td>
+
+<td align="right">
+<a href="https://github.com/floci-io/floci/pull/2630">
+<img src="https://img.shields.io/badge/VIEW-00C96B?style=flat-square&logo=github&logoColor=000000" />
+</a>
+</td>
+</tr>
 
 
 <tr>
@@ -92,7 +107,7 @@
 <div align="center">
 
 <sub>
-Showing latest 4 of 4 merged pull requests
+Showing latest 5 of 5 merged pull requests
 &nbsp; • &nbsp;
 </sub>
 
