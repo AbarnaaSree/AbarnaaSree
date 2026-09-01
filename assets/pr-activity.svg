@@ -101,7 +101,7 @@ Pull Request Activity
 </text>
 
 <circle
-  cx="1020"
+  cx="545"
   cy="80"
   r="6"
   fill="#00FF88"
@@ -113,7 +113,7 @@ Pull Request Activity
 </circle>
 
 <text
-  x="1020"
+  x="545"
   y="348"
   fill="#A7AAB5"
   font-family="Arial"
@@ -123,8 +123,31 @@ Pull Request Activity
 2026-08
 </text>
 
+<circle
+  cx="1020"
+  cy="304"
+  r="6"
+  fill="#00FF88"
+  filter="url(#strongGlow)"
+>
+<title>
+2026-09: 1 PRs
+</title>
+</circle>
+
+<text
+  x="1020"
+  y="348"
+  fill="#A7AAB5"
+  font-family="Arial"
+  font-size="12"
+  text-anchor="middle"
+>
+2026-09
+</text>
+
 <polyline
-  points="70,256 1020,80"
+  points="70,256 545,80 1020,304"
   fill="none"
   stroke="#00FF88"
   filter="url(#greenGlow)"
