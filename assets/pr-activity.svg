@@ -125,13 +125,13 @@ Pull Request Activity
 
 <circle
   cx="1020"
-  cy="304"
+  cy="288"
   r="6"
   fill="#00FF88"
   filter="url(#strongGlow)"
 >
 <title>
-2026-09: 1 PRs
+2026-09: 2 PRs
 </title>
 </circle>
 
@@ -147,7 +147,7 @@ Pull Request Activity
 </text>
 
 <polyline
-  points="70,256 545,80 1020,304"
+  points="70,256 545,80 1020,288"
   fill="none"
   stroke="#00FF88"
   filter="url(#greenGlow)"
