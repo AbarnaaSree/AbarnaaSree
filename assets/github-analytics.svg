@@ -122,7 +122,7 @@ Followers
   font-size="30"
   font-weight="700"
 >
-4
+5
 </text>
 
 <rect
@@ -154,7 +154,7 @@ Commits
   font-size="30"
   font-weight="700"
 >
-144
+145
 </text>
 
 <rect
@@ -218,7 +218,7 @@ Merged PRs
   font-size="30"
   font-weight="700"
 >
-5
+6
 </text>
 
 <rect

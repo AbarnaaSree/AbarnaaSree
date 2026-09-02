@@ -20,11 +20,26 @@
 
 **🔀 21 Total PRs**
 &nbsp;&nbsp; • &nbsp;&nbsp;
-**🟢 5 Merged PRs**
+**🟢 6 Merged PRs**
 
 </div>
 
 <table width="100%">
+
+
+<tr>
+<td>
+
+ **feat(cognito): implement user MFA preferences**
+
+</td>
+
+<td align="right">
+<a href="https://github.com/floci-io/floci/pull/2896">
+<img src="https://img.shields.io/badge/VIEW-00C96B?style=flat-square&logo=github&logoColor=000000" />
+</a>
+</td>
+</tr>
 
 
 <tr>
@@ -107,7 +122,7 @@
 <div align="center">
 
 <sub>
-Showing latest 5 of 5 merged pull requests
+Showing latest 6 of 6 merged pull requests
 &nbsp; • &nbsp;
 </sub>
 
