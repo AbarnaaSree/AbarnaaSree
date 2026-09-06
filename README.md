@@ -20,11 +20,26 @@
 
 **🔀 31 Total PRs**
 &nbsp;&nbsp; • &nbsp;&nbsp;
-**🟢 6 Merged PRs**
+**🟢 7 Merged PRs**
 
 </div>
 
 <table width="100%">
+
+
+<tr>
+<td>
+
+ **fix: enforce parent-first langchain splitter imports**
+
+</td>
+
+<td align="right">
+<a href="https://github.com/LearningCircuit/local-deep-research/pull/6226">
+<img src="https://img.shields.io/badge/VIEW-00C96B?style=flat-square&logo=github&logoColor=000000" />
+</a>
+</td>
+</tr>
 
 
 <tr>
@@ -122,7 +137,7 @@
 <div align="center">
 
 <sub>
-Showing latest 6 of 6 merged pull requests
+Showing latest 7 of 7 merged pull requests
 &nbsp; • &nbsp;
 </sub>
 
