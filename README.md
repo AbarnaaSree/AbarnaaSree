@@ -20,11 +20,41 @@
 
 **🔀 31 Total PRs**
 &nbsp;&nbsp; • &nbsp;&nbsp;
-**🟢 7 Merged PRs**
+**🟢 9 Merged PRs**
 
 </div>
 
 <table width="100%">
+
+
+<tr>
+<td>
+
+ **fix(chat): guard user key against missing session scope**
+
+</td>
+
+<td align="right">
+<a href="https://github.com/LearningCircuit/local-deep-research/pull/6250">
+<img src="https://img.shields.io/badge/VIEW-00C96B?style=flat-square&logo=github&logoColor=000000" />
+</a>
+</td>
+</tr>
+
+
+<tr>
+<td>
+
+ **fix(dynamodb): append list values for out-of-range indexes**
+
+</td>
+
+<td align="right">
+<a href="https://github.com/floci-io/floci/pull/3088">
+<img src="https://img.shields.io/badge/VIEW-00C96B?style=flat-square&logo=github&logoColor=000000" />
+</a>
+</td>
+</tr>
 
 
 <tr>
@@ -137,7 +167,7 @@
 <div align="center">
 
 <sub>
-Showing latest 7 of 7 merged pull requests
+Showing latest 9 of 9 merged pull requests
 &nbsp; • &nbsp;
 </sub>
 
