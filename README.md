@@ -20,11 +20,26 @@
 
 **🔀 32 Total PRs**
 &nbsp;&nbsp; • &nbsp;&nbsp;
-**🟢 9 Merged PRs**
+**🟢 10 Merged PRs**
 
 </div>
 
 <table width="100%">
+
+
+<tr>
+<td>
+
+ **fix: update workspace chat lastUpdatedAt**
+
+</td>
+
+<td align="right">
+<a href="https://github.com/Mintplex-Labs/anything-llm/pull/6288">
+<img src="https://img.shields.io/badge/VIEW-00C96B?style=flat-square&logo=github&logoColor=000000" />
+</a>
+</td>
+</tr>
 
 
 <tr>
@@ -167,7 +182,7 @@
 <div align="center">
 
 <sub>
-Showing latest 9 of 9 merged pull requests
+Showing latest 10 of 10 merged pull requests
 &nbsp; • &nbsp;
 </sub>
 
