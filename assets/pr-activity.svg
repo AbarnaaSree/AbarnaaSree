@@ -79,7 +79,7 @@ Pull Request Activity
 
 <circle
   cx="70"
-  cy="260"
+  cy="263.52941176470586"
   r="6"
   fill="#00FF88"
   filter="url(#strongGlow)"
@@ -102,7 +102,7 @@ Pull Request Activity
 
 <circle
   cx="545"
-  cy="95"
+  cy="108.23529411764707"
   r="6"
   fill="#00FF88"
   filter="url(#strongGlow)"
@@ -131,7 +131,7 @@ Pull Request Activity
   filter="url(#strongGlow)"
 >
 <title>
-2026-09: 16 PRs
+2026-09: 17 PRs
 </title>
 </circle>
 
@@ -147,7 +147,7 @@ Pull Request Activity
 </text>
 
 <polyline
-  points="70,260 545,95 1020,80"
+  points="70,263.52941176470586 545,108.23529411764707 1020,80"
   fill="none"
   stroke="#00FF88"
   filter="url(#greenGlow)"
