@@ -18,7 +18,7 @@
 <!--START_MERGED_PRS-->
 <div align="center">
 
-**🔀 36 Total PRs**
+**🔀 37 Total PRs**
 &nbsp;&nbsp; • &nbsp;&nbsp;
 **🟢 10 Merged PRs**
 
