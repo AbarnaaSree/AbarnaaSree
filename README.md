@@ -20,11 +20,26 @@
 
 **🔀 42 Total PRs**
 &nbsp;&nbsp; • &nbsp;&nbsp;
-**🟢 10 Merged PRs**
+**🟢 11 Merged PRs**
 
 </div>
 
 <table width="100%">
+
+
+<tr>
+<td>
+
+ **docs: update Flux pricing**
+
+</td>
+
+<td align="right">
+<a href="https://github.com/pollinations/pollinations/pull/14865">
+<img src="https://img.shields.io/badge/VIEW-00C96B?style=flat-square&logo=github&logoColor=000000" />
+</a>
+</td>
+</tr>
 
 
 <tr>
@@ -162,27 +177,12 @@
 </tr>
 
 
-<tr>
-<td>
-
- **Warn when static HTML parser dependencies are unavailable**
-
-</td>
-
-<td align="right">
-<a href="https://github.com/pbakaus/impeccable/pull/465">
-<img src="https://img.shields.io/badge/VIEW-00C96B?style=flat-square&logo=github&logoColor=000000" />
-</a>
-</td>
-</tr>
-
-
 </table>
 
 <div align="center">
 
 <sub>
-Showing latest 10 of 10 merged pull requests
+Showing latest 10 of 11 merged pull requests
 &nbsp; • &nbsp;
 </sub>
 
