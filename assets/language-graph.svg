@@ -101,7 +101,7 @@ JavaScript
   font-size="14"
   font-weight="700"
 >
-42.9%
+43.3%
 </text>
 
 <text
@@ -128,7 +128,7 @@ HTML
 <rect
   x="190"
   y="123"
-  width="413.8914389757831"
+  width="350.1694161050476"
   height="24"
   rx="6"
   fill="#00FF88"
@@ -144,7 +144,7 @@ HTML
   font-size="14"
   font-weight="700"
 >
-27.3%
+23.3%
 </text>
 
 <text
@@ -154,7 +154,7 @@ HTML
   font-family="Arial"
   font-size="14"
 >
-CSS
+Python
 </text>
 
 
@@ -171,7 +171,7 @@ CSS
 <rect
   x="190"
   y="171"
-  width="212.2733132131478"
+  width="269.2597956327214"
   height="24"
   rx="6"
   fill="#00FF88"
@@ -187,7 +187,7 @@ CSS
   font-size="14"
   font-weight="700"
 >
-14.0%
+17.9%
 </text>
 
 <text
@@ -197,7 +197,7 @@ CSS
   font-family="Arial"
   font-size="14"
 >
-Python
+CSS
 </text>
 
 
@@ -214,7 +214,7 @@ Python
 <rect
   x="190"
   y="219"
-  width="175.9827716129427"
+  width="179.59207449777915"
   height="24"
   rx="6"
   fill="#00FF88"
@@ -230,7 +230,7 @@ Python
   font-size="14"
   font-weight="700"
 >
-11.6%
+12.0%
 </text>
 
 <text
@@ -257,7 +257,7 @@ Java
 <rect
   x="190"
   y="267"
-  width="60.75980476534738"
+  width="51.405328435854074"
   height="24"
   rx="6"
   fill="#00FF88"
@@ -273,7 +273,7 @@ Java
   font-size="14"
   font-weight="700"
 >
-4.0%
+3.4%
 </text>
 
 <text
@@ -359,7 +359,7 @@ Dockerfile
   font-size="14"
   font-weight="700"
 >
-0.1%
+0.0%
 </text>
 
 </svg>
