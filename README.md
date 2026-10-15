@@ -20,11 +20,26 @@
 
 **🔀 43 Total PRs**
 &nbsp;&nbsp; • &nbsp;&nbsp;
-**🟢 11 Merged PRs**
+**🟢 12 Merged PRs**
 
 </div>
 
 <table width="100%">
+
+
+<tr>
+<td>
+
+ **fix: walk pdfplumber pages lazily during extraction**
+
+</td>
+
+<td align="right">
+<a href="https://github.com/LearningCircuit/local-deep-research/pull/7346">
+<img src="https://img.shields.io/badge/VIEW-00C96B?style=flat-square&logo=github&logoColor=000000" />
+</a>
+</td>
+</tr>
 
 
 <tr>
@@ -162,27 +177,12 @@
 </tr>
 
 
-<tr>
-<td>
-
- **fix: keep tracking alive after malformed SSE chunks**
-
-</td>
-
-<td align="right">
-<a href="https://github.com/pollinations/pollinations/pull/13297">
-<img src="https://img.shields.io/badge/VIEW-00C96B?style=flat-square&logo=github&logoColor=000000" />
-</a>
-</td>
-</tr>
-
-
 </table>
 
 <div align="center">
 
 <sub>
-Showing latest 10 of 11 merged pull requests
+Showing latest 10 of 12 merged pull requests
 &nbsp; • &nbsp;
 </sub>
 
