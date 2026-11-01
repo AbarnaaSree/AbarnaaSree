@@ -101,7 +101,7 @@ Pull Request Activity
 </text>
 
 <circle
-  cx="386.66666666666663"
+  cx="307.5"
   cy="163.47826086956522"
   r="6"
   fill="#00FF88"
@@ -113,7 +113,7 @@ Pull Request Activity
 </circle>
 
 <text
-  x="386.66666666666663"
+  x="307.5"
   y="348"
   fill="#A7AAB5"
   font-family="Arial"
@@ -124,7 +124,7 @@ Pull Request Activity
 </text>
 
 <circle
-  cx="703.3333333333333"
+  cx="545"
   cy="80"
   r="6"
   fill="#00FF88"
@@ -136,7 +136,7 @@ Pull Request Activity
 </circle>
 
 <text
-  x="703.3333333333333"
+  x="545"
   y="348"
   fill="#A7AAB5"
   font-family="Arial"
@@ -147,7 +147,7 @@ Pull Request Activity
 </text>
 
 <circle
-  cx="1020"
+  cx="782.5"
   cy="288.69565217391306"
   r="6"
   fill="#00FF88"
@@ -159,7 +159,7 @@ Pull Request Activity
 </circle>
 
 <text
-  x="1020"
+  x="782.5"
   y="348"
   fill="#A7AAB5"
   font-family="Arial"
@@ -169,8 +169,31 @@ Pull Request Activity
 2026-10
 </text>
 
+<circle
+  cx="1020"
+  cy="309.5652173913044"
+  r="6"
+  fill="#00FF88"
+  filter="url(#strongGlow)"
+>
+<title>
+2026-11: 1 PRs
+</title>
+</circle>
+
+<text
+  x="1020"
+  y="348"
+  fill="#A7AAB5"
+  font-family="Arial"
+  font-size="12"
+  text-anchor="middle"
+>
+2026-11
+</text>
+
 <polyline
-  points="70,278.2608695652174 386.66666666666663,163.47826086956522 703.3333333333333,80 1020,288.69565217391306"
+  points="70,278.2608695652174 307.5,163.47826086956522 545,80 782.5,288.69565217391306 1020,309.5652173913044"
   fill="none"
   stroke="#00FF88"
   filter="url(#greenGlow)"
