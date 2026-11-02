@@ -20,11 +20,26 @@
 
 **🔀 46 Total PRs**
 &nbsp;&nbsp; • &nbsp;&nbsp;
-**🟢 12 Merged PRs**
+**🟢 13 Merged PRs**
 
 </div>
 
 <table width="100%">
+
+
+<tr>
+<td>
+
+ **test: remove chardet shim from OCR env provisioning tests**
+
+</td>
+
+<td align="right">
+<a href="https://github.com/infiniflow/ragflow/pull/19910">
+<img src="https://img.shields.io/badge/VIEW-00C96B?style=flat-square&logo=github&logoColor=000000" />
+</a>
+</td>
+</tr>
 
 
 <tr>
@@ -162,27 +177,12 @@
 </tr>
 
 
-<tr>
-<td>
-
- **fix: preserve Firehose compression format in CloudFormation**
-
-</td>
-
-<td align="right">
-<a href="https://github.com/floci-io/floci/pull/2406">
-<img src="https://img.shields.io/badge/VIEW-00C96B?style=flat-square&logo=github&logoColor=000000" />
-</a>
-</td>
-</tr>
-
-
 </table>
 
 <div align="center">
 
 <sub>
-Showing latest 10 of 12 merged pull requests
+Showing latest 10 of 13 merged pull requests
 &nbsp; • &nbsp;
 </sub>
 
