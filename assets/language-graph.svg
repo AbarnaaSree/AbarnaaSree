@@ -101,7 +101,7 @@ JavaScript
   font-size="14"
   font-weight="700"
 >
-41.9%
+41.6%
 </text>
 
 <text
@@ -128,7 +128,7 @@ HTML
 <rect
   x="190"
   y="123"
-  width="350.2131439582539"
+  width="350.2131439582538"
   height="24"
   rx="6"
   fill="#00FF88"
@@ -144,7 +144,7 @@ HTML
   font-size="14"
   font-weight="700"
 >
-22.6%
+22.4%
 </text>
 
 <text
@@ -171,7 +171,7 @@ Python
 <rect
   x="190"
   y="171"
-  width="322.6263183079102"
+  width="333.7781039644615"
   height="24"
   rx="6"
   fill="#00FF88"
@@ -187,7 +187,7 @@ Python
   font-size="14"
   font-weight="700"
 >
-20.8%
+21.4%
 </text>
 
 <text
@@ -230,7 +230,7 @@ CSS
   font-size="14"
   font-weight="700"
 >
-11.9%
+11.8%
 </text>
 
 <text
@@ -257,7 +257,7 @@ Java
 <rect
   x="190"
   y="267"
-  width="37.23181203887513"
+  width="37.231812038875134"
   height="24"
   rx="6"
   fill="#00FF88"
@@ -369,7 +369,7 @@ Batchfile
   font-family="Arial"
   font-size="14"
 >
-Dockerfile
+Mako
 </text>
 
 
