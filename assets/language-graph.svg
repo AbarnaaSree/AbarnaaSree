@@ -101,7 +101,7 @@ JavaScript
   font-size="14"
   font-weight="700"
 >
-41.6%
+40.1%
 </text>
 
 <text
@@ -111,7 +111,7 @@ JavaScript
   font-family="Arial"
   font-size="14"
 >
-HTML
+Python
 </text>
 
 
@@ -128,7 +128,7 @@ HTML
 <rect
   x="190"
   y="123"
-  width="350.2131439582538"
+  width="393.55306209545483"
   height="24"
   rx="6"
   fill="#00FF88"
@@ -144,7 +144,7 @@ HTML
   font-size="14"
   font-weight="700"
 >
-22.4%
+24.3%
 </text>
 
 <text
@@ -154,7 +154,7 @@ HTML
   font-family="Arial"
   font-size="14"
 >
-Python
+HTML
 </text>
 
 
@@ -171,7 +171,7 @@ Python
 <rect
   x="190"
   y="171"
-  width="333.7781039644615"
+  width="350.2131439582538"
   height="24"
   rx="6"
   fill="#00FF88"
@@ -187,7 +187,7 @@ Python
   font-size="14"
   font-weight="700"
 >
-21.4%
+21.6%
 </text>
 
 <text
@@ -230,7 +230,7 @@ CSS
   font-size="14"
   font-weight="700"
 >
-11.8%
+11.4%
 </text>
 
 <text
@@ -257,7 +257,7 @@ Java
 <rect
   x="190"
   y="267"
-  width="37.231812038875134"
+  width="37.23181203887513"
   height="24"
   rx="6"
   fill="#00FF88"
@@ -273,7 +273,7 @@ Java
   font-size="14"
   font-weight="700"
 >
-2.4%
+2.3%
 </text>
 
 <text
