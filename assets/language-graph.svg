@@ -101,7 +101,7 @@ JavaScript
   font-size="14"
   font-weight="700"
 >
-38.3%
+37.5%
 </text>
 
 <text
@@ -128,7 +128,7 @@ Python
 <rect
   x="190"
   y="123"
-  width="467.8233451234732"
+  width="473.212726884752"
   height="24"
   rx="6"
   fill="#00FF88"
@@ -144,7 +144,7 @@ Python
   font-size="14"
   font-weight="700"
 >
-27.6%
+27.3%
 </text>
 
 <text
@@ -187,7 +187,7 @@ HTML
   font-size="14"
   font-weight="700"
 >
-20.6%
+20.2%
 </text>
 
 <text
@@ -214,7 +214,7 @@ CSS
 <rect
   x="190"
   y="219"
-  width="184.73737301890085"
+  width="195.1168452430989"
   height="24"
   rx="6"
   fill="#00FF88"
@@ -230,7 +230,7 @@ CSS
   font-size="14"
   font-weight="700"
 >
-10.9%
+11.3%
 </text>
 
 <text
@@ -273,7 +273,7 @@ Java
   font-size="14"
   font-weight="700"
 >
-2.2%
+2.1%
 </text>
 
 <text
@@ -300,7 +300,7 @@ TypeScript
 <rect
   x="190"
   y="315"
-  width="4.241944661782488"
+  width="25.97600049143545"
   height="24"
   rx="6"
   fill="#00FF88"
@@ -316,7 +316,7 @@ TypeScript
   font-size="14"
   font-weight="700"
 >
-0.3%
+1.5%
 </text>
 
 <text
